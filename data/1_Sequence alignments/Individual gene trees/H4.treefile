@@ -1,0 +1,185 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=83;
+	taxlabels
+	Arulla_DNA102666
+	Assamiidae_DNA104069
+	Assamiidae_DNA104857
+	Assamiidae_DNA104859
+	Baculigerus
+	Biantidae_DNA105668
+	Bunofagea
+	Caenoncopus
+	Chilon
+	Conomma
+	Cynortula
+	Dongmoa
+	Epedanidae_DNA104062
+	Epedanidae_DNA104066
+	Epedanidae_DNA104861
+	Epedanidae_DNA104862
+	Equitius
+	Erebomaster
+	Escadabius
+	Ethobunus
+	Fijicolana
+	Fissiphallius
+	Fissiphallius_DNA104055
+	Fumontana
+	Glysterus[&!color=#ff0000]
+	Gnomulus
+	Goniosoma
+	Guasinia
+	Haasus_judaeus
+	Haasus_sp
+	Heterocranaus
+	Holoscotolemon
+	IC_DNA102668[&!color=#009900]
+	IC_DNA102669[&!color=#009900]
+	IC_DNA103572
+	IC_DNA103729
+	IC_DNA104070
+	IC_DNA104071
+	Icaleptes[&!color=#ff0000]
+	Icaleptes_DNA104053
+	Icaleptes_DNA104056
+	Karos
+	Kimula
+	Larifuga
+	Lomanius_DNA104934
+	Lomanius_DNA104935
+	Martensiellus
+	Megapachylus
+	Metabiantes_DNA100335
+	Metabiantes_DNA100704
+	Metalibitia
+	Minuella
+	Mitraceras
+	Paktongius
+	Palaeoncopus
+	Paraselenca
+	Pellobunus
+	Peltonychia
+	Protolophus
+	Pseudoepedanus
+	Rostromontia
+	Samoidae
+	Sandokan
+	Santinezia
+	Santobius_DNA104931
+	Scotolemon
+	Stenostygnus_DNA104847
+	Stenostygnus_DNA104848
+	Stenostygnus_DNA104849
+	Stenostygnus_DNA104850
+	Stygnomma
+	Stygnommatidae_DNA105636
+	Stygnoplus
+	Stygnopsidae_DNA103882
+	Stygnopsidae_DNA104856
+	Theromaster
+	Tithaeus
+	Triaenobunus
+	Triaenonychidae
+	Trionyxella
+	Zalmoxida
+	Zalmoxis
+	Zygopachylus
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (Zalmoxis:0.036407,Ethobunus:0.054373,((Icaleptes_DNA104056:0.023457,(Fissiphallius_DNA104055:0.013458,Fissiphallius:0.059758)[&label=100]:0.0886)[&label=80]:0.027654,(((Glysterus:3.0E-6,Icaleptes:2.0E-6)[&label=100]:0.037597,Icaleptes_DNA104053:2.45E-4)[&label=99]:0.100972,((((((((Holoscotolemon:0.081974,((Theromaster:0.023123,Erebomaster:0.044288)[&label=99]:0.028678,Larifuga:0.094638)[&label=71]:0.019897)[&label=61]:3.0E-6,Peltonychia:0.060832)[&label=74]:0.007834,(((IC_DNA104070:2.0E-6,(Zalmoxida:3.0E-6,Stygnoplus:0.175216)[&label=71]:0.040833)[&label=54]:0.012625,(IC_DNA104071:0.001036,IC_DNA103729:0.02109)[&label=100]:0.038467)[&label=87]:0.070384,(IC_DNA102669:3.0E-6,IC_DNA102668:3.0E-6)[&label=89]:2.0E-6)[&label=52]:0.024669)[&label=26]:0.009303,((Chilon:0.062531,(((Karos:0.117057,Stygnopsidae_DNA104856:0.049906)[&label=76]:0.010747,Stygnopsidae_DNA103882:0.034893)[&label=99]:0.073372,((Epedanidae_DNA104861:0.10348,Epedanidae_DNA104862:0.057483)[&label=62]:0.003461,Pseudoepedanus:2.0E-6)[&label=100]:0.102092)[&label=57]:2.0E-6)[&label=28]:0.013835,(Paraselenca:0.044644,(Stygnomma:0.093831,(Pellobunus:0.011554,Fijicolana:0.060861)[&label=100]:0.070485)[&label=82]:0.009742)[&label=73]:0.006417)[&label=23]:0.009107)[&label=47]:0.0281,IC_DNA103572:0.045355)[&label=20]:0.011117,(Minuella:0.058773,Kimula:0.066388)[&label=64]:0.023813)[&label=5]:2.0E-6,(((((Conomma:0.025631,(Scotolemon:0.042064,Mitraceras:0.095182)[&label=76]:0.017987)[&label=73]:0.019124,(((Tithaeus:0.021496,(Martensiellus:0.088314,(((Palaeoncopus:0.05126,Sandokan:0.054238)[&label=85]:0.016419,Gnomulus:0.056178)[&label=79]:0.021613,Caenoncopus:0.045497)[&label=99]:0.065852)[&label=84]:0.031953)[&label=74]:0.008621,(Epedanidae_DNA104066:0.024619,Epedanidae_DNA104062:0.023126)[&label=98]:0.027321)[&label=80]:0.014722,((Dongmoa:0.071237,(Lomanius_DNA104934:2.0E-6,Lomanius_DNA104935:0.005993)[&label=100]:0.07127)[&label=94]:0.040664,(Santobius_DNA104931:0.076826,Protolophus:0.080055)[&label=80]:0.026405)[&label=92]:0.079642)[&label=37]:2.0E-6)[&label=73]:0.019654,(((Megapachylus:0.051872,Goniosoma:0.068067)[&label=100]:0.026633,Santinezia:0.051381)[&label=99]:0.045739,(Heterocranaus:0.057525,(Metalibitia:0.07291,Cynortula:0.070188)[&label=100]:0.057831)[&label=98]:0.010508)[&label=94]:0.028347)[&label=58]:0.006637,(Fumontana:0.057864,Baculigerus:0.14553)[&label=75]:0.050402)[&label=67]:0.006368,((Triaenobunus:0.031305,((Equitius:0.037226,Rostromontia:0.104598)[&label=97]:0.051859,Triaenonychidae:0.076543)[&label=79]:0.037515)[&label=60]:0.019285,Bunofagea:0.10096)[&label=92]:0.048971)[&label=43]:0.024153)[&label=27]:0.005663,(((Escadabius:0.086146,((Trionyxella:0.033594,(((Arulla_DNA102666:0.030203,Assamiidae_DNA104069:0.055088)[&label=89]:0.036437,(Assamiidae_DNA104859:0.019754,Paktongius:0.058848)[&label=98]:0.035409)[&label=85]:0.007306,Assamiidae_DNA104857:0.028792)[&label=92]:0.035014)[&label=92]:0.04896,((Zygopachylus:0.044126,(Haasus_sp:3.0E-6,Haasus_judaeus:0.018904)[&label=100]:0.100902)[&label=85]:0.043877,(Metabiantes_DNA100335:0.014294,Metabiantes_DNA100704:0.026289)[&label=87]:0.030556)[&label=80]:0.047593)[&label=26]:0.017528)[&label=41]:0.009655,(Biantidae_DNA105668:0.087639,Guasinia:0.031006)[&label=66]:0.024701)[&label=63]:0.008227,((((Stygnommatidae_DNA105636:0.006256,Stenostygnus_DNA104848:0.018961)[&label=99]:0.06202,(Stenostygnus_DNA104850:0.01865,Stenostygnus_DNA104849:0.030139)[&label=87]:2.0E-6)[&label=82]:0.026813,Stenostygnus_DNA104847:2.0E-6)[&label=98]:0.075009,Samoidae:0.069276)[&label=61]:0.025593)[&label=53]:0.01032)[&label=96]:0.108559)[&label=94]:0.011471)[&label=84]:0.031975);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=2.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="Arial";
+	set tipLabels.fontSize=12;
+	set tipLabels.fontStyle=1;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

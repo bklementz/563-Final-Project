@@ -1,0 +1,43 @@
+echo "individual gene trees Assamiidae analysis after Prashant removed duplicates"
+
+echo "Elongation factor"
+
+iqtree -s OpilionesEF1.phy -nt AUTO -m MFP -bb 1000 -pre EF1
+
+echo "U2"
+
+iqtree -s OpilionesU2.phy -nt AUTO -m MFP -bb 1000 -pre U2
+
+echo "Histone 4"
+
+iqtree -s OpilionesH4.phy -nt AUTO -m MFP -bb 1000 -pre H4
+
+echo "Cytochrome oxidase I"
+
+iqtree -s OpilionesCOI.phy -nt AUTO -m MFP -bb 1000 -pre COI
+
+echo "28S"
+
+iqtree -s Opiliones28S.phy -nt AUTO -m MFP -bb 1000 -pre 28S
+
+echo "18S"
+
+iqtree -s Opiliones18S.phy -nt AUTO -m MFP -bb 1000 -pre 18S
+
+echo "Cytochrome B"
+
+iqtree -s OpilionesCytB.phy -nt AUTO -m MFP -bb 1000 -pre CytB
+
+echo "12S"
+
+iqtree -s Opiliones12S.phy -nt AUTO -m MFP -bb 1000 -pre 12S
+
+echo "16S"
+
+iqtree -s Opiliones16S.phy -nt AUTO -m MFP -bb 1000 -pre 16S
+
+echo "Histone 3"
+
+iqtree -s OpilionesH3.phy -nt AUTO -m MFP -bb 1000 -pre H3
+
+echo "done"

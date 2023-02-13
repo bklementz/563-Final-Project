@@ -1,0 +1,914 @@
+#NEXUS
+[saved by seaview on Mon Dec 24 09:43:59 2018]
+BEGIN DATA;
+  DIMENSIONS NTAX=113 NCHAR=364;
+  FORMAT DATATYPE=DNA
+  GAP=-
+  ;
+MATRIX
+[1] Zalmoxis
+TATTAGGATTAATAGTGAGACCTGCTCTATTGATTAAATGGCTGCAGTATGACTGTGTAA
+AAGTAGCATAATCATTAGTTTTTTAATTGAAGACTGGAATGAAGGGTTATACTAAGAGGT
+AGTTTTCTTAATTTTAATTATAAGTAAAAATGCTTATATAGGTTCTTGGGACGAGAAGAC
+CCTAAAAGCTTTGGGGTGACAGTGAATCTTTTATACTAAAATTTAAATTATAAGTTACTT
+TAGGGATAACAGCGTTATTTAATTAAAGAGTTCTTATTAATAATTTAGTTGCGACCTCGA
+TGTTGAATTAAA-TGGCTCTAAGGGGCAGGAGTTTTATGGTCTGTTCGACCATTAATTGT
+TTAC
+[2] Fissiphallius_DNA104057
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[3] Holoscotolemon
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[4] Conomma
+TATTAGTATTAATAATCTTGCCTGCCCTATATTTTAAATGGCTGCAGTATGACTGTACTA
+AGGTAGCATAATCATTAGTTTTTTAATTGGAGACTTGTATGAAGGGTGATACTATGATGA
+AGTTTTTTGAATTTTAATTTAAGTTAAAAATGTTTTAATTAATTTGGGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGTGATTATGAATCTTTGTGG----------------AAGTTACTC
+TAGGGATAACAGCATAATTCTTTTGGTGAGTTCATATCAATAAATGAGTTGTGACCTCG-
+------------------------------------------------------------
+----
+[5] Scotolemon
+TTTTAAG-TAAGCGGTATTGCCTGCTCAATAAATTAAATAGCCGCAGTATGACTGTGCTA
+AGGTAGCGTAATCATTAGCTTCTTAATTAGAGGCAAGTATGAAAGGTAATACCAAGAGGT
+AGTTTTTTGAATTTTAATTATTAATAAAAATGTTAATATATAATCCTGGGACGAGAAGAC
+CCTAGAAATTTTGGGGTGATACAGAACATTTGTTTAGATAAATGGA-----AAATTACTC
+TAGGGATAACAGCATAATTTAATTGGAGAGTTCTTATCAGTAATTAAGTTATGACCTCGA
+TGTTGAATTAAACTATAT-TAAGGTGAAGAAGCTTTATAGTCTGTTCGACTATTTGAAGT
+TTAC
+[6] Epedanidae_DNA104861
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[7] Epedanidae_DNA104862
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[8] Pseudoepedanus
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[9] Karos
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[10] Hoplobunus
+TATTATAATTAATAGTGTTACCTGCTCTATCTGGTAAATGGCTGCAGTATGACTGTACTA
+AGGTAGCATAATCATTAGTTTCTTAATTAGGGACTGGGATGAAGGGTAAAACCTTGCAGA
+GGTTTTTTGAAATTAAATTAAAAGTAAAAATGCTTTTATTAATTTTTGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGGGATTAAGAATCTTTTTATTAATGAAAGTAAGATTAAGTTACTC
+TAGGGATAACAGCGTAATTTAGTTTTGGAGTCCTTATTTAAAATTAAGTTGCGACCTCGA
+TGTTGAATTAAA-TGTAGGTTAAATGGAGAGGTTTAGTAGTCTGTTCGACTTTTAGAAAT
+TTAC
+[11] Stygnopsidae_DNA103882
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[12] Stygnopsidae_DNA104855
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[13] Dongmoa
+TATTAGAATTAATAATCTTACCTGCTCTATAAAATAAATGGCTGCAGTATGACTGTACTA
+AGGTAGCATAATCAAAAGCCTTTTAATTGGTGGCTGGAATGAAGGGTAAATTTGGGAAGA
+AGTTTTTTTAATTTAAATTAAAAATAAAAATGTTTTTATAAATTTTTAGGACGATAAGAC
+CCTAGAAGCTTTGGGGAGATGAAGAATCTTTTTTAAAAAATTTTTAAGTATAAGTTACTC
+TAGGGATAACAGCATTATTTAATTAAAGAGTTCTTATTGATAATTAAGTTGTGACCTCGA
+TGTTGAATTAAAATAAATTTGGGGTGAAGAAGCTTCATAGTCTGTTCGACTAGTAAAATT
+TTAC
+[14] Assamiidae_DNA104858
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[15] Bishopella
+CCTTGAAGTTTAAGGTAAATTCTGCTCAATATTTTAAATAGCCGCAGTATGACTGTGTTA
+AGGTAGCATAATCATTAGTCTTTTAATTGAAGACTGGAATGAAGGGATTAACTAGGAAGA
+AGTTTTTTTAATTTATATTATAAATAAAAATATTTATATAAATCTAAGGGACGAGAAGAC
+CCTAAAAGTTTTGGGGTGATTATGAATCTTTAATATTGATTGTATGTATTATAATTACTT
+TAGGGATAACAGCATAATTTGATTGAAGAGTTCTTATTAATAATCAAGTTGTGACCTCGA
+TGTTGAATTAAAGTTTATAGATGGTGTAGGGGCTTTCTAGTCTGTTCGACTA--AATACT
+TTAC
+[16] Bunofagea
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[17] Trionyxella
+TATTAGGAATAGTAATTATACCTGCTCTATATAGTAAATGGCTGCAGTATGACTGTACAA
+AGGTAGCATAATCAATTGCTTTTTAATTGGAGGCTGGGATGAAAGGTTTGACCGGGAAGA
+TGTCTTTTGAATTTTAATTAGAGATAAAAATGTCTTTATGAACCCCTGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGTGATTATGAAACTTTAAAAAAGTGATTTTGTTAGTAAGTTACTC
+TAGGGATAACAGCGTAATGAGATTTAAGAGTTCTAATTAAGAATTTTGTTGCGACCTCGA
+TGTTGAATTAAA-TTTAGGAGGGGTGAAGGAGCTTCTTAGTCTGTTCGACTATTGAAATT
+TTAC
+[18] Agoristenidae_DNA105839
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[19] Santobius_DNA104931
+TATTAGAATTAATAATCTTACCTGCCCAATCTTATAAATAGCTGCAGTATGACTGTACTA
+AGGTAGCATAATCAATAGCCTTTTAATTGATGGCTGGAATGAAAGGTAAAATCAGAACAA
+AGTTTTTTGAACTTAAGTTAAAAATAAAAACGTTTTTATTAATCTTAGGGACGACAAGAC
+CCTAGAAGCTTTGGGGCAATTTTAAATCTTTATATTCATCTCTTTTCTCACAAGTTACTC
+TAGGGATAACAGCATAATTTAGGTCAAGAGCCCTTATTGAAACCTAAGTTGTGACCTCGA
+TGTTGAATTAAATGTAACATGAGGTGAAGAAGCTTCATAGTCTGTTCGACTATTAAAAAT
+TTAC
+[20] Minuella
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[21] Lomanius_DNA104934
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[22] Lomanius_DNA104935
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[23] Tithaeus
+TATTAGAATTAATAGTAATGCCTGCCCAATAAAGTTAATGGCTGCAGTATGACTGTACTA
+AGGTAGCATAATCAATAGTCTTTTAATTGATGACTGGAATGAAGGGCAAAACTAAAAAGA
+AGTTTTTTGAATTTAAATTAAATATAAAAATGTTTTTATAAATTTCTAGGACGAGAAGAC
+CCTAGAAGCTTTGGGGTGATAAGGAATCTTTTATTTTTAAGTATATAATGAAAGTTACTC
+TAGGGATAACAGCGTTATTTAATTTTAGAGTTCAAATTGGAAATTAAGTTGCGACCTCGA
+TGTTGAATTAAATTGTACTAAAGGTGAAGAAGCTTTTTAGTCTGTTCGACTATTAAATAT
+TTAC
+[24] Epedanidae_DNA104066_1
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[25] Epedanidae_DNA104062_1
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[26] Epedanidae_DNA104068
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[27] Martensiellus
+TATTAGTATTAATAATCTTACCTGCTCTATATAGTAAATGGCTGCAGTATGACTGTACTA
+AGGTAGCATAATCAATAGCTTTTTAATTGAAGGCTGGTATGAAAGGTAAAACTATGGGGG
+CGTTTTTTGAATTTAAATTATAAGTAAAAATGCTTATATTAACCCTTGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGTGATATTGAATCTTTGGTTAGTATAGTGAAAAATTAAGTTACTC
+TAGGGATAACAGCGTAATTTATTTTCTGAGTTCTTATTGAAAAATAGGTTGCGACCTCGA
+TGTTGAATTAAA-TGGAAGTAGGGTGGAGAAGCTTTATAGTCTGTTCGACTATTAAAATT
+TTAC
+[28] Palaeoncopus
+TGTTAGTATTAATAATCTTACCTGCCCAATTAAGTGAATGGCTGCAGTATGACTGTACTA
+AGGTAGCATAATCAATAGTTTTTTAATTGGAGACTGGTATGAAGGGTAAAACCATAAGGA
+CGTTTTTTGAATTTAAGTTAAAAGTAAAAACGCTTTTATTAACCCTTGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGTGATATTGAATCTTTAATTTTGGGATTTGATTGGTAAGTTACTC
+TAGGGATAACAGCGTAATTTGATCTATGAGTTCTTATTTGAGATGAAGTTGCGACCTCGA
+TGTTGAATTAAA-TGGAAGTGAGGTGAAGGAGCTTTATAGTCTGTTCGACTATTAAATTT
+TTAC
+[29] Sandokan
+TATTAGAAATAATAGTTTTTTCTGCTCAGTAATGTAAATAGCTGCAGTATGACTGTACTA
+AGGTAGCATAATCAATAGCTTTTTAATTGAAGGCTGGTATGAAGGGTAAGACTATATAGA
+AGTTTTTTGAATTTAAATTAATAGTAAAAATTCTTTTATAAATCCTTGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGTGATAATGAATCTTTAATTTTTAAAGGATTTGTTTAAGTTACTC
+TAGGGATAACAGCGTAATTTAATTTAAGAGTTCTTATTATAAATTAAGTTGCGACCTCGA
+TGTTGAATTAAA-TGGAAATAAGGTGTAGAAGCTTTATAGTCTGTTCGACTATTAAATTT
+TTAC
+[30] Caenoncopus
+TATTAGTATTAATAATCTTGCCTGCTCAGTTAAGTAAATAGCTGCAGTATGACTGTACTA
+AGGTAGCATAATCAATAGCTTTTTAATTGAAGGCTGGAATGAAAGGTAATACTATGAGAA
+AGTTTTTTGAATTTAAATTATAAATAAAAATGTTTATATAAGTCTTTGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGTGATAATGAATCTTTGGTGTTAAATATTATATTATAAGTTACTC
+TAGGGATAACAGCGTAATTTAATTTATGAGTCCTTATTTAAAATTAGGTTGCGACCTCGA
+TGTTGAATTAAA-TGAAAGTAAGGTGTAGAAGCTTTATAGTCTGTTCGACTATTAAATTT
+TTAC
+[31] Gnomulus
+TATTAGGATTAATAATCTTGCCTGCTCAATAAAGTAAATGGCTGCAGTATGACTGTACTA
+AGGTAGCATAATCAATAGTCTTTTTATTGGAGGCTGGAATGAAAGGTAAGACTATAAAGA
+TGTTTTTTGAATTTAGATTAAAAATAAAAATATTTTTATAAATCCTTGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGTGATAATGAATCTTTAATTTTGGGATATAGATTT-AAGTTACTC
+TAGGGATAACAGCGTTATTTAGTTAATGAGTTCTTATTTAAAATTAAGTTGCGACCTCGA
+TGTTGAATTAAAGTAAAAGTAAGGTGAAGGAGCTTTATAGTCTGTTCGACTATTAAATTT
+TTAC
+[32] Metalibitia
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[33] Megapachylus
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[34] Glysterus
+TATTAGGATTAATAATATCACCTGCACGGTGAATTAAATTGCTGCAGTATGACTGTACAA
+AGGTAGCATAATAAATAGTTTTTTAATTGAAGACTAGAATGAAAGGTGAGACTAAGAGGA
+AGTTTTTTGAATTTAAATTAAAAATTAAAATGTTTTTATAAAATTTAGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGCAAGTTTGAATTTTTGGATATATAATATCAGATTAAAGTTACTC
+TAGGGATAACAGCATAATTTAATTTACAAGTTCTTATTAAAAATTAAGTTGTGACCTCGA
+TGTTGAATTAAAGTGAATTTTTGGTGAAGGGGCTTTATAGTCTGTTCGACTATTAAAATT
+TTAC
+[35] Stygnommatidae_DNA105636
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[36] Stenostygnus_DNA104847
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[37] Stenostygnus_DNA104850
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[38] Goniosoma
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[39] Cynortula
+TATTAGAATTAATAGTATCACCTGCACAGTAAATTAAATTGCTGCAGTATGACTGTACAA
+AGGTAGCATAATCATTAGCTTTTTAATTGGAGGCTGGAATGAAAGGTGAAACTAAGGGGA
+AGTTTTTTGAATTTAATTTAAAAGTAAAAAAGCTTTTATAAACCCTTGGGACGAGAAGAC
+CCTAGAAGTTTTGGGGCAATATTGAATTTTTATATAAGTAATGTGAAA---AAATTACTC
+TAGGGATAACAGCGTTATTTAGTTTATGAGTTCTTATTAACAACTAAGTTGCGACCTCGA
+TGTTGAATTAAATTAAACTTGTGGTGAAGGGGCTATATAGTCTGTTCGACTATTAAAAAT
+TTAC
+[40] Stygnoplus
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[41] Zygopachylus
+TATTAGAATTAATAATCTCACCTGCACGGTAAGTTAAATTGCTGCAGTATGACTGTACAA
+AGGTAGCATAATCATTAGTTTTTTAATTGAAGACTGGAATGAAAGGTGATACTAAGAAGG
+AGTTTTTTGAATTTAAATTAAAAGTAAAAATGCTTTTATAGATTTCTGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGCAACACTGAATTTTTAGTTTATTAAATTATATTATAAGTTACTC
+TAGGGATAACAGCGTTATTTAATTAGCAAGTTCTTATTAATAATTAAGTTGCGACCTCGA
+TGTTGAATTAAAATTAATTTTGGGTGTAGGAGCTTGGTAGTCTGTTCGACTATTAAAATT
+TTAC
+[42] Heterocranaus
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[43] Troglosiro
+TCTTTAAATTTAAAGTAATGTCTGCTCAATTCAGTAAATAGCTGCAGGA-GACTGTACTA
+AGGTAGCATAATCATTAGATTATTTATTGTAATCAAGAATAAAAGACAA----ATGAATA
+AATTTTTCTAACCTTATTTTCTTGTTAAAAAGCAAAAATTCTATTTAGGGACAAGAAGAC
+CCTAGAAGCTTTGGGGCAATTAAGAATATTAATCCAAGATTCTTGCAA---AAGTTACTC
+TAGGGATAACAGCACAATAAAAGTAAAGAGACCCTATCTTCATCTTTGTTATGACCTCGA
+TGTTGGATCAATTTTTCTACTTGATGAAAAAG-TCAATAGTCTGTTCGACTTTTAAAAAA
+TTAC
+[44] Dendrolasma
+CTTTAGAATTAAAGGTAGGACCTGCCCCCTGTACTAAAGGGCCGCAGTATAACTGTGCAA
+AGGTAGCATAATAATTTGCTTTATAATTGAAAGCTGGGATGAAAGGT----TTATGAGGG
+GTCTTTTTGAATTTAATTTTAAAGTAAAAAAGCTTTAGAAATTTTGTGGGACGATAAGAC
+CCTATAAGCTCTGGGGCGGTAGGAAATTTGGAGCCACTAAATAGTGAGAATAAGTTACTA
+TAGGGATAACAGCATAATTCTTTTTGAGAGTTCTTATTAACGAAGGAGTTGTGACCTCGA
+TGTTGAATTAATTAATCTAATGGGTGAAGAAGCTC-ATAGTCTGTTCGACTTTTAAATAT
+TTAC
+[45] Protolophus
+CCCTAAGATTAG-GGTAAGTTCTGCCCCCTTATTTAAAGGGCCGCAGTATGACTGTGCTA
+AGGTAGCATAATCATTAGGTTTTTAATTGGGATCTGGTATGAATGGGAA---TAGGGAAT
+AGTCTTTTGAAGTTAAGTTTTTAGTAATAACGCTTGGATGGGTATGTGGGACGATAAGAC
+CCTAAAAGCTCTGGGGCGGTTAAGCAGTTTTGATCCGTTAGTAACGAATTTAAGTTACTT
+TAGGGATAACAGCATAATATACTTATGGAGTTCTAATCGAAGAGTATGTTGTGACCTCGA
+TGTTGAATTAATTTGATTTTAGGGTGAAGAAGCTCTGTAGTCTGTTCGACTATTGAAAAA
+TTAC
+[46] Trogulus
+TTTTATGATGAATAGTAGGATCTGCCCACTTATTTGAAGGGGTGCGGTATAACTGTACTA
+AGGTAGCATAATCATTTGTTTTTTAATTGAAAACTGGTATGAAGGAT-----TTACAGGA
+AGCTTTTTGAATTTAGAATTTTAGTAAAAATACTAGATTTTTATTGTGGGACGATAAGAC
+CCTATGAGCTCTGGGGTGGTAAATAATTTTGATCCATTATTAATGATAAATGAGTTACTG
+TAGGGATAACAGCATAATTTTTTTATAGAGTTCTTATCGATAAATTAGTTGTGACCTCGA
+TGTTGAATCAAT-TACCTATTAGGTGGAGGAGCTTATTAGACTGTTCGTCTATTAAAGAG
+TTAC
+[47] Pantopsalis
+CTTTAAGAATTAAAGTATTGCCTGCCCATTATTTTGAAAGGCCGCAGTATGACTGTGCTA
+AGGTAGCATAGTCATTTGGTTTTTAATTGAGATCTGGAATGAAGGGTAAG----------
+--TTTTTTGAATTTAAATTTTTAGTAAGAATTCTAAAATTTTTTTGAGGGACGATAAGAC
+CCTAAAAGCTTTGGGGCGAAACCAAATTTTTTGATCCAAAAATTTTGATAAAAGTTACTT
+TAGGGATAACAGTATAATTTATTCAGGGAGTTCAAATCGGAGAATAAGTTGTTACCTCGA
+TGTTGAATTAAAGTTATTATTAGGTGTAGTCGTTTAATAGTCTGTTCGACTATTAAATCT
+TTAC
+[48] Hesperonemastoma
+TCTTTATATATAAAGTAAGTTCTGCTCAATATTTTAAATGGCCGCAGTATGACTGTGCTA
+AGGTAGCATAATCATTTGCTCTATAATTGAGGGCTAGAATGAATGATAAA--TGGGAAGA
+TGTCTTTTAAATTTTAATTACTAGAAAAATTTCTAGTATGAAATTATGGGACGATAAGAC
+CCTATAAGCTCTGGGGCGGCTGAGAATTTTATTCCATAAAGGTATGAGTATAAGTTACTA
+TAGGGATAACAGCATAATTTATTTTTGAAGT-CTAATTTGATAATAAGTTATGACCTCGA
+TGTTGAATTAATATTACTGTGAGGTGAAGTAGCTTTACAGTGAGTCC-------------
+----
+[49] Synthetonychia
+TTTT----TTTAAAGTAAATTCTGCTCAGTTAATTAAATAGCCGCAATATTACTGTGCTA
+AGGTAGCATAATCATTTGTCTTTTAATTGGAGGCTGGAATGAATGATATT-CCGAGAAGA
+AGTTTTTTGAAATTAAATTTAAAATAAAAATGTTTTAATAAAATTTAGGGACGATAAGAC
+CCTAAAAGCTTTGGGGGGAAAATGAATCTTCATTTTTGAAAATTAAAATTT-AGTTACTT
+TAGGGATAACAGCATTATTTCGTTAGAGAGTCCTAATTGAAAACGAAGTTATGACCTCGA
+TGTTGAATTAATTATTCTAATAAATGGAGAAATTTAAAGGTTTGTTCAACCTTTAAAAAA
+TTAC
+[50] Assamiidae_DNA104857
+TATTTGCAAAAATAGTACCACCTGCTCAATATTATAAATAGCTGTGGTATGACTATACAA
+AGGTAGCATAATCATTTGTTTTTTAATTGAAGACTAGGATGAAAGGTGTAACCGGGGGGA
+TGTTTTTTGAATTTTAGTTAAGATTAAAAACGATCTTATAAGACCTTGGGACGAGGAGAC
+CCTAGAAGCTTTGGGGCAACGGAGGACTCCTCTCTGAAATCTATAAAT---AAGTTACTC
+TAGGGATAACAGCGTACTTAAGCAAGAGAGTTCGTATTAAAAGCTTAGTTGCGACCTCGA
+TGTTGAATTAAGGATCTAATTAGGTGTAGGGGCTTAATAGTCTGTTCGACTATTAATACC
+TTAC
+[51] Paktongius
+TATTTGAATAAATAATAATGTCTGCTCAATTTTATAAATAGCTATAGTATAACTATACAA
+AGGTAGCATAATCATTTGTCTTTTAATTGGAGACTGGCATGAAAGGCTCAACTGAAGAGA
+AGTTTTTTGAATTTTAATTATAATTAAAAATGATTATATTAACTCTTGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGTGATAAGGAACTTTCTTTTTTATAAATATAGTATTAAGTTACTC
+TAGGGATAACAGCGTAATTAATTTGAAGAGTTCTTATTAAATATTTAGTTGCGACCTCGA
+TGTTGAATTAAGTATCCAATGTGGTGAAGGAGCCTAATAGTCTGTTCGACTATTGAAAGC
+TTAC
+[52] Assamiidae_DNA104859
+TATTTGAAAAAATAGTAGTACCTGCTCAATTTAATAAATGGCTATAGTATGACTATACAA
+AGGTAGCATAATCATTTGTTTTTTAATTGGAGGCTAGAATGAAAGGCAATACTGAGGAGG
+AGTTTTTTGAATTTTAATTAAGATTAAAAATGATCTTATAAAATTCTGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGCGATAAGGAAACTTTTACGATAGGAGTTGGAGTATAAGTTACTC
+TAGGGATAACAGCGTAATTAAATTGAAGAGTTCTAATTGAGTATTTGGTTGCGACCTCGA
+TGTTGAATTAAGAAATGGGGAAGGTGTAGGAGCCTTGTAGTCTGTTCGACTATTAAAATT
+TTAC
+[53] Scotolemon_lespesi
+TGTTATAATATATAATAGAACCTGCTCAATAAATTAAATAGCCGCAGTATGACTGTGCTA
+AGGTAGCATAATCATTAGTTTTTTAATTGAAGACTGGCATGAATGGTATTACTAAGAAGA
+ACTTTTTTGAATTTAAATTGAAGATAAAAATGTTTTCATAAAAGTTTGGGACGAGAAGAC
+CCTAGAAATTTTGGGGTGATAATGAAACTTTATTATTAAATGTAA------AAATTACTC
+TAGGGATAACAGCATAATTTAATTAAAAAGTTCTTATTAACAATTAAGTTATGACCTCGA
+TGTTGAATTAAAATTAATTTTAGGTGCAGAGGCTAAACAGTCTGTTCGACTGATAGAATT
+TTAC
+[54] Baculigerus
+TATTAGAATTAATAATGATACCTGCTCTATAATTTAAATGGCTGCGGTATGACTGTATTA
+AGGTAGCATAATCAATAGTTTTTTAATTGAAGACTTGAATGAATGGTTTT-TTAGGTAAG
+AGTTTTTTGAATTTGAATTAAAAGTAAAAATGCTTTTATTAACCTTTGGGACGAGAAGAC
+CCTAGAAGTTTTGGGGTGATATGGAATCTTTTATTTGTGAAGATGAGTAA-AAATTACTC
+TAGGGATAACNNCGTAATTTTATTGAAGAGTTCTTATTATTAATAGAGTTGCGACCTCGA
+TGTTGAATTAAA-TTATTTTAAGGTGTAGGGGCTTTATAGTCTGTTCGACTATTAATTGT
+TTAC
+[55] Mitraceras
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[56] Pellobunus
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[57] IC_DNA104070
+TGTTAGAATTAATGGTCATATCTGCTCAATAACTTAAATAGCTGCAGTATGACTGTACAA
+AGGTAGCATAATCATTAGTTTTTTAATTGGAGACTGGAATGAAAGAAGAGACTAAAAAGA
+GGTTTTTTTAACTTGGTTTATAAATAAAAAATTTTATATCAATCTTAGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGCAAAAGAGAATCTTTCCTTTAAAAATTAGT-----AAGTTACTC
+TAGGGATAACAGCGTTATTTAATTAGAAAGTTCTTATTAAAAATTAATTTGCGACCTCGA
+TGTTGAATTAAATAGTATTAAAGGTGTAGAAGCTTTTTAGTCTGTTCGACTAACAAAA-T
+TTAC
+[58] IC_DNA104071
+CATTAGAATTAATGGTTGCATCTGCTCAATAATTTAAATAGCTGCAGTATGACTGTACTA
+AGGTAGCATAATCATTAGTTTCTTGATTGGAGGCTGGAATGAACGAAGAAACTGGGAAGA
+AGTTTTTTTAAGTTGGTTTATAAATGAAAAAATTTATATAAATCTCAGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGCGATAAAGAATCTTTTGTTGTATTAATCATCTTCAAAGTTACTC
+TAGGGATAACAGCGTTATTCAATTAGAGAGTTCTTATTAAAAATTGATTTGCGACCTCGA
+TGTTGAATTAAATAAAATTTATGGTGAAGGAGCTATATAGTCTGTTCGACTATTAAAA-T
+TTAC
+[59] Santobius_DNA104930
+---------------------------------------------------------CTA
+AGGTAGCATAATCAATAGCCTTTTAATTGATGGCTGGAATGAAAGGTAAAATCAAGAACA
+AGTTTTTTGAACTTAAGCTAAAAATAAAAACGTTTTTATTAATCTTAGGGACGACAAGAC
+CCTAGAAGCTTTGGGGCAATTTTAAATCTTTATTTACATCTCTTTTTACACAAGTTACTC
+TAGGGATAACAGCATAATTTAGGTCAAGAGCCCTTATTGAAACCTAAGTTGTGACCTCGA
+TGTTGAATTAAACGTAACATGAGGTGAAGAAGCTTCATAGTCTGTTCGACTATTAAAAAT
+TTAC
+[60] Theromaster
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[61] Fumontana
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[62] Equitius
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[63] Rostromontia
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[64] Triaenobunus
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[65] Triaenonychidae
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[66] Larifuga
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[67] Erebomaster
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[68] Peltonychia
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[69] IC_DNA102677
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[70] IC_DNA103729
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[71] Santinezia
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[72] IC_DNA102669
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[73] IC_DNA102668
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[74] Trinella
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[75] IC_DNA103572
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[76] Stygnopsidae_DNA104856
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[77] Fissiphallius_DNA104055_1
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[78] Ethobunus
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[79] Fissiphallius
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[80] Samoidae
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[81] Assamiidae_DNA102666
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[82] Biantidae_DNA105668
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[83] Escadabius
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[84] Trojanella
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[85] Assamiidae_DNA104069
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[86] Metabiantes_DNA100335
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[87] Stenostygnus_DNA104848
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[88] Chilon
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[89] Paraselenca
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[90] Icaleptes
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[91] Icaleptes_DNA104053
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[92] Metabiantes_DNA100703
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[93] Metabiantes_DNA100704
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[94] Icaleptes_DNA104056_1
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[95] Stenostygnus_DNA104849
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[96] Fijicolana
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[97] Guasinia
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[98] Kimula
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[99] Stygnomma
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[100] Caddo
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[101] Haasus_sp
+TATTAGAGTTAATAGTCGAGCCTGCTCTATGAATTAAATGGCTGCAGTATGACTGTACGA
+AGGTAGCATAGTAATTAGCCTTTTTATTGGAGGCTGGGATCAATGGCGATAACTGGAGAG
+AATTTCTTGAATTTAAATTAGGAATAAAAATGTTCTTATAAATCTTTGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGAGATGGTGGATCTTTGTAAGGTAG-----------AAGTTACTC
+TAGGGATAACAGCGTAATTTGTTTGGTGAGTTCTTATCAATAAATGAGTTGCGACCTCGA
+TGTTGAATTAAGTGGAATGTATGGTGTAGGGGCTATATAGTCTGTTCGACTTGTGGGGGC
+TTAC
+[102] Haasus_judaeus
+TATTAGAATTAATAGTCGAGCCTGCTCTATGATTTAAATGGCTGCAGTATGACTGTACGA
+AGGTAGCATAGTAATTAGCCTTTTTATTGGAGGCTGGGATCAATGGCGATAACTGGAGAG
+AATTTCTTGAATTTAAATTAAGAATAAAAATGTTTTTATAATTCTTTGGGACGAGAAGAC
+CCTAGAAGCTTTGGGGAGATTGTGGATCTTTGTATGGTAG-----------AAGTTACTC
+TAGGGATAACAGCGTAATTTGTTTGGTGAGTTCTTATCAATAAGTGAGTTGCGACCTCGA
+TGTTGAATTAAGTGGTATGTATGGTGTAGGGGCTATA-----------------------
+----
+[103] As020_Gab
+CGTTATTATGAATAATCCAGCCTGCCCAATAAATTTAATGGCCGCAGTACAACTGTACTA
+AAGTAGCATGATCAATAGCCTTTTAATTAGAGGCCAGTACGAAAGGTCCCACTTTAGAAA
+AGTTTTTTGAACTTTAACTGCAATTAAAAATATTTGCATAAATCTCAAAGACGAGAAGAC
+CCTAAGAGCTTTGGGACAATAAAAAATCTTTGCCTCATTA-----------AAGTTACCT
+TAGGGATAACAGCGTAATTTATTTAAAAAGTCCTTATTTATAAATAAGTTTCGACCTCGA
+TGTTGAATTAAATTAAACTTAAGGTGAAAAAGCTTTATAGTCTGTTCGACTAATAAAAAT
+TTAC
+[104] As041_Gab
+TACTAAAATTAGTAATCCCACCTGCCCAGTGAATTTAACGGCTGCAGTATAACTGTACAA
+AGGTAGCATAATCACCAGCTTTTTAATTGAAGGCTAGAATGAAAGGTAATTCTATAGAAA
+AATTTTTTGAATTTTAACTATAATTCAAAATCATTATATAAACTTCAGGGACGAGAAGAC
+CCTAAGAACTTTGGGGAATTCAAAAATCTTTAATCCTTT------------AAGCTACCT
+TAGGGATAACAGCGTTATTTATCTAAAAAGTTCTTATTTATAGATAAGTTGCGACCTCGA
+TGTTGAATTAAATCTAACTCAAAGTGAAGAAGCTTTGTAGTCTGTTCGACTTATAAAAAT
+TTAC
+[105] As038_Gab
+TACTTAAATAAGTAATCCCCCCTGCCCACTGTTCTCAACGGCTGCAGTATGACTGTACAA
+AGGTAGCATAATCATTAGTCTTTTAATTGAAGACTCGTATGAAAGGGAATCACTGAGAAA
+AGTTTTCTAAATCTTAACTATAATTCAAAATGATTATATCACTCTCAAGGACGAGAAGAC
+CCTAAGAGCTTTGGGGAAATAACTGATCTTTACCACCAACC----------AAGTTACCT
+TAGGGATAACAGCGTCATCCATCTCAAGAGTTCTTATCCACAGATGATTTGCGACCTCGA
+TGTTGAATTAAATCTTATTTAAGGTGAAGAAGCTTTACAGTCTGTTCGACTAATAAAAAT
+TTAC
+[106] Zuma
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[107] Vonones
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[108] As030_Gab
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[109] As022_Gab
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[110] As026_Gab
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[111] Jarmilana
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[112] Maiorerus
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+[113] Proscotolemon
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+----
+;
+END;

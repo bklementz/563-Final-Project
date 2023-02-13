@@ -1,0 +1,203 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=101;
+	taxlabels
+	As010_Gab[&!color=#009933]
+	As011_Gab
+	As012_Gab
+	As014_Gab
+	As016_Gab[&!color=#009933]
+	As017_Gab
+	As020_Gab
+	As021_Gab
+	As025_Gab
+	As027_Gab
+	As029_Gab
+	As031_Gab
+	As032_Gab
+	As034_Cam
+	As038_Gab
+	As039_Gab
+	As040_Gab
+	As041_Gab
+	As045_Cam
+	As050_Cam
+	As056_Gab
+	As058_Gab
+	As059_Gab
+	As061_Lib
+	As069_Lib
+	As070_Lib
+	As072_Lib
+	As080_Indo
+	As081_Indo
+	As082_Cam
+	As083_Cam
+	As084_Cam
+	As085_Cam
+	As085_WAus
+	As087_WAus
+	As089_EAus[&!color=#ff0000]
+	As090_EAus[&!color=#ff0000]
+	As092_EAus
+	As094_PNG
+	As095_PNG[&!color=#0000ff]
+	As096_PNG[&!color=#0000ff]
+	As097_PNG
+	As098_Phil
+	As101_NAus
+	As102_NAus
+	As103_NAus
+	As104_EAus
+	As105_Phil
+	As108_Laos
+	As109_Thai
+	As110_Laos
+	As111_Phil
+	As114_Thai
+	As116_Thai
+	As117_Thai
+	As120_Thai
+	As121_Laos
+	As122_Laos
+	As123_Viet
+	As124_Indo
+	As125_Thai
+	As127_Laos
+	As130_Viet
+	As131_Mala
+	As132_Mala
+	As133_Indo
+	As135_Viet
+	Assamiidae_DNA104857
+	Assamiidae_DNA104859
+	Baculigerus
+	Bishopella
+	Caenoncopus
+	Conomma
+	Cynortula
+	Dendrolasma
+	Dongmoa
+	Glysterus
+	Gnomulus
+	Haasus_judaeus
+	Haasus_sp
+	Hesperonemastoma
+	Hoplobunus
+	IC_DNA104070
+	IC_DNA104071
+	Martensiellus
+	Paktongius
+	Palaeoncopus
+	Pantopsalis
+	Protolophus
+	Sandokan
+	Santobius_DNA104930
+	Santobius_DNA104931
+	Scotolemon
+	Scotolemon_lespesi
+	Synthetonychia
+	Tithaeus
+	Trionyxella
+	Troglosiro
+	Trogulus
+	Zalmoxis
+	Zygopachylus
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (Zalmoxis:0.164442,(((((((Dongmoa:0.07339,(Santobius_DNA104931:0.023147,Santobius_DNA104930:0.010961)[&label=100]:0.158115)[&label=99]:0.04127,Tithaeus:0.121263)[&label=59]:0.02459,((((Martensiellus:0.093763,Palaeoncopus:0.096769)[&label=89]:0.028196,(Trionyxella:0.207829,((((((((((((Assamiidae_DNA104857:0.218317,Paktongius:0.139751)[&label=85]:0.061593,Assamiidae_DNA104859:0.072159)[&label=98]:0.125426,(As110_Laos:0.00209,As121_Laos:0.012392)[&label=100]:0.030383)[&label=83]:0.07784,((As111_Phil:0.11617,As132_Mala:0.181837)[&label=98]:0.039993,As120_Thai:0.119814)[&label=95]:0.048877)[&label=74]:0.021051,As109_Thai:0.15846)[&label=83]:0.017303,As125_Thai:0.127532)[&label=84]:0.075513,(As116_Thai:0.170097,As117_Thai:0.155395)[&label=100]:0.189588)[&label=78]:0.027546,((((As080_Indo:0.099063,As081_Indo:0.038711)[&label=100]:0.086554,(As133_Indo:0.144188,(As124_Indo:0.178309,(As130_Viet:0.173619,As127_Laos:0.239017)[&label=78]:0.065065)[&label=73]:0.019413)[&label=88]:0.04067)[&label=100]:0.059101,((As085_WAus:0.008774,As087_WAus:3.0E-6)[&label=100]:0.192351,((((As089_EAus:3.0E-6,As090_EAus:2.0E-6)[&label=100]:0.175845,((As094_PNG:0.002899,(As095_PNG:3.0E-6,As096_PNG:3.0E-6)[&label=93]:2.0E-6)[&label=100]:0.068234,As097_PNG:0.07851)[&label=96]:0.030183)[&label=49]:0.029806,(As101_NAus:0.008472,(As102_NAus:3.0E-6,As103_NAus:0.002869)[&label=98]:0.003218)[&label=98]:0.053635)[&label=42]:0.005166,(As092_EAus:0.008582,As104_EAus:2.0E-6)[&label=100]:0.075376)[&label=81]:0.010329)[&label=91]:0.030002)[&label=97]:0.046811,(As108_Laos:0.101438,As114_Thai:0.109775)[&label=100]:0.100392)[&label=89]:0.024156)[&label=79]:0.017983,(((As020_Gab:0.242596,As041_Gab:0.102511)[&label=95]:0.036694,As038_Gab:0.13985)[&label=100]:0.229723,(As059_Gab:0.170588,(((((((As010_Gab:3.0E-6,As016_Gab:2.0E-6)[&label=100]:0.074405,As050_Cam:0.047746)[&label=100]:0.149605,(((As029_Gab:0.015067,As058_Gab:0.042619)[&label=97]:0.00977,As040_Gab:0.016077)[&label=100]:0.26947,(((As012_Gab:0.037697,As025_Gab:0.065376)[&label=100]:0.141882,(As061_Lib:0.089757,As069_Lib:0.204309)[&label=100]:0.378619)[&label=95]:0.062335,(As032_Gab:3.0E-6,As039_Gab:0.002792)[&label=100]:0.372486)[&label=74]:0.002749)[&label=86]:0.061251)[&label=88]:0.061312,(((As011_Gab:0.039009,((As021_Gab:0.024686,As082_Cam:0.032205)[&label=100]:0.005064,As056_Gab:0.038203)[&label=99]:0.010254)[&label=100]:0.054138,((As027_Gab:0.03238,As084_Cam:0.149442)[&label=99]:0.064935,As034_Cam:0.068723)[&label=99]:0.039439)[&label=91]:0.035188,As085_Cam:0.15291)[&label=98]:0.053216)[&label=87]:0.045245,(As072_Lib:0.181629,(As017_Gab:3.0E-6,As031_Gab:0.008535)[&label=100]:0.292213)[&label=99]:0.109596)[&label=92]:0.06329,As014_Gab:0.202715)[&label=95]:0.055916,(As045_Cam:0.207767,(As070_Lib:0.368708,As083_Cam:0.124579)[&label=99]:0.156745)[&label=99]:0.119434)[&label=97]:0.038672)[&label=99]:0.071528)[&label=89]:0.044926)[&label=81]:0.034929,((Conomma:0.199704,As135_Viet:0.285969)[&label=75]:0.055444,(As098_Phil:0.135505,As105_Phil:0.132288)[&label=99]:0.085204)[&label=58]:0.042397)[&label=57]:0.017489,((As122_Laos:0.093178,As131_Mala:0.123059)[&label=99]:0.031505,As123_Viet:0.084253)[&label=95]:0.063908)[&label=70]:0.01217,(Gnomulus:0.079177,Caenoncopus:0.070407)[&label=99]:0.027206)[&label=85]:0.108506)[&label=70]:0.02236)[&label=45]:0.009818,Sandokan:0.085744)[&label=55]:0.013863,Hoplobunus:0.208403)[&label=57]:0.016193)[&label=61]:0.01887,((Glysterus:0.099118,Zygopachylus:0.081398)[&label=60]:0.031687,Cynortula:0.090188)[&label=99]:0.059139)[&label=18]:0.008542,(IC_DNA104070:0.101741,IC_DNA104071:0.090636)[&label=100]:0.12758)[&label=30]:0.008044,(((Scotolemon_lespesi:0.117887,Scotolemon:0.226906)[&label=97]:0.024053,Bishopella:0.214711)[&label=82]:0.026212,((Synthetonychia:0.280256,((((Dendrolasma:0.22747,Trogulus:0.241466)[&label=100]:0.073708,Pantopsalis:0.261572)[&label=35]:0.012159,Protolophus:0.291711)[&label=59]:0.050939,Hesperonemastoma:0.266774)[&label=91]:0.063029)[&label=53]:0.029476,Troglosiro:0.527302)[&label=98]:0.067331)[&label=74]:0.053085)[&label=60]:0.0141,(Haasus_sp:0.008511,Haasus_judaeus:0.023859)[&label=100]:0.274416)[&label=76]:0.020884,Baculigerus:0.14184);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=2.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="Arial";
+	set tipLabels.fontSize=12;
+	set tipLabels.fontStyle=1;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

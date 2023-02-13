@@ -1,0 +1,225 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=123;
+	taxlabels
+	Agoristenidae_DNA105839
+	Arulla_DNA102666
+	As009_Cam
+	As011_Gab
+	As018_Gab
+	As020_Gab
+	As022_Gab[&!color=#990099]
+	As026_Gab[&!color=#990099]
+	As027_Gab
+	As028_Gab
+	As030_Gab
+	As031_Gab
+	As040_Gab
+	As041_Gab
+	As050_Cam
+	As056_Gab
+	As057_Gab
+	As058_Gab
+	As059_Gab
+	As080_Indo
+	As081_Indo
+	As083_Cam
+	As084_Cam
+	As085_WAus[&!color=#009933]
+	As087_WAus[&!color=#009933]
+	As092_EAus
+	As094_PNG
+	As095_PNG
+	As096_PNG
+	As099_Dibunus
+	As102_NAus
+	As104_EAus
+	As105_Phil
+	As106_Thai
+	As108_Laos
+	As109_Thai
+	As110_Laos
+	As114_Thai
+	As115_Thai
+	As118_Thai
+	As119_Indo
+	As120_Thai
+	As121_Laos
+	As122_Laos
+	As123_Viet
+	As126_Laos
+	As127_Laos
+	As129_Laos
+	As131_Mala
+	As133_Indo[&!color=#cc0000]
+	As134_Viet[&!color=#cc0000]
+	As136_Viet
+	As140_Viet
+	Baculigerus
+	Biantidae_DNA105668
+	Bishopella
+	Bunofagea
+	Caenoncopus
+	Conomma
+	Cynortula
+	Dendrolasma
+	Epedanidae_DNA104062
+	Epedanidae_DNA104066
+	Epedanidae_DNA104068
+	Equitius
+	Ethobunus
+	Fijicolana
+	Fissiphallius
+	Glysterus
+	Gnomulus
+	Goniosoma
+	Guasinia
+	Hesperonemastoma
+	Heterocranaus
+	Holoscotolemon
+	Hoplobunus
+	IC_DNA104070
+	Icaleptes_DNA104056
+	Jarmilana
+	Karos
+	Kimula
+	Larifuga
+	Lomanius_DNA104935
+	Martensiellus
+	Megapachylus
+	Metabiantes_DNA100335
+	Metabiantes_DNA100703
+	Metabiantes_DNA100704
+	Op049_Beloniscus
+	Op104_Dibuninae
+	Op105_Dibunus
+	Op106_Toccolus
+	Op107_Nanepedanus_rufus
+	Paktongius
+	Palaeoncopus
+	Pantopsalis
+	Pellobunus
+	Peltonychia
+	Protolophus
+	Sandokan
+	Santinezia
+	Santobius_DNA104931
+	Scotolemon
+	Stenostygnus_DNA104847
+	Stenostygnus_DNA104848
+	Stenostygnus_DNA104849
+	Stenostygnus_DNA104850
+	Stygnomma
+	Stygnopsidae_DNA103882
+	Stygnopsidae_DNA104855
+	Stygnopsidae_DNA104856
+	Synthetonychia
+	Tithaeus
+	Triaenobunus
+	Triaenonychidae
+	Trionyxella
+	Troglosiro
+	Trogulus
+	Trojanella
+	Zalmoxida
+	Zalmoxis
+	Zuma
+	Zygopachylus
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (Trojanella:0.488011,(Holoscotolemon:0.392961,Peltonychia:0.189492)[&label=90]:0.100422,(Zuma:0.251535,(((((As009_Cam:0.076923,As050_Cam:0.099082)[&label=100]:0.068934,As018_Gab:0.125729)[&label=100]:0.103293,((As011_Gab:0.125079,As056_Gab:0.089456)[&label=100]:0.068969,(As027_Gab:0.18741,As084_Cam:0.209974)[&label=100]:0.212246)[&label=98]:0.092752)[&label=97]:0.115682,(As057_Gab:0.258485,(As058_Gab:0.087526,As040_Gab:0.186896)[&label=100]:0.519456)[&label=74]:0.097126)[&label=73]:0.117886,((((Scotolemon:0.614685,Bunofagea:0.499526)[&label=100]:0.169026,(((((((Bishopella:0.545884,((((((((Protolophus:0.315747,Pantopsalis:0.262243)[&label=99]:0.044609,(Dendrolasma:0.257743,Trogulus:0.374845)[&label=79]:0.062017)[&label=98]:0.045065,Hesperonemastoma:0.350505)[&label=70]:0.064387,Synthetonychia:0.562882)[&label=88]:0.004683,Troglosiro:0.376038)[&label=93]:0.076279,((Larifuga:0.444506,(Triaenobunus:0.157859,Triaenonychidae:0.290497)[&label=100]:0.092253)[&label=91]:0.069184,Equitius:0.371931)[&label=100]:0.351302)[&label=98]:0.124119,((((Guasinia:0.320618,Kimula:0.179548)[&label=99]:0.111185,(((Metabiantes_DNA100704:0.202488,Metabiantes_DNA100335:0.180579)[&label=100]:0.041686,Metabiantes_DNA100703:0.177204)[&label=99]:0.049157,Biantidae_DNA105668:0.158661)[&label=88]:0.064534)[&label=99]:0.050512,((Stygnomma:0.205507,Baculigerus:0.276961)[&label=92]:0.079894,((Stenostygnus_DNA104848:0.167181,(Stenostygnus_DNA104849:0.075735,(Stenostygnus_DNA104847:0.105633,Stenostygnus_DNA104850:0.084722)[&label=100]:0.050783)[&label=100]:0.095722)[&label=100]:0.057583,(Fijicolana:0.178606,Pellobunus:0.171551)[&label=100]:0.067813)[&label=99]:0.034102)[&label=83]:0.049028)[&label=88]:0.030148,((Icaleptes_DNA104056:0.282699,(Ethobunus:0.294867,Zalmoxis:0.225904)[&label=98]:0.044134)[&label=99]:0.039819,Fissiphallius:0.379168)[&label=100]:0.104076)[&label=100]:0.119829)[&label=92]:0.047803,((((As099_Dibunus:0.166744,Op105_Dibunus:0.225975)[&label=100]:0.117135,(Op106_Toccolus:0.2586,Op104_Dibuninae:0.451586)[&label=62]:0.037594)[&label=99]:0.059914,Op107_Nanepedanus_rufus:0.268114)[&label=96]:0.031372,As105_Phil:0.540338)[&label=91]:0.021414)[&label=43]:0.009801)[&label=48]:0.028431,((((((((Conomma:0.382333,((As020_Gab:0.187225,As041_Gab:0.126836)[&label=100]:0.069638,As030_Gab:0.273583)[&label=72]:0.038333)[&label=95]:0.033873,Jarmilana:0.269229)[&label=73]:0.040895,(As022_Gab:3.0E-6,As026_Gab:3.0E-6)[&label=100]:0.285748)[&label=73]:0.026417,Op049_Beloniscus:0.438359)[&label=73]:0.044315,((Caenoncopus:0.14427,((Gnomulus:0.126561,Palaeoncopus:0.144985)[&label=35]:0.014681,(Martensiellus:0.130268,Sandokan:0.137182)[&label=99]:0.054232)[&label=100]:0.051271)[&label=100]:0.105294,(((Epedanidae_DNA104066:0.174475,(Epedanidae_DNA104062:0.003344,Epedanidae_DNA104068:0.018497)[&label=100]:0.24896)[&label=100]:0.044671,As119_Indo:0.46516)[&label=91]:0.050735,((((((Tithaeus:0.102734,As106_Thai:0.089981)[&label=97]:0.042898,(As118_Thai:0.076071,((IC_DNA104070:0.318696,Zalmoxida:0.3191)[&label=100]:0.085185,(Lomanius_DNA104935:0.339033,Santobius_DNA104931:0.108278)[&label=100]:0.403501)[&label=89]:0.095142)[&label=72]:0.03728)[&label=68]:0.01699,As115_Thai:0.140006)[&label=89]:0.061965,((As129_Laos:0.012845,As122_Laos:0.050167)[&label=100]:0.15898,((As136_Viet:0.107055,As123_Viet:0.229326)[&label=98]:0.04281,As140_Viet:0.190553)[&label=98]:0.05697)[&label=80]:0.037993)[&label=90]:0.044092,As131_Mala:0.103551)[&label=99]:0.080831,As114_Thai:0.131769)[&label=97]:0.04692)[&label=83]:0.02795)[&label=76]:0.025071)[&label=58]:0.014134,(Hoplobunus:0.33312,(((Stygnopsidae_DNA103882:0.244998,Stygnopsidae_DNA104855:0.139264)[&label=99]:0.031098,Stygnopsidae_DNA104856:0.12796)[&label=100]:0.039696,Karos:0.239691)[&label=99]:0.033173)[&label=100]:0.126519)[&label=41]:0.022706,Agoristenidae_DNA105839:0.240682)[&label=20]:3.0E-6,((((Heterocranaus:0.19207,Santinezia:0.332267)[&label=99]:0.062169,Glysterus:0.223698)[&label=99]:0.018378,(Megapachylus:0.245119,Goniosoma:0.184406)[&label=98]:0.059125)[&label=100]:0.058501,(Zygopachylus:0.203735,Cynortula:0.134038)[&label=100]:0.120836)[&label=94]:0.052052)[&label=70]:0.018291)[&label=99]:0.102298,(As081_Indo:0.217065,((As126_Laos:0.192012,As080_Indo:0.183964)[&label=61]:0.012827,((As133_Indo:3.0E-6,As134_Viet:3.0E-6)[&label=100]:0.20615,As127_Laos:0.187567)[&label=97]:0.05387)[&label=64]:0.023059)[&label=100]:0.040355)[&label=90]:0.026087,(((Trionyxella:0.166508,(((Paktongius:0.14446,As120_Thai:0.151452)[&label=93]:0.043863,(As110_Laos:0.064005,As121_Laos:0.024699)[&label=100]:0.14269)[&label=99]:0.019698,As109_Thai:0.27921)[&label=100]:0.083653)[&label=78]:0.054621,(As108_Laos:0.13382,(As085_WAus:3.0E-6,As087_WAus:3.0E-6)[&label=100]:0.339449)[&label=99]:0.08632)[&label=56]:0.047412,((As096_PNG:0.001453,As095_PNG:0.006574)[&label=98]:0.016144,As094_PNG:0.001946)[&label=99]:0.164172)[&label=25]:0.026029)[&label=23]:0.025002,(As092_EAus:0.00429,As104_EAus:0.012091)[&label=100]:0.210969)[&label=22]:0.034835,As102_NAus:0.128447)[&label=80]:0.290698,Arulla_DNA102666:0.20733)[&label=79]:0.101901)[&label=76]:0.042173,((As028_Gab:0.230876,As083_Cam:0.569217)[&label=97]:0.227154,As031_Gab:0.572485)[&label=70]:0.044805)[&label=72]:0.085782,As059_Gab:0.177352)[&label=95]:0.106231)[&label=100]:0.289763)[&label=90]:0.02205);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=2.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="Arial";
+	set tipLabels.fontSize=12;
+	set tipLabels.fontStyle=1;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
