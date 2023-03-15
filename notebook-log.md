@@ -427,3 +427,141 @@ All info from Edgar 2004
 
 Output Files for each alignment have been transferred to ~/563-Final-Project/data/Alignments/MUSCLE/
 
+# Distance and Parsimony Tree Construction
+## Distance Methods
+### Neighbor Joining
+#### Description of Algorithm
+-relies on an input of a distance matrix calculated based on the fraction of sites in which each pair of sequences differs (p-distance)
+-the p-value differences are then converted into measures of evolutionary difference using different models
+-Model relies on tree construction via Minimum Evolution
+-minimum evolution will construct a tree based on minimizing the genetic differences between taxa (min. length)
+-will construct additive, not ultrametric trees
+#### Steps
+1. Net divergence is calculated as the sum of distances for every end node in the dataset
+2. a rate-corrected distance matrix is constructed from these values
+3. a new node is defined that groups the two taxa that have the lowest rate-corrected distance value
+4. Branch lengths from the new node to the daughter lineages are calculated. 
+5. the branch lengths or genetic distance from the new node (grouping the two previous taxa) to the remaining taxa are then calculated
+6. Steps are repeated until all taxa have been connected via a final node
+#### Strengths
+-will produce better fits to distance calculations when taxa experience unequal rates of evolution and follow non-molecular clock behavior
+-highly scalable; remains fast to construct as number of taxa and sequence length increases
+-statistically consistent under many models of evolution
+  -will produce the correct tree topology as long as distance matrix is nearly additive
+#### Limitations and Assumptions
+-assumes unequal rates of evolution
+-NJ examines only a tiny fraction of the total number of possible tree topologies
+-may be biased by statistical error in distance measurement
+  -estimates of distance (formulas or likelihood) produces standard errors that can be quite high unless sequences are very long
+-loss of data; reduction of sequence data to single value distances
+-can result in negative branch lengths (non-biological)
+
+# Running the Distance Trees
+All tree construction was done in RStudio
+## Loading necessary packages
+<library(ape)>
+<library(adegenet)>
+<library(phangorn)>
+
+## Navigating working directory to folder containing alignment files
+<getwd()> -determine which directory I'm currently in
+<setwd('/Users/bklementz/Desktop/563-Final-Project/data/Alignments/Mafft')> -moving to my alignments directory
+
+## Loading Sample Data (16S alignment)
+<dna <- fasta2DNAbin(file="16S-aligned-mafft.fasta")>
+-converts fasta alignment into a DNAbin object
+
+## Computing Genetic Distances
+-using TN93 model
+    -allows for differing rates of transitions and transversion, heterogeneous base frequencies, and between-site varaition in substitution rates
+<D <- dist.dna(dna, model="TN93")>
+
+## Constructing NJ Tree
+<tre <- nj(D)>
+error: Error in nj(D) : missing values are not allowed in the distance matrix Consider using njs()
+<tre <- njs(D)>
+
+## Ladderizing the Tree
+<tre <- ladderize(tre)>
+
+## Plotting and Titling the Tree
+<plot(tre, cex=.6)>
+<title("Assamiidae-Phylo-16S-Mafft-Alignment)>
+
+Following the same steps, NJ trees were constructed for each of the other four genes in the dataset.
+
+Phylogeny could not be constructed using the 18S and 28S alignments. Produced an error message, "distance information insufficient to construct a tree, cannot calculate agglomeration criterion).
+
+Phylogenies were exported as PDFs from RStudio to ~/563-Final-Project/figures/Distance-Phylogenies/
+
+
+## Parsimony Methods
+### Description
+-relies on character-based data, either as one of 4 nucleotides or one of 20 amino acids in input sequences
+-tree construction attempts to minimize the number of character state changes to explain the dataset
+-with more character state changes, it implies a more complex hypothesis because homoplasy is an ad hoc hypothesis
+### Steps
+1. determine the number of character state changes needed to explain the data
+2. search overall tree topologies and select the tree that minimizes the number of state changes
+-Relies on the Fitch algorithm for equal costs of state changes, or the Sankoff algorithm for unequal costs.
+### Fitch Algorithm
+1. root tree in random place
+2. calculate the set state of each internal node by..
+  -forming the intersection of the two child state sets
+  -if the intersection is non-zero, the set state for the node becomes the sum of the lengths of the child branches 
+  -if the intersection is zero, the set state for the node becomes the sum of the lengths of the child branches plus one.
+### Assumptions and Limitations
+-relies on slow rates of evolution (not an assumption)
+-independence among characters
+-more computationally intensive than distance-based methods given it is an NP-hard problem
+-can be heavily influenced by long branch attraction (statistical inconsistency)
+-cannot account for convergent evolution
+-not based on any model of evolution
+-no guarantee it will construct the correct tree
+
+# Running the Maximum Parsimony Trees
+All tree construction was done in RStudio
+## Loading necessary packages
+<library(ape)>
+<library(adegenet)>
+<library(phangorn)>
+
+## Input of sample data and conversion to phangorn object
+<dna <- fasta2DNAbin(file="16S-aligned-mafft.fasta")>
+<dna2 <- as.phyDat(dna)>
+
+## Computing starting tree
+-neighbor joining distance tree as initial topology for searching the tree space
+-must compute parsimony score for this tree
+<tre.ini <- nj(dist.dna(dna,model="raw"))>
+<parsimony(tre.ini, dna2)>
+
+## Searching for tree with maximum parsimony
+<tre.pars <- optim.parsimony(tre.ini, dna2)>
+
+## Plot tree
+<plot(tre.pars, cex=0.6)>
+
+MP trees for each of the other four genes in the dataset followed the same steps
+
+Trees were exported from RStudio as pdfs and stored in the "~/563-Final-Project/figures/Parsimony-Phylogenies/" directory
+
+### 16S
+Parsimony score of initial tree: 4296
+Parsimony score of final tree: 4091 after 43 nni operations
+
+### 18S
+Tree could not be constructed; error message following:
+<tre.ini <- nj(dist.dna(dna,model="raw"))>
+error: distance information insufficient to construct a tree, cannot calculate agglomeration criterion
+
+### 28S
+Tree could not be constructed; same error as above
+
+### COI
+Parsimony score of initial tree: 11477
+Parsimony score of final tree: 11238 after 54 nni operations
+
+### H3
+Parsimony score of initial tree: 3201
+Parsimony score of final tree: 2590 after 106 nni operations
