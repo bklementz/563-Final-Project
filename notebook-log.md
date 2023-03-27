@@ -565,3 +565,74 @@ Parsimony score of final tree: 11238 after 54 nni operations
 ### H3
 Parsimony score of initial tree: 3201
 Parsimony score of final tree: 2590 after 106 nni operations
+
+# Maximum Likelihood Methods
+## Chosen Method: IQ-Tree
+### Description of Algorithm
+-Based on hill-climbing NNI; used to determine locally optimal trees
+-NNI swaps two subtrees across internal branches
+-for a given tree, likelihood scores are approximated for each NNI-tree by optimizing inner branch and adjacent 4 branches
+	-only consider NNIs that increase likelihood score of current tree
+-non-conflicting NNI's recorded (don't operate on same internal/adjacent branches)
+-simultaneously apply all NNIs in the list to current tree and compute ML of resulting tree 
+-If likelihood of resulting tree is worse, all modifications discarded except best nni - ensures a tree with better likelihood is always found
+Initial Tree Generation
+-Tree search start with quickly built initial tree that is improved
+-IQ-Tree begins with generating 100 parsimony trees (similar to RAxML)
+-the 20 trees with the best ML scores and perform hill-climbing NNI to obtain locally optimal trees
+-retain 5 top topologies w/ highest likelihood in candidate tree set for optimization
+Stochastic NNI 
+-locally optimal trees in candidate list are randomly perturbed to escape local optima.
+-then perform hill-climbing NNI on perturbed tree to reach new local optimum.
+-if the new optimum has higher likelihood than the candidate tree, replaced by new tree
+-tree search stops when the best tree has not changed for 100 random perturbations
+
+### Strengths
+-IQ-Tree 2 has features that reduce computational time (ultrafast bootstrap approximations, improved quartet likelihood mapping)
+-IQ-Tree samples several starting trees and randomly perturbs trees during hill-climbing to prevent getting stuck in local optima-
+-uses fast NNI hill-climbing algorithm, faster than traditional NNI hill climbing algorithms
+-IQ-Tree2 can implement non-time reversible models, allows inference of rooted phylogenies
+-given same computing time, IQ-Tree computes trees with higher likelihood than RAxML or PhyML (87.1% of benchmark datasets in Nguyen et al. 2015)
+-broader exploration of tree space, given maintenance of candidate tree set which is continuously updated with better trees
+
+### Assumptions
+-samples local optima, assuming the top optima found represents the global optima/ideal tree
+-IQ-Tree1 uses the same GTR (nucleotides) or WAG (amino acids) models for all tree construction
+	-assumed model can only generate unrooted trees, so IQ-Tree assumes alignments are always unrooted
+
+
+### Limitations
+-takes longer to run than RAxML when CPU time is variable
+-IQ-Tree 1 only runs on unrooted trees
+-primarily uses fast NNI, thought to produce less accurate trees than SPR
+-stochastic NNI perturbations do not continue after 100 perturbations
+-even with randomly sampled initial trees and perturbations, there is no guarantee the output phylogeny represents the global optimum.
+-produces variation in log-likelihoods, can produce different tree topologies
+
+## Running IQ-Tree
+<cd ~/Desktop/563-Final-Project/data/Alignments/Mafft>
+-navigating to directory containing my MSAs
+
+<~/Desktop/iqtree-1.6.12-MacOSX/bin/iqtree -s 16S-aligned-mafft.fasta>
+-running 16S Mafft alignment 
+-first specify location of iqtree application in downloaded directory
+then -s <name of input file>
+All output files relocated to ~/563-Final-Project/figures/IQTree-ML-Phylogenies/16S-Mafft-Alignment-Outputs/
+
+<~/Desktop/iqtree-1.6.12-MacOSX/bin/iqtree -s 18S-aligned-mafft.fasta>
+-running 18S Mafft alignment
+All output files relocated to ~/563-Final-Project/figures/IQTree-ML-Phylogenies/18S-Mafft-Alignment-Outputs/
+
+<~/Desktop/iqtree-1.6.12-MacOSX/bin/iqtree -s 28S-aligned-mafft.fasta>
+-running 28S Mafft alignment
+All output files relocated to ~/563-Final-Project/figures/IQTree-ML-Phylogenies/28S-Mafft-Alignment-Outputs/
+
+<~/Desktop/iqtree-1.6.12-MacOSX/bin/iqtree -s COI-aligned-mafft.fasta>
+-running COI Mafft alignment
+All output files relocated to ~/563-Final-Project/figures/IQTree-ML-Phylogenies/COI-Mafft-Alignment-Outputs/
+
+<~/Desktop/iqtree-1.6.12-MacOSX/bin/iqtree -s H3-aligned-mafft.fasta>
+-running H3 Mafft Alignment
+All output files relocated to ~/563-Final-Project/figures/IQTree-ML-Phylogenies/H3-Mafft-Alignment-Outputs/
+
+
