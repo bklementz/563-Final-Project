@@ -22,9 +22,12 @@ Consensus sequences were submitted to BLAST against NCBI database to identify co
 # Alignment (Two Methods)
 As sequences were provided already aligned, for the purposes of reproducing this step, alignment files were manually edited and all gaps removed from each sequence.
 
-Edited sequences for 16S, 18S, 28S, COI, and H3 have been moved to the "Sequences-for-Alignment_Edited" in the "data" subfolder.
+Edited sequences for 16S, 18S, 28S, COI, and H3 have been moved to the "Sequences-for-Alignment_Edited" in the ./data_clean subfolder.
 
 ## Mafft
+### Installation
+Mafft installed via this link: <https://mafft.cbrc.jp/alignment/software/macstandard.html> and selecting the mafft-7.490-signed.pkg
+Upon download, I simply opened the .pkg file and followed the installer's instructions
 ### Description
 Offers various multiple alignment strategies
 1. FFT-NS-1, FFT-NS-2 (Progressive Methods)
@@ -54,7 +57,7 @@ G-INS-i: assumes entire region can be aligned and aligns them globally with N-W 
 -Order of alignable blocks assumed to be conserved for all input sequences
 
 ### Running the Mafft Alignments
-'cd Users/bklementz/Desktop/563-Final-Project/data/Sequences-for-Alignment_Edited'
+'cd Users/bklementz/Desktop/563-Final-Project/data_clean/Sequences-for-Alignment_Edited'
 -moved into folder containing fasta files for alignment
 
 ### Alignment of 16S Sequences:
@@ -125,6 +128,8 @@ alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
 Strategy:
  L-INS-i (Probably most accurate, very slow)
  Iterative refinement method (<16) with LOCAL pairwise alignment information
+ 
+ Name of Final Output File: "16S-aligned-mafft.fasta" in ./data_clean/Alignments/Mafft/
 
  ### Alignment of 18S Sequences
  Same procedure as above, except...
@@ -185,6 +190,8 @@ done
 dvtditr (nuc) Version 7.511
 alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
 0 thread(s)
+
+Name of Final Output File: "18S-aligned-mafft.fasta" in ./data_clean/Alignments/Mafft/
 
  ### Alignment of 28S Sequences
  Same procedure as above, except...
@@ -252,6 +259,8 @@ alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
 Strategy:
  L-INS-i (Probably most accurate, very slow)
  Iterative refinement method (<16) with LOCAL pairwise alignment information
+ 
+ Name of Final Output File: "28S-aligned-mafft.fasta" in ./data_clean/Alignments/Mafft
 
  ### Alignment of COI Sequences
  Same procedure as above, except...
@@ -318,6 +327,8 @@ alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
 Strategy:
  L-INS-i (Probably most accurate, very slow)
  Iterative refinement method (<16) with LOCAL pairwise alignment information
+ 
+ Name of Final Output File: "COI-aligned-mafft.fasta" in ./data_clean/Alignments/Mafft/
 
  ### Alignment of H3 Sequences
  Same procedure as above, except...
@@ -384,9 +395,13 @@ Strategy:
  L-INS-i (Probably most accurate, very slow)
  Iterative refinement method (<16) with LOCAL pairwise alignment information
 
-Output Files for each alignment have been transferred to ~/563-Final-Project/data/Alignments/Mafft/
+Name of Final Output File: "H3-aligned-mafft.fasta" in ./data_clean/Alignments/Mafft
 
 ## MUSCLE
+### Installation
+Download link: https://drive5.com/muscle/downloads_v3.htm
+Selected version for Mac OSX Intel i86 64 Bits "muscle3.8.31_i86darwin64.tar.gz"
+Move to downloaded directory and untar with command <tar -zxvf muscle3.8.31_i86darwin64.tar.gz>
 ### Description
 All info from Edgar 2004
 -k mer distances computed for each pair of input sequences for constructing distance matrix
@@ -408,24 +423,29 @@ All info from Edgar 2004
   -T-Coffee, SATe also beat out MUSCLE when tested on BALiBASE benchmark alignments
 
 ### Running the MUSCLE Alignments
-'cd Users/bklementz/Desktop/563-Final-Project/data/Sequences-for-Alignment/'
+'cd Users/bklementz/Desktop/563-Final-Project/data_clean/Sequences-for-Alignment/'
 
 ### 16S Alignment
 '~/Desktop/Muscle/muscle3.8.31_i86darwin64 -in 16S.fasta -out 16S-aligned-muscle.fasta'
+Name of Final Output File: "16S-aligned-muscle.fasta" in ./data_clean/Alignments/MUSCLE/
 
 ### 18S Alignment
 '~/Desktop/Muscle/muscle3.8.31_i86darwin64 -in 18S.fasta -out 18S-aligned-muscle.fasta'
+Name of Final Output File: "18S-aligned-muscle.fasta" in ./data_clean/Alignments/MUSCLE/
 
 ### 28S Alignment
 '~/Desktop/Muscle/muscle3.8.31_i86darwin64 -in 28S.fasta -out 28S-aligned-muscle.fasta'
+Name of Final Output File: "28S-aligned-muscle.fasta" in ./data_clean/Alignments/MUSCLE/
 
 ### COI Alignment
 '~/Desktop/Muscle/muscle3.8.31_i86darwin64 -in COI.fasta -out COI-aligned-muscle.fasta'
+Name of Final Output File: "COI-aligned-muscle.fasta" in ./data_clean/Alignments/MUSCLE/
 
 ### H3 Alignment
 '~/Desktop/Muscle/muscle3.8.31_i86darwin64 -in H3.fasta -out H3-aligned-muscle.fasta'
+Name of Final Output File: "H3-aligned-muscle.fasta" in ./data_clean/Alignments/MUSCLE/
 
-Output Files for each alignment have been transferred to ~/563-Final-Project/data/Alignments/MUSCLE/
+Output Files for each alignment have been transferred to ~/563-Final-Project/data_clean/Alignments/MUSCLE/
 
 # Distance and Parsimony Tree Construction
 ## Distance Methods
@@ -617,22 +637,22 @@ Stochastic NNI
 -running 16S Mafft alignment 
 -first specify location of iqtree application in downloaded directory
 then -s <name of input file>
-All output files relocated to ~/563-Final-Project/figures/IQTree-ML-Phylogenies/16S-Mafft-Alignment-Outputs/
+Output files relocated to ~/563-Final-Project/analysis/IQTree-Outputs/16S-aligned-mafft-outputs/ and tree file transferred to ./figures/IQTree-ML-Phylogenies
 
 <~/Desktop/iqtree-1.6.12-MacOSX/bin/iqtree -s 18S-aligned-mafft.fasta>
 -running 18S Mafft alignment
-All output files relocated to ~/563-Final-Project/figures/IQTree-ML-Phylogenies/18S-Mafft-Alignment-Outputs/
+Output files relocated to ~/563-Final-Project/analysis/IQTree-Outputs/18S-aligned-mafft-outputs/ and tree file transferred to ./figures/IQTree-ML-Phylogenies
 
 <~/Desktop/iqtree-1.6.12-MacOSX/bin/iqtree -s 28S-aligned-mafft.fasta>
 -running 28S Mafft alignment
-All output files relocated to ~/563-Final-Project/figures/IQTree-ML-Phylogenies/28S-Mafft-Alignment-Outputs/
+Output files relocated to ~/563-Final-Project/analysis/IQTree-Outputs/28S-aligned-mafft-outputs/ and tree file transferred to ./figures/IQTree-ML-Phylogenies
 
 <~/Desktop/iqtree-1.6.12-MacOSX/bin/iqtree -s COI-aligned-mafft.fasta>
 -running COI Mafft alignment
-All output files relocated to ~/563-Final-Project/figures/IQTree-ML-Phylogenies/COI-Mafft-Alignment-Outputs/
+Output files relocated to ~/563-Final-Project/analysis/IQTree-Outputss/COI-aligned-mafft-outputs/ and tree file transferred to ./figures/IQTree-ML-Phylogenies
 
 <~/Desktop/iqtree-1.6.12-MacOSX/bin/iqtree -s H3-aligned-mafft.fasta>
 -running H3 Mafft Alignment
-All output files relocated to ~/563-Final-Project/figures/IQTree-ML-Phylogenies/H3-Mafft-Alignment-Outputs/
+Output files relocated to ~/563-Final-Project/analysis/IQTree-Outputs/H3-aligned-mafft-outputs/ and tree file transferred to ./figures/IQTree-ML-Phylogenies
 
 
