@@ -1,0 +1,9 @@
+begin mrbayes;
+	
+	set autoclose=yes;
+	lset nst=6 rates=invgamma;
+	mcmcp Checkpoint=yes Checkfreq=2000000 ngen=20000000 printfreq=100000 samplefreq=5000 nchains=4 nruns=4 savebrlens=yes;
+	mcmc;
+	sumt nruns=4 Relburning=yes burninfrac=0.20;
+
+end;

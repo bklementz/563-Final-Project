@@ -655,4 +655,693 @@ Output files relocated to ~/563-Final-Project/analysis/IQTree-Outputss/COI-align
 -running H3 Mafft Alignment
 Output files relocated to ~/563-Final-Project/analysis/IQTree-Outputs/H3-aligned-mafft-outputs/ and tree file transferred to ./figures/IQTree-ML-Phylogenies
 
+# Bayesian Methods
+## Chosen Method: MrBayes
+### Installation
+1. First install homebrew ("https://brew.sh/") using command </bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)">
+2. From terminal window: 
+	<brew tap brewsci/bio>
+	<brew install mrbayes>
+### Description of Algorithm
+-Phylogenetic inferences based on posterior probability distribution of trees, calculated via Bayes theorem
+	-the posterior distribution is proportional to the product of a likelihood function and a prior distribution (based on user's own understanding of the system)
+-given the reliance on prior and likelihood functions/distributions, the posterior distribution is often intractable (overly complex)
+-relies on Markov chain Monte Carlo (MCMC) to approximate posterior tree probabilities
+-MCMC
+	-new state of chain is proposed using stochastic process
+	-acceptance probability is calculated
+	-uniform random variable is selected
+		-if less than the acceptance probability, new state is accepted and state of chain changes (will only accept changes that increase posterior probability)
+		-if not, chain remains in same prior state
+	-process is repeated thousands to millions of times
+	-proportion of time a tree is visited during course of chain is an approximation of its posterior probability
+	-uphill steps (over topology of posterior probability) are always accepted, slightly downhill steps are usually accepted, and drastic downhill steps are almost never accepted, thus chain tends to stay in regions of high posterior probability
+-MCMC in Phylogenetic Context
+	-start with a random tree and arbitrary values for branch lengths and model parameters
+	-each generation consists of either proposing a new tree and accepting or rejecting the SPR, NNI, etc moves, or proposing and accepting/rejecting a new model parameter value
+	-every k generations (user specified), the tree topology is saved (sample chain)
+	-after n generations, it will summarize the sampled trees with histograms, means, credible intervals, and other analyses
+	-once MCMC is completed, a list of all trees visited is produced and evaluate which tree was visited the most (where the algorithm spent the most time), suggesting higher posterior probability for that tree
+-MrBayes can also run MCMCMC
+	-runs a user defined number of chains, n-1 of these chains are heated
+	-once all the chains have gone a step, swap attempted between two randomly selected chains
+	-if accepted, chains switch states
+	-heated chains more easily explore tree space (heating lowers peaks and fills valleys, smoother likelihood topology)
+	-cold chain can leap valleys when swap occurs between cold chain (if stuck on local optimum) and heated chain exploring another peak
+-Input data: aligned DNA or amino acid sequences in nexus format	
+-MrBayes3
+	-uses Metropolis-Hastings sampler and updates single parameters in each move
+	-scales rate parameters so that branch lengths are based on the expected number of site changes
 
+### Assumptions
+-Likelihood function typically calculated under assumption that substitutions occur under time-homogeneous Poisson process
+-"an important but commonly invoked constraint is the assumption of data homogeneity" - Ronquist and Huelsenbeck (2003)
+
+### Strengths
+-Advantages over other methods (Huelsenbeck and Ronquist 2001):
+	-easy interpretation of results
+	-incorporation of prior information
+-offers standard MCMC algorithm, and Metropolis-coupled Markov chain Monte Carlo (MCMCMC)
+-can be easily operated through command-line
+-user can specify substitution model, prior distributions, details of MC analyses
+-options to relax assumption of equal rates of evolution across sites (e.g., gamma-distributed)
+-can infer ancestral states and accommodates uncertainty about tree/model parameters
+-Markov chains based on Metropolis-Hastings algorithm more computationally efficient than ML boostrapping (Ronquist and Huelsenbeck 2003)
+	-accelerates convergence of Markov chain
+-datasets of more than 350 taxa require only moderate computational effort, tree spaces typically too large for ML bootstrapping
+-MrBayes3 accommodates mixed models, data heterogeneity (AAs, nucleotides, morphology)
+	-also offers single, doublet, and codon models for nucleotide data
+	-AA data can be analyzed by fixed or variale rate matrices
+-well suited to parallelization, can even yield linear speed-ups
+
+### Limitations
+-MrBayes3 - more parameters in the mixed model, visit each parameter more rarely, leads to slower mixing and a need to run the chains for longer before adequate sample of posterior distribution is reached
+-does not support multithreading
+-analyses often conducted with default priors; could yield biased/incorrect results (Nascimento et al. 2018)
+-often slower than other phylogenetic methods, given traversal of tree space is hindered by keeping track of all the steps the chain has taken
+-samples are often dependent due to small neighborhood of moves
+	-requires thinning of the samples to approximate truly independent sampling
+
+## Running MrBayes
+### Converting MSAs from .fasta to .nxs
+1. Opened file "COI-aligned-mafft.fasta" in ./data_clean/Alignments/Mafft/ with the alignment viewing software seaview
+2. Selected File->Save As; in the new window, select Save As: NEXUS (.nxs)
+3. Visual inspection of nexus file
+	"BEGIN DATA;
+		DIMENSIONS NTAX=120 NCHAR=657;
+		FORMAT DATATYPE=DNA
+		GAP=-
+		;"
+	and at the end...
+		";
+		END;"
+	Matches characteristics of original .fasta file
+4. "COI-aligned-mafft.nxs" saved to ./data_clean/Alignments/nex-format/
+### Running MrBayes
+1. Navigate to subdirectory containing nexus input file
+	<cd Desktop/563-Final-Project/data_clean/Alignments/nexus-format>
+2. Open MrBayes with command <mb>
+3. <execute COI-aligned-mafft.nxs>
+4. <lset nst=6 rates=invgamma> - selects GTR model with proportion of invariable sites and gamma distribution of rates across sites
+5. <mcmc nruns=4 nchains=4 ngen=20000000 samplefreq=200>
+		mcmc - starts the Markov chain Monte Carlo analysis
+		nruns - sets how may independent analyses are started at once
+		nchains - number of chains, default is 4 chains (1 cold and 3 hot)
+		ngen - the number of generations analysis will run for (chose 20000000 based on advice from Prashant Sharma)
+		samplefreq - how often the chain is sampled (=200 will result in 10000 samples over 20000000 generations)
+6. Hitting enter after writing out the previous command begins the analysis
+Initial Output:
+MrBayes > execute COI-aligned-mafft.nxs
+
+   Executing file "COI-aligned-mafft.nxs"
+   UNIX line termination
+   Longest line length = 61
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading data block
+      Allocated taxon set
+      Allocated matrix
+      Defining new matrix with 120 taxa and 657 characters
+      Data is Dna
+      Gaps coded as -
+      Taxon   1 -> Trojanella
+      Taxon   2 -> Holoscotolemon
+      Taxon   3 -> Peltonychia
+      Taxon   4 -> Zuma
+      Taxon   5 -> As009_Cam
+      Taxon   6 -> As050_Cam
+      Taxon   7 -> As018_Gab
+      Taxon   8 -> As011_Gab
+      Taxon   9 -> As056_Gab
+      Taxon  10 -> As027_Gab
+      Taxon  11 -> As084_Cam
+      Taxon  12 -> As057_Gab
+      Taxon  13 -> As058_Gab
+      Taxon  14 -> As040_Gab
+      Taxon  15 -> Scotolemon
+      Taxon  16 -> Bishopella
+      Taxon  17 -> Protolophus
+      Taxon  18 -> Pantopsalis
+      Taxon  19 -> Hesperonemastoma
+      Taxon  20 -> Dendrolasma
+      Taxon  21 -> Trogulus
+      Taxon  22 -> Troglosiro
+      Taxon  23 -> Synthetonychia
+      Taxon  24 -> Conomma
+      Taxon  25 -> Guasinia
+      Taxon  26 -> Icaleptes_DNA104056
+      Taxon  27 -> Ethobunus
+      Taxon  28 -> Zalmoxis
+      Taxon  29 -> Kimula
+      Taxon  30 -> Stygnomma
+      Taxon  31 -> Baculigerus
+      Taxon  32 -> Stenostygnus_DNA104848
+      Taxon  33 -> Stenostygnus_DNA104849
+      Taxon  34 -> Stenostygnus_DNA104847
+      Taxon  35 -> Stenostygnus_DNA104850
+      Taxon  36 -> Fijicolana
+      Taxon  37 -> Pellobunus
+      Taxon  38 -> Metabiantes_DNA100704
+      Taxon  39 -> Metabiantes_DNA100335
+      Taxon  40 -> Biantidae_DNA105668
+      Taxon  41 -> Metabiantes_DNA100703
+      Taxon  42 -> Trionyxella
+      Taxon  43 -> Paktongius
+      Taxon  44 -> As120_Thai
+      Taxon  45 -> As110_Laos
+      Taxon  46 -> As121_Laos
+      Taxon  47 -> As096_PNG
+      Taxon  48 -> As095_PNG
+      Taxon  49 -> As094_PNG
+      Taxon  50 -> As102_NAus
+      Taxon  51 -> As092_EAus
+      Taxon  52 -> As104_EAus
+      Taxon  53 -> As108_Laos
+      Taxon  54 -> As081_Indo
+      Taxon  55 -> As126_Laos
+      Taxon  56 -> As080_Indo
+      Taxon  57 -> As133_Indo
+      Taxon  58 -> As127_Laos
+      Taxon  59 -> As109_Thai
+      Taxon  60 -> As087_WAus
+      Taxon  61 -> Heterocranaus
+      Taxon  62 -> Megapachylus
+      Taxon  63 -> Goniosoma
+      Taxon  64 -> Glysterus
+      Taxon  65 -> Agoristenidae_DNA105839
+      Taxon  66 -> Caenoncopus
+      Taxon  67 -> Gnomulus
+      Taxon  68 -> Palaeoncopus
+      Taxon  69 -> Martensiellus
+      Taxon  70 -> Sandokan
+      Taxon  71 -> Epedanidae_DNA104066
+      Taxon  72 -> Tithaeus
+      Taxon  73 -> As106_Thai
+      Taxon  74 -> As118_Thai
+      Taxon  75 -> As115_Thai
+      Taxon  76 -> As131_Mala
+      Taxon  77 -> As114_Thai
+      Taxon  78 -> As129_Laos
+      Taxon  79 -> As122_Laos
+      Taxon  80 -> As136_Viet
+      Taxon  81 -> As123_Viet
+      Taxon  82 -> As140_Viet
+      Taxon  83 -> Epedanidae_DNA104062
+      Taxon  84 -> Epedanidae_DNA104068
+      Taxon  85 -> Zygopachylus
+      Taxon  86 -> Cynortula
+      Taxon  87 -> As026_Gab
+      Taxon  88 -> Hoplobunus
+      Taxon  89 -> Stygnopsidae_DNA103882
+      Taxon  90 -> Karos
+      Taxon  91 -> Stygnopsidae_DNA104855
+      Taxon  92 -> Stygnopsidae_DNA104856
+      Taxon  93 -> As020_Gab
+      Taxon  94 -> As041_Gab
+      Taxon  95 -> As030_Gab
+      Taxon  96 -> Jarmilana
+      Taxon  97 -> Arulla_DNA102666
+      Taxon  98 -> As059_Gab
+      Taxon  99 -> IC_DNA104070
+      Taxon 100 -> Zalmoxida
+      Taxon 101 -> As099_Dibunus
+      Taxon 102 -> Op105_Dibunus
+      Taxon 103 -> Op106_Toccolus
+      Taxon 104 -> Op107_Nanepedanus_rufus
+      Taxon 105 -> Op104_Dibuninae
+      Taxon 106 -> Santinezia
+      Taxon 107 -> As028_Gab
+      Taxon 108 -> Lomanius_DNA104935
+      Taxon 109 -> Santobius_DNA104931
+      Taxon 110 -> As105_Phil
+      Taxon 111 -> As083_Cam
+      Taxon 112 -> Op049_Beloniscus
+      Taxon 113 -> Bunofagea
+      Taxon 114 -> As031_Gab
+      Taxon 115 -> Fissiphallius
+      Taxon 116 -> Larifuga
+      Taxon 117 -> Triaenobunus
+      Taxon 118 -> Triaenonychidae
+      Taxon 119 -> Equitius
+      Taxon 120 -> As119_Indo
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1681318336
+      Setting output file names to "COI-aligned-mafft.nxs.run<i>.<p|t>"
+   Exiting data block
+   Reached end of file
+
+MrBayes > lset nst=6 rates=invgamma
+
+   Setting Nst to 6
+   Setting Rates to Invgamma
+   Successfully set likelihood model parameters
+
+MrBayes > mcmc nruns=4 nchains=4  ngen=2000000 samplefreq=200 
+
+   WARNING: Reallocation of zero size attempted. This is probably a bug. Problems may follow.
+   WARNING: Reallocation of zero size attempted. This is probably a bug. Problems may follow.
+   Setting number of runs to 4
+   Setting number of chains to 4
+   Setting number of generations to 2000000
+   Setting sample frequency to 200
+   Setting chain output file names to "COI-aligned-mafft.nxs.run<i>.<p/t>"
+   Running Markov chain
+   MCMC stamp = 6096088174
+   Seed = 284773038
+   Swapseed = 1681318336
+   Model settings:
+
+      Data not partitioned --
+         Datatype  = DNA
+         Nucmodel  = 4by4
+         Nst       = 6
+                     Substitution rates, expressed as proportions
+                     of the rate sum, have a Dirichlet prior
+                     (1.00,1.00,1.00,1.00,1.00,1.00)
+         Covarion  = No
+         # States  = 4
+                     State frequencies have a Dirichlet prior
+                     (1.00,1.00,1.00,1.00)
+         Rates     = Invgamma
+                     The distribution is approximated using 4 categories.
+                     Shape parameter is exponentially
+                     distributed with parameter (1.00).
+                     Proportion of invariable sites is uniformly dist-
+                     ributed on the interval (0.00,1.00).
+
+   Active parameters: 
+
+      Parameters
+      ---------------------
+      Revmat              1
+      Statefreq           2
+      Shape               3
+      Pinvar              4
+      Ratemultiplier      5
+      Topology            6
+      Brlens              7
+      ---------------------
+
+      1 --  Parameter  = Revmat
+            Type       = Rates of reversible rate matrix
+            Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+      2 --  Parameter  = Pi
+            Type       = Stationary state frequencies
+            Prior      = Dirichlet
+
+      3 --  Parameter  = Alpha
+            Type       = Shape of scaled gamma distribution of site rates
+            Prior      = Exponential(1.00)
+
+      4 --  Parameter  = Pinvar
+            Type       = Proportion of invariable sites
+            Prior      = Uniform(0.00,1.00)
+
+      5 --  Parameter  = Ratemultiplier
+            Type       = Partition-specific rate multiplier
+            Prior      = Fixed(1.0)
+
+      6 --  Parameter  = Tau
+            Type       = Topology
+            Prior      = All topologies equally probable a priori
+            Subparam.  = V
+
+      7 --  Parameter  = V
+            Type       = Branch lengths
+            Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+   Number of chains per MPI processor = 16
+
+   The MCMC sampler will use the following moves:
+      With prob.  Chain will use move
+         0.93 %   Dirichlet(Revmat)
+         0.93 %   Slider(Revmat)
+         0.93 %   Dirichlet(Pi)
+         0.93 %   Slider(Pi)
+         1.85 %   Multiplier(Alpha)
+         1.85 %   Slider(Pinvar)
+         9.26 %   ExtSPR(Tau,V)
+         9.26 %   ExtTBR(Tau,V)
+         9.26 %   NNI(Tau,V)
+         9.26 %   ParsSPR(Tau,V)
+        37.04 %   Multiplier(V)
+        12.96 %   Nodeslider(V)
+         5.56 %   TLMultiplier(V)
+
+   Division 1 has 507 unique site patterns
+   Initializing conditional likelihoods
+
+   Running benchmarks to automatically select fastest BEAGLE resource... A
+B
+
+   Using BEAGLE v4.0.0 (PRE-RELEASE) resource 0 for division 1:
+      Rsrc Name : CPU (arm64)
+      Impl Name : CPU-4State-Single
+      Flags: PROCESSOR_CPU PRECISION_SINGLE COMPUTATION_SYNCH EIGEN_REAL
+             SCALING_MANUAL SCALERS_RAW VECTOR_NONE THREADING_CPP      MODEL STATES: 4
+   Initializing invariable-site conditional likelihoods
+
+   Initial log likelihoods and log prior probs for run 1:
+      Chain 1 -- -66586.032045 -- 165.615042
+      Chain 2 -- -67015.101198 -- 165.615042
+      Chain 3 -- -67508.013773 -- 165.615042
+      Chain 4 -- -66091.164425 -- 165.615042
+
+   Initial log likelihoods and log prior probs for run 2:
+      Chain 1 -- -66862.308880 -- 165.615042
+      Chain 2 -- -66712.047929 -- 165.615042
+      Chain 3 -- -67185.087873 -- 165.615042
+      Chain 4 -- -67550.534599 -- 165.615042
+
+   Initial log likelihoods and log prior probs for run 3:
+      Chain 1 -- -66575.987152 -- 165.615042
+      Chain 2 -- -66720.220937 -- 165.615042
+      Chain 3 -- -66250.851910 -- 165.615042
+      Chain 4 -- -66807.916266 -- 165.615042
+
+   Initial log likelihoods and log prior probs for run 4:
+      Chain 1 -- -66501.983430 -- 165.615042
+      Chain 2 -- -67399.220464 -- 165.615042
+      Chain 3 -- -66459.410393 -- 165.615042
+      Chain 4 -- -67161.511326 -- 165.615042
+
+
+   Using a relative burnin of 25.0 % for diagnostics
+
+   Chain results (2000000 generations requested):
+
+Encountered several issues for troubleshooting...
+1. The average standard deviation of split frequencies, after over 7 million generations, continued to increase, rather than converge towards 0 as expected
+2. Feasibility of running analysis on my computer, after 7 million generations, estimated time to complete the total of 20 million generations was nearly 55 hours
+
+Attempt 2
+1. Using "COI-aligned-mafft.nxs" in ./data_clean/Alignments/nex-format
+2. Creating an mbblock (series of commands to append to end of nexus document to run MrBayes)
+	-in a new text file, named mbblock.txt
+	"begin mrbayes;
+	
+		set autoclose=yes;
+		lset nst=6 rates=invgamma;
+		mcmcp Checkpoint=yes Checkfreq=2000000 ngen=20000000 printfreq=100000 samplefreq=5000 nchains=4 nruns=4 savebrlens=yes;
+		mcmc;
+		sumt nruns=4 Relburnin=yes burninfrac=0.20;
+		
+		end;"
+		
+	set autoclose=yes - when autoclose is set to yes, the program will not prompt me during execution
+	mcmcp - mcmcp allows setting parameters before running the program
+	checkpoint=yes - all current parameter values of chains will be printed to check-pointing file once reaching a Checkfreq generation, allows restarting of analysis from last checkpoint
+	checkfreq=2000000 - will print current parameter values every 2000000 generations
+	printfreq=100000 - will print info to screen every 100000 generations (recommended by coworkers to slightly reduce runtime)
+	samplefreq=5000 - Markov chain sampled every 5000 generations, still results in 4000 samples (will increase independence)
+	savebrlens - will save branch length info on trees
+	sumt - will print summary tree at the end
+	Relburnin=yes - specifies that a proportion of sampled values will be discarded as burnin
+	burninfrac=0.20 - specifies that 20% of samples will be discarded
+	
+3. Append mbblock.txt to end of nexus file with <cat COI-aligned-mafft.nxs mbblock.txt > COI-mb.nxs
+4. Run MrBayes with <mb COI-mb.nxs>
+Initial Output:
+Executing file "COI-mb.nxs"
+   UNIX line termination
+   Longest line length = 121
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading data block
+      Allocated taxon set
+      Allocated matrix
+      Defining new matrix with 120 taxa and 657 characters
+      Data is Dna
+      Gaps coded as -
+      Taxon   1 -> Trojanella
+      Taxon   2 -> Holoscotolemon
+      Taxon   3 -> Peltonychia
+      Taxon   4 -> Zuma
+      Taxon   5 -> As009_Cam
+      Taxon   6 -> As050_Cam
+      Taxon   7 -> As018_Gab
+      Taxon   8 -> As011_Gab
+      Taxon   9 -> As056_Gab
+      Taxon  10 -> As027_Gab
+      Taxon  11 -> As084_Cam
+      Taxon  12 -> As057_Gab
+      Taxon  13 -> As058_Gab
+      Taxon  14 -> As040_Gab
+      Taxon  15 -> Scotolemon
+      Taxon  16 -> Bishopella
+      Taxon  17 -> Protolophus
+      Taxon  18 -> Pantopsalis
+      Taxon  19 -> Hesperonemastoma
+      Taxon  20 -> Dendrolasma
+      Taxon  21 -> Trogulus
+      Taxon  22 -> Troglosiro
+      Taxon  23 -> Synthetonychia
+      Taxon  24 -> Conomma
+      Taxon  25 -> Guasinia
+      Taxon  26 -> Icaleptes_DNA104056
+      Taxon  27 -> Ethobunus
+      Taxon  28 -> Zalmoxis
+      Taxon  29 -> Kimula
+      Taxon  30 -> Stygnomma
+      Taxon  31 -> Baculigerus
+      Taxon  32 -> Stenostygnus_DNA104848
+      Taxon  33 -> Stenostygnus_DNA104849
+      Taxon  34 -> Stenostygnus_DNA104847
+      Taxon  35 -> Stenostygnus_DNA104850
+      Taxon  36 -> Fijicolana
+      Taxon  37 -> Pellobunus
+      Taxon  38 -> Metabiantes_DNA100704
+      Taxon  39 -> Metabiantes_DNA100335
+      Taxon  40 -> Biantidae_DNA105668
+      Taxon  41 -> Metabiantes_DNA100703
+      Taxon  42 -> Trionyxella
+      Taxon  43 -> Paktongius
+      Taxon  44 -> As120_Thai
+      Taxon  45 -> As110_Laos
+      Taxon  46 -> As121_Laos
+      Taxon  47 -> As096_PNG
+      Taxon  48 -> As095_PNG
+      Taxon  49 -> As094_PNG
+      Taxon  50 -> As102_NAus
+      Taxon  51 -> As092_EAus
+      Taxon  52 -> As104_EAus
+      Taxon  53 -> As108_Laos
+      Taxon  54 -> As081_Indo
+      Taxon  55 -> As126_Laos
+      Taxon  56 -> As080_Indo
+      Taxon  57 -> As133_Indo
+      Taxon  58 -> As127_Laos
+      Taxon  59 -> As109_Thai
+      Taxon  60 -> As087_WAus
+      Taxon  61 -> Heterocranaus
+      Taxon  62 -> Megapachylus
+      Taxon  63 -> Goniosoma
+      Taxon  64 -> Glysterus
+      Taxon  65 -> Agoristenidae_DNA105839
+      Taxon  66 -> Caenoncopus
+      Taxon  67 -> Gnomulus
+      Taxon  68 -> Palaeoncopus
+      Taxon  69 -> Martensiellus
+      Taxon  70 -> Sandokan
+      Taxon  71 -> Epedanidae_DNA104066
+      Taxon  72 -> Tithaeus
+      Taxon  73 -> As106_Thai
+      Taxon  74 -> As118_Thai
+      Taxon  75 -> As115_Thai
+      Taxon  76 -> As131_Mala
+      Taxon  77 -> As114_Thai
+      Taxon  78 -> As129_Laos
+      Taxon  79 -> As122_Laos
+      Taxon  80 -> As136_Viet
+      Taxon  81 -> As123_Viet
+      Taxon  82 -> As140_Viet
+      Taxon  83 -> Epedanidae_DNA104062
+      Taxon  84 -> Epedanidae_DNA104068
+      Taxon  85 -> Zygopachylus
+      Taxon  86 -> Cynortula
+      Taxon  87 -> As026_Gab
+      Taxon  88 -> Hoplobunus
+      Taxon  89 -> Stygnopsidae_DNA103882
+      Taxon  90 -> Karos
+      Taxon  91 -> Stygnopsidae_DNA104855
+      Taxon  92 -> Stygnopsidae_DNA104856
+      Taxon  93 -> As020_Gab
+      Taxon  94 -> As041_Gab
+      Taxon  95 -> As030_Gab
+      Taxon  96 -> Jarmilana
+      Taxon  97 -> Arulla_DNA102666
+      Taxon  98 -> As059_Gab
+      Taxon  99 -> IC_DNA104070
+      Taxon 100 -> Zalmoxida
+      Taxon 101 -> As099_Dibunus
+      Taxon 102 -> Op105_Dibunus
+      Taxon 103 -> Op106_Toccolus
+      Taxon 104 -> Op107_Nanepedanus_rufus
+      Taxon 105 -> Op104_Dibuninae
+      Taxon 106 -> Santinezia
+      Taxon 107 -> As028_Gab
+      Taxon 108 -> Lomanius_DNA104935
+      Taxon 109 -> Santobius_DNA104931
+      Taxon 110 -> As105_Phil
+      Taxon 111 -> As083_Cam
+      Taxon 112 -> Op049_Beloniscus
+      Taxon 113 -> Bunofagea
+      Taxon 114 -> As031_Gab
+      Taxon 115 -> Fissiphallius
+      Taxon 116 -> Larifuga
+      Taxon 117 -> Triaenobunus
+      Taxon 118 -> Triaenonychidae
+      Taxon 119 -> Equitius
+      Taxon 120 -> As119_Indo
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1681446703
+      Setting output file names to "COI-mb.nxs.run<i>.<p|t>"
+   Exiting data block
+   Reading mrbayes block
+      Setting autoclose to yes
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting check-pointing ('Checkpoint') to yes
+      Setting check-pointing frequency to 2000000
+      Setting number of generations to 20000000
+      Setting print frequency to 100000
+      Setting sample frequency to 5000
+      Setting number of chains to 4
+      WARNING: Reallocation of zero size attempted. This is probably a bug. Problems may follow.
+      WARNING: Reallocation of zero size attempted. This is probably a bug. Problems may follow.
+      Setting number of runs to 4
+      Setting chain output file names to "COI-mb.nxs.run<i>.<p/t>"
+      Successfully set chain parameters
+      Running Markov chain
+      MCMC stamp = 6171898991
+      Seed = 705183611
+      Swapseed = 1681446703
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+      Number of chains per MPI processor = 16
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Division 1 has 507 unique site patterns
+      Initializing conditional likelihoods
+
+      Running benchmarks to automatically select fastest BEAGLE resource... A
+B
+
+      Using BEAGLE v4.0.0 (PRE-RELEASE) resource 0 for division 1:
+         Rsrc Name : CPU (arm64)
+         Impl Name : CPU-4State-Single
+         Flags: PROCESSOR_CPU PRECISION_SINGLE COMPUTATION_SYNCH EIGEN_REAL
+                SCALING_MANUAL SCALERS_RAW VECTOR_NONE THREADING_CPP         MODEL STATES: 4
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 1 -- -67239.229659 -- 165.615042
+         Chain 2 -- -66682.355446 -- 165.615042
+         Chain 3 -- -66184.689441 -- 165.615042
+         Chain 4 -- -66927.925099 -- 165.615042
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 1 -- -66849.459360 -- 165.615042
+         Chain 2 -- -67047.518333 -- 165.615042
+         Chain 3 -- -67141.276801 -- 165.615042
+         Chain 4 -- -66901.636279 -- 165.615042
+
+      Initial log likelihoods and log prior probs for run 3:
+         Chain 1 -- -66856.402180 -- 165.615042
+         Chain 2 -- -66661.747256 -- 165.615042
+         Chain 3 -- -66268.938334 -- 165.615042
+         Chain 4 -- -67128.740616 -- 165.615042
+
+      Initial log likelihoods and log prior probs for run 4:
+         Chain 1 -- -66057.261833 -- 165.615042
+         Chain 2 -- -66773.780628 -- 165.615042
+         Chain 3 -- -67177.095933 -- 165.615042
+         Chain 4 -- -67331.081331 -- 165.615042
+
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+		
