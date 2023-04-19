@@ -4920,5 +4920,85 @@ Using Tracer to summarize MCMC results
 1. Start Tracer; File -> Import Trace File
 	Opening .p files for both runs allows a combined summary of all parameters through time
 
-		
-		
+# Coalescent Methods
+## Chosen Method: ASTRAL
+### Installation
+From "https://github.com/smirarab/ASTRAL/blob/master/README.md#installation",
+	-simply select the zip file link and extract the contents
+	-ASTRAL folder relocated to desktop - ./Desktop/Astral/
+### Description of Algorithm
+-A method for constructing a species tree from a set of gene trees
+-functions under the multi-species coalescent model of gene evolution
+	-incorporates incomplete lineage sorting and disagreement between gene trees and the species tree (differing topologies)
+	-species tree is inferred from a distribution of gene tree topologies, the species tree topology is the most probable gene tree topology
+		-can count the number of gene trees and pick the most frequent one as the species tree
+-one of the scalable alternatives to co-estimation of gene and species trees under a joint inference
+-ASTRAL is a "summary method"
+	-these methods first infer gene trees independently for all loci, then combine the gene trees to form a species tree
+	-effectively ignores the dependent nature of different loci
+-Input: a set of unrooted gene trees, ASTRAL will find the species tree that agrees with the largest number of quartet trees from the set of gene trees
+	-Heuristic version: used on large datasets, constrains search space (reduce run time)
+		-includes a set of bipartitions as part of input, and output species tree must draw its bipartitions from that set
+		-reduces the NP-hard problem to be solved in polynomial time (Mirarab et al. 2014)
+		-also called the Maximum Quartet Support Species Tree approach (MQSST)
+		-MQSST uses dynamic programming to solve optimization problem
+		-Use set of defined bipartitions to generate series of tripartitions
+		-for each tripartition, calculate the number of quartet trees induced by input gene trees associated to that tripartition. 
+		-species tree constructed by calculating a score for individual tripartitions based on recursive formula
+-A binary tree can be represented as a set of tripartitions, one per node
+-DP can be used to find a set of tripartitions that can be combined into a binary tree that have the maximum number of possible shared quartets with gene trees
+### Strengths
+-more accurate than concatenated ML phylogenies due to higher statistical consistency
+-breaking analysis into independent steps increases scalability
+-MQSST accounts for estimation error of dominant quartet tree 
+	-takes into account relative frequency of all three quartet topologies and weights them; other methods try to first find dominant quartet topology and summarize them
+-statistically consistent when input gene trees are sampled randomly under MSC model (no sampling bias/model violations)
+-remains consistent when species are missing from gene trees
+-more accurate than concatenation with ML when gene tree discordance is high (high ILS)
+-tends to outperform NJst by small margins in simulations (Mirarab and Warnow 2015)
+-dominates MP-EST when using large datasets especially
+
+### Limitations
+-ASTRAL are statistially inconsistent if each gene has limited length and gene trees constructed with maximum likelihood
+	-fails due to LBA
+-statistically inconsistent if gene trees evolving in a network (ILS+gene flow)
+-concatenated ML more accurate when gene tree discordance is low, or when gene tree error is high
+-some scalability concerns, "increasing the number of species should roughly quadruple the running time" - (Mirarab 2019; class paper)
+### Assumptions
+-robustness to missing data in exact version requires that presence of a gene for a species is independent of of gene tree topology and presence of other genes for that species
+	-heuristic version requires that each clade in species tree has a non-zero chance of having no missing data in each gene
+
+### Running ASTRAL
+Caveat: Due to incredibly long run times for even a single gene in MrBayes, input for ASTRAL will rely on individual gene trees produced by IQ-Tree (Maximum Likelihood inference)
+	Astral tends to be statistically inconsistent when gene trees are constructed by ML (strong impact of LBA), however with a focus on the interfamilial relationships in Assamiidae, I do not anticipate any significantly long branches
+
+Creating Concatenated File for all 5 gene trees
+1. <cd ~/Desktop/563-Final-Project/figures/IQTree-ML-Phylogenies
+-moving to the subdirectory containing all 5 tree files from previous section
+2. <cat *.treefile > input-genetrees-ML-cat.tre>
+-cat will concatenate the five tree files into a single file named input-genetrees-ML-cat.tre
+-the *.treefile specifies that all files containing the ".treefile" component in their name will be concatenated
+
+ASTRAL
+<java -jar ~/Desktop/Astral/astral.5.7.8.jar -i input-genetrees-ML-cat.tre -o output-speciestree-ASTRAL.tre 2> output-speciestree-ASTRAL.log>
+-requires pathing to location of astral application, hence the ~/Desktop/Astral/astral5.7.8.jar
+-i "filename" specifies the input file containing all your gene trees
+-o "filename" creates the corresponding output file for the final tree
+2> "filename.log" prints the Astral analysis info from the run to a permanent text file
+
+output-speciestree-ASTRAL.tre moved to ./563-Final-Project/figures/ASTRAL/
+input-genetrees-ML-cat.tre moved to ./563-Final-Project/figures/ASTRAL/
+output-specestree-ASTRAL.log moved to ./563-Final-Project/analysis/ASTRAL-Outputs/
+
+Visualizing the Output in FigTree
+1. Once FigTree is loaded, select File -> Open, select output-speciestree-ASTRAL.tre
+2. To make tree readable, slide expansion bar to increase separation between terminals
+	-Under Appearance, increasing line weight
+	-Under Tip Labels (should be checked), increase font size
+3. Rooting
+-select the branch with terminal "Troglosiro" 
+	-a Cyphophthalmi (the most distantly related suborder of Opiliones)
+-select reroot from the top menu
+4. Support Values
+-check node labels box; in display box, select label - nodes now labeled with likelihood scores
+
