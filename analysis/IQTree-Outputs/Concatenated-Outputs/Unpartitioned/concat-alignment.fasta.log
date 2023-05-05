@@ -1,0 +1,500 @@
+IQ-TREE multicore version 1.6.12 for Mac OS X 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    Bens-Air.lan (SSE4.2, 8 GB RAM)
+Command: /Users/bklementz/Desktop/iqtree-1.6.12-MacOSX/bin/iqtree -s concat-alignment.fasta -nt AUTO -bb 1000 -bnni -alrt 1000 -m TEST
+Seed:    680963 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Apr 21 21:32:59 2023
+Kernel:  SSE2 - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file concat-alignment.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 199 sequences with 5575 columns, 2731 distinct patterns
+1632 parsimony-informative, 464 singleton sites, 3479 constant sites
+                          Gap/Ambiguity  Composition  p-value
+   1  Zalmoxis                    1.51%    passed     50.21%
+   2  Dongmoa                    13.13%    passed     32.06%
+   3  Tithaeus                   14.62%    passed      7.62%
+   4  Martensiellus               3.59%    passed     46.81%
+   5  Palaeoncopus                1.51%    passed     89.94%
+   6  Sandokan                    1.47%    passed     30.70%
+   7  Glysterus                   2.42%    passed     58.53%
+   8  Cynortula                   2.22%    passed     80.67%
+   9  Zygopachylus                1.61%    passed     98.44%
+  10  Santobius_DNA104931         8.09%    failed      1.55%
+  11  Santobius_DNA104930        20.79%    passed     16.67%
+  12  Hoplobunus                  8.75%    passed     19.38%
+  13  Scotolemon_lespesi         34.03%    passed     34.88%
+  14  IC_DNA104070                8.22%    failed      2.48%
+  15  IC_DNA104071               19.12%    passed     21.70%
+  16  Baculigerus                 5.36%    passed     37.39%
+  17  Trionyxella                 2.76%    passed     81.26%
+  18  Assamiidae_DNA104857       35.44%    passed     91.01%
+  19  Paktongius                  7.39%    passed     62.47%
+  20  Assamiidae_DNA104859       21.38%    passed     13.15%
+  21  Haasus_sp                  22.40%    failed      0.49%
+  22  Haasus_judaeus             35.71%    failed      2.11%
+  23  Conomma                     2.30%    passed     47.44%
+  24  Bishopella                 21.83%    failed      0.13%
+  25  Scotolemon                  7.66%    failed      0.24%
+  26  As020_Gab                  49.09%    failed      0.05%
+  27  As038_Gab                  57.31%    passed      9.06%
+  28  As041_Gab                  45.65%    failed      0.20%
+  29  Gnomulus                    1.45%    passed     44.03%
+  30  Caenoncopus                 1.22%    passed     18.62%
+  31  As122_Laos                 49.26%    failed      0.01%
+  32  As123_Viet                 45.31%    failed      0.01%
+  33  As131_Mala                 45.58%    failed      0.69%
+  34  As098_Phil                 57.74%    passed     31.80%
+  35  As105_Phil                 45.90%    passed     40.04%
+  36  As080_Indo                 45.72%    passed     12.79%
+  37  As081_Indo                 45.60%    passed      9.70%
+  38  As133_Indo                 45.11%    passed     10.06%
+  39  As085_WDus                 93.27%    failed      0.00%
+  40  As087_WAus                 45.45%    passed     40.33%
+  41  As089_EAus                 71.91%    passed     28.44%
+  42  As092_EDus                 93.27%    failed      0.00%
+  43  As104_EAus                 46.82%    passed     17.48%
+  44  As101_NAus                 57.52%    passed     29.13%
+  45  As102_NAus                 60.39%    failed      0.00%
+  46  As103_NAus                 58.40%    passed     22.23%
+  47  As094_PNG                  46.44%    failed      0.76%
+  48  As096_PNG                  45.63%    failed      0.33%
+  49  As097_PNG                  57.33%    passed     38.03%
+  50  As108_Laos                 59.57%    failed      0.01%
+  51  As114_Thai                 59.59%    failed      0.00%
+  52  As124_Indo                 72.02%    passed      7.68%
+  53  As130_Viet                 71.32%    passed     12.14%
+  54  As109_Thai                 45.17%    passed     34.88%
+  55  As111_Phil                 71.59%    passed     27.78%
+  56  As120_Thai                 44.97%    passed     24.98%
+  57  As110_Laos                 45.42%    passed     43.32%
+  58  As121_Laos                 45.09%    passed     35.50%
+  59  As125_Thai                 71.77%    passed     21.92%
+  60  As132_Mala                 56.86%    passed      9.12%
+  61  As127_Laos                 45.51%    passed      7.64%
+  62  As116_Thai                 71.41%    passed     24.19%
+  63  As117_Thai                 56.93%    passed     12.09%
+  64  As059_Gab                  45.61%    passed     13.29%
+  65  As010_Gab                  79.93%    failed      0.19%
+  66  As050_Cam                  60.02%    failed      0.00%
+  67  As011_Gab                  54.04%    failed      0.00%
+  68  As021_Gab                  60.84%    failed      4.42%
+  69  As082_Cam                  57.43%    failed      4.30%
+  70  As056_Gab                  45.58%    failed      2.95%
+  71  As027_Gab                  50.89%    failed      1.21%
+  72  As034_Cam                  72.41%    passed     62.23%
+  73  As084_Cam                  63.75%    failed      0.16%
+  74  As085_Cam                  71.93%    passed     70.54%
+  75  As014_Gab                  74.08%    failed      0.05%
+  76  As029_Gab                  77.90%    passed     12.08%
+  77  As040_Gab                  45.43%    failed      3.50%
+  78  As058_Gab                  50.80%    failed      0.16%
+  79  As072_Lib                  72.14%    passed     55.15%
+  80  As012_Gab                  81.27%    passed     58.01%
+  81  As025_Gab                  66.31%    failed      1.04%
+  82  As017_Gab                  72.93%    passed     50.53%
+  83  As031_Gab                  51.96%    failed      2.87%
+  84  As135_Viet                 56.90%    failed      3.62%
+  85  As045_Cam                  57.33%    passed      5.90%
+  86  As070_Lib                  57.52%    failed      0.54%
+  87  As083_Cam                  46.22%    passed     88.08%
+  88  Synthetonychia             46.96%    failed      0.00%
+  89  Dendrolasma                 8.00%    failed      0.75%
+  90  Trogulus                   10.71%    failed      0.00%
+  91  Protolophus                 3.26%    passed     55.69%
+  92  Pantopsalis                22.71%    failed      2.16%
+  93  Hesperonemastoma            3.39%    failed      0.02%
+  94  As061_Lib                  71.89%    passed     19.80%
+  95  As069_Lib                  58.03%    failed      0.00%
+  96  As032_Gab                  61.58%    failed      0.71%
+  97  As039_Gab                  57.58%    failed      0.02%
+  98  Troglosiro                 14.89%    failed      0.17%
+  99  Pseudoepedanus             41.36%    failed      0.00%
+ 100  Agoristenidae_DNA105839    21.26%    passed     14.13%
+ 101  Trinella                   68.59%    passed     84.14%
+ 102  Arulla_DNA102666           17.29%    passed     57.67%
+ 103  Assamiidae_DNA104069       34.22%    failed      0.17%
+ 104  Chilon                     66.58%    failed      3.87%
+ 105  Paraselenca                28.22%    failed      0.00%
+ 106  Assamiidae_DNA104858       68.61%    passed     80.30%
+ 107  Fijicolana                 16.63%    passed     39.68%
+ 108  Stygnomma                  38.57%    passed     58.74%
+ 109  Pellobunus                  8.02%    passed     21.46%
+ 110  Icaleptes_DNA104056         8.75%    passed     59.17%
+ 111  Icaleptes_DNA104053        19.57%    failed      0.03%
+ 112  Guasinia                   31.80%    failed      0.39%
+ 113  Metabiantes_DNA100703      13.81%    passed     64.78%
+ 114  Metabiantes_DNA100704       9.15%    passed     18.39%
+ 115  Stenostygnus_DNA104847     13.85%    passed     89.01%
+ 116  Stenostygnus_DNA104849     21.99%    passed     43.64%
+ 117  Stenostygnus_DNA104850     21.58%    passed     14.01%
+ 118  Stenostygnus_DNA104848     21.99%    passed     76.80%
+ 119  Ethobunus                   8.50%    passed     74.18%
+ 120  Fissiphallius_DNA104055    19.57%    failed      0.11%
+ 121  Fissiphallius_DNA104057    21.87%    failed      0.07%
+ 122  Escadabius                 20.41%    failed      0.24%
+ 123  Metabiantes_DNA100335      28.09%    passed     11.03%
+ 124  Biantidae_DNA105668        20.25%    passed     31.02%
+ 125  Samoidae                   31.86%    failed      0.12%
+ 126  Mitraceras                 25.45%    failed      0.16%
+ 127  Jarmilana                  43.62%    passed     28.56%
+ 128  Maiorerus                  62.96%    passed     72.48%
+ 129  Epedanidae_DNA104861       19.61%    failed      0.02%
+ 130  Epedanidae_DNA104862       19.77%    failed      0.00%
+ 131  Goniosoma                   8.83%    passed     68.15%
+ 132  Megapachylus               10.82%    passed     86.25%
+ 133  Heterocranaus               8.02%    passed     34.06%
+ 134  Santinezia                  9.56%    passed     82.76%
+ 135  Metalibitia                19.66%    failed      0.01%
+ 136  Lomanius_DNA104935          8.11%    passed     60.68%
+ 137  Stygnopsidae_DNA103882     20.97%    passed      5.51%
+ 138  Stygnopsidae_DNA104855      9.52%    passed     74.65%
+ 139  Stygnopsidae_DNA104856      8.05%    passed     65.11%
+ 140  Minuella                   25.90%    failed      0.05%
+ 141  Karos                       8.07%    passed     94.71%
+ 142  Equitius                    8.05%    passed     82.67%
+ 143  Larifuga                   16.39%    passed     16.05%
+ 144  Triaenonychidae            10.40%    passed     94.65%
+ 145  Triaenobunus                7.95%    passed     99.13%
+ 146  Rostromontia               40.38%    failed      0.32%
+ 147  IC_DNA102668               19.66%    failed      0.09%
+ 148  IC_DNA102669               20.50%    failed      0.07%
+ 149  Zalmoxida                  14.71%    passed     36.31%
+ 150  IC_DNA103729               28.61%    failed      4.09%
+ 151  IC_DNA103572               29.65%    failed      0.09%
+ 152  Bunofagea                  10.78%    passed     14.13%
+ 153  Vonones                    77.60%    passed     11.99%
+ 154  Erebomaster                46.53%    failed      0.37%
+ 155  Holoscotolemon             19.26%    passed     29.49%
+ 156  Peltonychia                 7.96%    passed      8.76%
+ 157  Trojanella                 31.87%    passed     69.53%
+ 158  Epedanidae_DNA104062       28.79%    passed     69.39%
+ 159  Epedanidae_DNA104068       30.73%    passed     47.34%
+ 160  Epedanidae_DNA104066       20.43%    passed     44.19%
+ 161  Op106_Toccolus             42.26%    passed     16.54%
+ 162  Op107_Nanepedanus_rufus    42.30%    passed     16.95%
+ 163  Op104_Dibuninae            42.31%    passed     14.24%
+ 164  Op105_Dibunus              42.37%    passed     31.78%
+ 165  As026_Gab                  54.49%    failed      0.13%
+ 166  As030_Gab                  70.03%    failed      0.00%
+ 167  As022_Gab                  85.58%    passed     36.67%
+ 168  As028_Gab                  54.89%    passed     11.86%
+ 169  As085_WAus                 64.00%    failed      0.18%
+ 170  As092_EAus                 54.96%    passed     44.76%
+ 171  Op103_Bupares              53.78%    passed     16.94%
+ 172  As057_Gab                  67.46%    failed      0.00%
+ 173  As134_Viet                 63.50%    failed      0.05%
+ 174  As090_EAus                 69.31%    failed      1.27%
+ 175  As095_PNG                  68.04%    failed      0.00%
+ 176  As009_Cam                  59.09%    failed      0.19%
+ 177  As016_Gab                  87.26%    passed     56.00%
+ 178  As018_Gab                  55.35%    failed      2.71%
+ 179  Op049_Beloniscus           42.78%    passed     47.58%
+ 180  As106_Thai                 51.84%    passed      8.22%
+ 181  As115_Thai                 51.78%    failed      4.47%
+ 182  As118_Thai                 51.73%    passed      8.97%
+ 183  As129_Laos                 57.99%    failed      0.35%
+ 184  As136_Viet                 51.73%    passed     18.96%
+ 185  As140_Viet                 51.95%    passed     25.59%
+ 186  As126_Laos                 52.13%    passed     15.05%
+ 187  As119_Indo                 66.44%    failed      0.17%
+ 188  Kimula                     52.79%    failed      0.02%
+ 189  Fumontana                  36.61%    failed      0.14%
+ 190  Zuma                       55.71%    failed      0.36%
+ 191  Stygnoplus                 19.62%    failed      0.07%
+ 192  Caddo                      63.01%    passed     69.93%
+ 193  Theromaster                21.38%    failed      0.00%
+ 194  As099_Dibunus              56.72%    passed     38.37%
+ 195  Icaleptes                  51.01%    failed      0.00%
+ 196  Fissiphallius              39.37%    passed     21.40%
+ 197  Lomanius_DNA104934         52.07%    failed      0.00%
+ 198  Stygnommatidae_DNA105636   57.69%    failed      0.00%
+ 199  Neopygoplus                94.13%    failed      0.74%
+WARNING: 77 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                      39.30%  84 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.050 seconds
+NOTE: ModelFinder requires 81 MB RAM!
+ModelFinder will test 88 DNA models (sample size: 5575) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+27 trees examined
+Threads: 1 / Time: 8.203 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -187133
+Threads: 2 / Time: 5.168 sec / Speedup: 1.587 / Efficiency: 79% / LogL: -187133
+Threads: 3 / Time: 4.332 sec / Speedup: 1.894 / Efficiency: 63% / LogL: -187133
+Threads: 4 / Time: 3.672 sec / Speedup: 2.234 / Efficiency: 56% / LogL: -187133
+Threads: 5 / Time: 6.627 sec / Speedup: 1.238 / Efficiency: 25% / LogL: -187133
+BEST NUMBER OF THREADS: 4
+
+  1  JC            136006.947   395 272803.893   272864.299   275421.182
+  2  JC+I          117154.794   396 235101.588   235162.311   237725.502
+  3  JC+G4         105827.660   396 212447.320   212508.043   215071.235
+  4  JC+I+G4       104618.889   397 210031.777   210092.819   212662.318
+  5  F81+F         136177.703   398 273151.406   273212.766   275788.573
+  6  F81+F+I       117372.155   399 235542.310   235603.991   238186.103
+  7  F81+F+G4      106117.419   399 213032.839   213094.520   215676.632
+  8  F81+F+I+G4    104926.898   400 210653.796   210715.798   213304.215
+  9  K2P           134154.383   396 269100.765   269161.488   271724.680
+ 10  K2P+I         115220.350   397 231234.700   231295.742   233865.241
+ 11  K2P+G4        103657.011   397 208108.022   208169.063   210738.563
+ 12  K2P+I+G4      102337.549   398 205471.099   205532.460   208108.266
+ 13  HKY+F         134334.427   399 269466.855   269528.536   272110.648
+ 14  HKY+F+I       115403.543   400 231607.087   231669.089   234257.506
+ 15  HKY+F+G4      103930.899   400 208661.797   208723.800   211312.216
+ 16  HKY+F+I+G4    102626.696   401 206055.392   206117.717   208712.437
+ 17  TNe           133649.467   397 268092.934   268153.976   270723.475
+ 18  TNe+I         115032.797   398 230861.593   230922.954   233498.760
+ 19  TNe+G4        103450.943   398 207697.885   207759.246   210335.052
+ 20  TNe+I+G4      102141.449   399 205080.899   205142.580   207724.692
+ 21  TN+F          133670.614   400 268141.229   268203.231   270791.648
+ 22  TN+F+I        115115.675   401 231033.350   231095.675   233690.395
+ 23  TN+F+G4       103577.396   401 207956.791   208019.116   210613.837
+ 24  TN+F+I+G4     102285.398   402 205374.795   205437.443   208038.467
+ 25  K3P           133973.690   397 268741.380   268802.421   271371.921
+ 26  K3P+I         115024.394   398 230844.788   230906.149   233481.955
+ 27  K3P+G4        103478.912   398 207753.823   207815.184   210390.990
+ 28  K3P+I+G4      102190.135   399 205178.271   205239.952   207822.064
+ 29  K3Pu+F        134151.193   400 269102.387   269164.389   271752.806
+ 30  K3Pu+F+I      115204.479   401 231210.959   231273.283   233868.004
+ 31  K3Pu+F+G4     103742.628   401 208287.256   208349.580   210944.301
+ 32  K3Pu+F+I+G4   102467.263   402 205738.527   205801.174   208402.198
+ 33  TPM2+F        133141.022   400 267082.044   267144.046   269732.463
+ 34  TPM2+F+I      114233.155   401 229268.311   229330.635   231925.356
+ 35  TPM2+F+G4     103273.172   401 207348.345   207410.669   210005.390
+ 36  TPM2+F+I+G4   102054.161   402 204912.322   204974.969   207575.993
+ 37  TPM2u+F       133141.022   400 267082.045   267144.047   269732.464
+ 38  TPM2u+F+I     114233.156   401 229268.312   229330.637   231925.357
+ 39  TPM2u+F+G4    103273.173   401 207348.346   207410.670   210005.391
+ 40  TPM2u+F+I+G4  102054.160   402 204912.321   204974.968   207575.992
+ 41  TPM3+F        133917.902   400 268635.805   268697.807   271286.224
+ 42  TPM3+F+I      114992.599   401 230787.198   230849.522   233444.243
+ 43  TPM3+F+G4     103728.168   401 208258.336   208320.661   210915.381
+ 44  TPM3+F+I+G4   102442.721   402 205689.442   205752.089   208353.113
+ 45  TPM3u+F       133917.902   400 268635.804   268697.806   271286.223
+ 46  TPM3u+F+I     114992.599   401 230787.197   230849.521   233444.242
+ 47  TPM3u+F+G4    103728.168   401 208258.335   208320.660   210915.381
+ 48  TPM3u+F+I+G4  102442.711   402 205689.422   205752.070   208353.094
+ 49  TIMe          133467.903   398 267731.806   267793.167   270368.973
+ 50  TIMe+I        114836.154   399 230470.307   230531.988   233114.100
+ 51  TIMe+G4       103272.665   399 207343.329   207405.010   209987.122
+ 52  TIMe+I+G4     101998.301   400 204796.603   204858.605   207447.022
+ 53  TIM+F         133486.206   401 267774.412   267836.736   270431.457
+ 54  TIM+F+I       114915.385   402 230634.770   230697.418   233298.441
+ 55  TIM+F+G4      103386.675   402 207577.349   207639.996   210241.020
+ 56  TIM+F+I+G4    102130.119   403 205066.239   205129.210   207736.536
+ 57  TIM2e         132612.115   398 266020.230   266081.591   268657.397
+ 58  TIM2e+I       114024.030   399 228846.060   228907.741   231489.853
+ 59  TIM2e+G4      102909.745   399 206617.491   206679.172   209261.284
+ 60  TIM2e+I+G4    101701.045   400 204202.089   204264.092   206852.508
+ 61  TIM2+F        132514.771   401 265831.541   265893.865   268488.586
+ 62  TIM2+F+I      113973.783   402 228751.566   228814.213   231415.237
+ 63  TIM2+F+G4     102895.218   402 206594.436   206657.084   209258.107
+ 64  TIM2+F+I+G4   101699.728   403 204205.456   204268.427   206875.753
+ 65  TIM3e         133194.948   398 267185.897   267247.258   269823.064
+ 66  TIM3e+I       114591.302   399 229980.604   230042.285   232624.397
+ 67  TIM3e+G4      103236.408   399 207270.816   207332.497   209914.608
+ 68  TIM3e+I+G4    101952.758   400 204705.516   204767.518   207355.935
+ 69  TIM3+F        133237.852   401 267277.704   267340.029   269934.750
+ 70  TIM3+F+I      114693.444   402 230190.888   230253.536   232854.559
+ 71  TIM3+F+G4     103389.667   402 207583.333   207645.980   210247.004
+ 72  TIM3+F+I+G4   102119.899   403 205045.798   205108.769   207716.095
+ 73  TVMe          132630.071   399 266058.142   266119.824   268701.935
+ 74  TVMe+I        113730.169   400 228260.338   228322.340   230910.757
+ 75  TVMe+G4       102857.740   400 206515.480   206577.482   209165.899
+ 76  TVMe+I+G4     101646.010   401 204094.020   204156.345   206751.065
+ 77  TVM+F         132707.771   402 266219.542   266282.189   268883.213
+ 78  TVM+F+I       113793.988   403 228393.975   228456.946   231064.272
+ 79  TVM+F+G4      103000.597   403 206807.195   206870.166   209477.492
+ 80  TVM+F+I+G4    101802.252   404 204412.504   204475.800   207089.427
+ 81  SYM           132141.036   400 265082.073   265144.075   267732.492
+ 82  SYM+I         113555.406   401 227912.812   227975.137   230569.857
+ 83  SYM+G4        102630.544   401 206063.088   206125.412   208720.133
+ 84  SYM+I+G4      101435.917   402 203675.833   203738.481   206339.505
+ 85  GTR+F         132064.812   403 264935.623   264998.594   267605.920
+ 86  GTR+F+I       113523.272   404 227854.544   227917.840   230531.467
+ 87  GTR+F+G4      102638.793   404 206085.587   206148.883   208762.510
+ 88  GTR+F+I+G4    101455.321   405 203720.641   203784.263   206404.191
+Akaike Information Criterion:           SYM+I+G4
+Corrected Akaike Information Criterion: SYM+I+G4
+Bayesian Information Criterion:         SYM+I+G4
+Best-fit model: SYM+I+G4 chosen according to BIC
+
+All model information printed to concat-alignment.fasta.model.gz
+CPU time for ModelFinder: 294.939 seconds (0h:4m:54s)
+Wall-clock time for ModelFinder: 82.523 seconds (0h:1m:22s)
+Generating 1000 samples for ultrafast bootstrap (seed: 680963)...
+
+NOTE: 81 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+10 trees examined
+Threads: 1 / Time: 8.573 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -136892
+Threads: 2 / Time: 5.236 sec / Speedup: 1.637 / Efficiency: 82% / LogL: -136892
+Threads: 3 / Time: 3.784 sec / Speedup: 2.265 / Efficiency: 76% / LogL: -136892
+Threads: 4 / Time: 3.229 sec / Speedup: 2.655 / Efficiency: 66% / LogL: -136892
+Threads: 5 / Time: 6.497 sec / Speedup: 1.319 / Efficiency: 26% / LogL: -136892
+BEST NUMBER OF THREADS: 4
+
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 0.212 / LogL: -102630.484
+Init pinv, alpha: 0.069, 1.000 / Estimate: 0.588, 0.625 / LogL: -101435.919
+Init pinv, alpha: 0.139, 1.000 / Estimate: 0.588, 0.625 / LogL: -101435.886
+Init pinv, alpha: 0.208, 1.000 / Estimate: 0.588, 0.625 / LogL: -101435.873
+Init pinv, alpha: 0.277, 1.000 / Estimate: 0.588, 0.625 / LogL: -101435.874
+Init pinv, alpha: 0.347, 1.000 / Estimate: 0.588, 0.624 / LogL: -101435.868
+Init pinv, alpha: 0.416, 1.000 / Estimate: 0.588, 0.624 / LogL: -101435.870
+Init pinv, alpha: 0.485, 1.000 / Estimate: 0.588, 0.625 / LogL: -101435.865
+Init pinv, alpha: 0.555, 1.000 / Estimate: 0.588, 0.625 / LogL: -101435.897
+Init pinv, alpha: 0.624, 1.000 / Estimate: 0.588, 0.625 / LogL: -101435.952
+Optimal pinv,alpha: 0.588, 0.625 / LogL: -101435.865
+
+Parameters optimization took 27.147 sec
+Computing ML distances based on estimated model parameters... 1.307 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+0.019 seconds
+Log-likelihood of BIONJ tree: -111283.974
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 5.728 second
+Computing log-likelihood of 98 initial trees ... 8.078 seconds
+Current best score: -101156.315
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -100983.392
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -100976.704
+Iteration 10 / LogL: -101023.602 / Time: 0h:1m:24s
+Iteration 20 / LogL: -101003.097 / Time: 0h:1m:38s
+Finish initializing candidate tree set (20)
+Current best tree score: -100976.704 / CPU time: 43.635
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 21: -100973.759
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 30: -100966.195
+Iteration 30 / LogL: -100966.195 / Time: 0h:1m:51s (0h:6m:23s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 34: -100965.103
+Iteration 40 / LogL: -100970.606 / Time: 0h:2m:2s (0h:4m:56s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 41: -100946.390
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 48: -100943.966
+Iteration 50 / LogL: -100949.268 / Time: 0h:2m:16s (0h:4m:32s left)
+Iteration 60 / LogL: -100956.247 / Time: 0h:2m:30s (0h:3m:43s left)
+Iteration 70 / LogL: -101027.066 / Time: 0h:2m:43s (0h:3m:4s left)
+Iteration 80 / LogL: -100946.380 / Time: 0h:2m:55s (0h:2m:31s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 82: -100942.264
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 83: -100939.760
+Iteration 90 / LogL: -100944.698 / Time: 0h:3m:8s (0h:3m:17s left)
+Iteration 100 / LogL: -100940.179 / Time: 0h:3m:20s (0h:2m:48s left)
+Iteration 110 / LogL: -100942.624 / Time: 0h:3m:32s (0h:2m:22s left)
+Iteration 120 / LogL: -100949.092 / Time: 0h:3m:46s (0h:1m:59s left)
+Iteration 130 / LogL: -100974.469 / Time: 0h:3m:58s (0h:1m:37s left)
+Iteration 140 / LogL: -100953.219 / Time: 0h:4m:11s (0h:1m:17s left)
+Iteration 150 / LogL: -100944.218 / Time: 0h:4m:23s (0h:0m:58s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 157: -100939.243
+Iteration 160 / LogL: -100939.793 / Time: 0h:4m:35s (0h:2m:48s left)
+Iteration 170 / LogL: -100940.298 / Time: 0h:4m:48s (0h:2m:28s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 177: -100939.148
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 179: -100938.843
+Iteration 180 / LogL: -100943.600 / Time: 0h:5m:1s (0h:2m:46s left)
+Iteration 190 / LogL: -100950.651 / Time: 0h:5m:13s (0h:2m:27s left)
+Iteration 200 / LogL: -100956.584 / Time: 0h:5m:25s (0h:2m:9s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -100938.558
+Iteration 210 / LogL: -101037.164 / Time: 0h:5m:37s (0h:1m:51s left)
+Iteration 220 / LogL: -100943.545 / Time: 0h:5m:50s (0h:1m:34s left)
+Iteration 230 / LogL: -100976.831 / Time: 0h:6m:3s (0h:1m:17s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 240: -100938.282
+Iteration 240 / LogL: -100938.282 / Time: 0h:6m:15s (0h:2m:37s left)
+Iteration 250 / LogL: -100947.343 / Time: 0h:6m:27s (0h:2m:20s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -100937.977
+Iteration 260 / LogL: -100941.392 / Time: 0h:6m:40s (0h:2m:3s left)
+Iteration 270 / LogL: -100939.899 / Time: 0h:6m:53s (0h:1m:47s left)
+Iteration 280 / LogL: -100942.388 / Time: 0h:7m:6s (0h:1m:31s left)
+Iteration 290 / LogL: -100938.675 / Time: 0h:7m:18s (0h:1m:15s left)
+Iteration 300 / LogL: -100947.794 / Time: 0h:7m:30s (0h:1m:0s left)
+Iteration 310 / LogL: -100938.555 / Time: 0h:7m:43s (0h:0m:44s left)
+Iteration 320 / LogL: -100938.801 / Time: 0h:7m:54s (0h:0m:29s left)
+Iteration 330 / LogL: -100943.265 / Time: 0h:8m:6s (0h:0m:14s left)
+Iteration 340 / LogL: -100941.250 / Time: 0h:8m:18s (0h:0m:0s left)
+Refining ufboot trees with NNI 1 branch...
+100 samples done
+200 samples done
+300 samples done
+400 samples done
+500 samples done
+600 samples done
+700 samples done
+800 samples done
+900 samples done
+1000 samples done
+Total 1000 ufboot trees refined
+TREE SEARCH COMPLETED AFTER 341 ITERATIONS / Time: 0h:12m:7s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -100937.977
+Optimal log-likelihood: -100937.968
+Rate parameters:  A-C: 1.24180  A-G: 3.35693  A-T: 2.99290  C-G: 0.81424  C-T: 5.85773  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Proportion of invariable sites: 0.589
+Gamma shape alpha: 0.624
+Parameters optimization took 1 rounds (0.215 sec)
+BEST SCORE FOUND : -100937.968
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+3.577 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file concat-alignment.fasta.splits.nex
+Total tree length: 12.222
+
+Total number of iterations: 341
+CPU time used for tree search: 2628.763 sec (0h:43m:48s)
+Wall-clock time used for tree search: 671.777 sec (0h:11m:11s)
+Total CPU time used: 2831.208 sec (0h:47m:11s)
+Total wall-clock time used: 731.872 sec (0h:12m:11s)
+UFBoot trees printed to concat-alignment.fasta.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file concat-alignment.fasta.splits.nex...
+199 taxa and 1244 splits.
+Consensus tree written to concat-alignment.fasta.contree
+Reading input trees file concat-alignment.fasta.contree
+Log-likelihood of consensus tree: -100938.996
+
+Analysis results written to: 
+  IQ-TREE report:                concat-alignment.fasta.iqtree
+  Maximum-likelihood tree:       concat-alignment.fasta.treefile
+  Likelihood distances:          concat-alignment.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          concat-alignment.fasta.splits.nex
+  Consensus tree:                concat-alignment.fasta.contree
+  UFBoot trees:                  concat-alignment.fasta.ufboot
+  Screen log file:               concat-alignment.fasta.log
+
+Date and Time: Fri Apr 21 21:46:36 2023

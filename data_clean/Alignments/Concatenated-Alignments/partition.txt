@@ -1,0 +1,10 @@
+#NEXUS
+begin sets;
+	charset 16S = concat-alignment.fasta: 1-388;
+	charset 18S = concat-alignment.fasta: 389-2150;
+	charset 28S = concat-alignment.fasta: 2151-4591;
+	charset 1COI = concat-alignment.fasta: 4592-5248\3;
+	charset 2COI = concat-alignment.fasta: 4593-5248\3;
+	charset 3COI = concat-alignment.fasta: 4594-5248\3;
+	charset H3 = concat-alignment.fasta: 5249-5575;
+end;

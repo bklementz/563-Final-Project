@@ -266,6 +266,7 @@ Strategy:
  Same procedure as above, except...
  -input file - COI.fasta
  -output file - COI-aligned-mafft.fasta
+
 Program Outputs:
 command=
 "/usr/local/bin/mafft"  --localpair  --maxiterate 16 --inputorder "COI.fasta" > "COI-aligned-mafft.fasta"

@@ -1,0 +1,1975 @@
+IQ-TREE multicore version 1.6.12 for Mac OS X 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    Bens-Air.lan (SSE4.2, 8 GB RAM)
+Command: /Users/bklementz/Desktop/iqtree-1.6.12-MacOSX/bin/iqtree -s concat-alignment.fasta -q partition.txt -nt AUTO -bb 1000 -bnni -alrt 1000 -m TEST
+Seed:    8229 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Apr 21 20:54:56 2023
+Kernel:  SSE2 - auto-detect threads (8 CPU cores detected)
+
+Reading partition model file partition.txt ...
+Reading alignment file concat-alignment.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 199 sequences with 5575 columns, 2731 distinct patterns
+1632 parsimony-informative, 464 singleton sites, 3479 constant sites
+                          Gap/Ambiguity  Composition  p-value
+   1  Zalmoxis                    1.51%    passed     50.21%
+   2  Dongmoa                    13.13%    passed     32.06%
+   3  Tithaeus                   14.62%    passed      7.62%
+   4  Martensiellus               3.59%    passed     46.81%
+   5  Palaeoncopus                1.51%    passed     89.94%
+   6  Sandokan                    1.47%    passed     30.70%
+   7  Glysterus                   2.42%    passed     58.53%
+   8  Cynortula                   2.22%    passed     80.67%
+   9  Zygopachylus                1.61%    passed     98.44%
+  10  Santobius_DNA104931         8.09%    failed      1.55%
+  11  Santobius_DNA104930        20.79%    passed     16.67%
+  12  Hoplobunus                  8.75%    passed     19.38%
+  13  Scotolemon_lespesi         34.03%    passed     34.88%
+  14  IC_DNA104070                8.22%    failed      2.48%
+  15  IC_DNA104071               19.12%    passed     21.70%
+  16  Baculigerus                 5.36%    passed     37.39%
+  17  Trionyxella                 2.76%    passed     81.26%
+  18  Assamiidae_DNA104857       35.44%    passed     91.01%
+  19  Paktongius                  7.39%    passed     62.47%
+  20  Assamiidae_DNA104859       21.38%    passed     13.15%
+  21  Haasus_sp                  22.40%    failed      0.49%
+  22  Haasus_judaeus             35.71%    failed      2.11%
+  23  Conomma                     2.30%    passed     47.44%
+  24  Bishopella                 21.83%    failed      0.13%
+  25  Scotolemon                  7.66%    failed      0.24%
+  26  As020_Gab                  49.09%    failed      0.05%
+  27  As038_Gab                  57.31%    passed      9.06%
+  28  As041_Gab                  45.65%    failed      0.20%
+  29  Gnomulus                    1.45%    passed     44.03%
+  30  Caenoncopus                 1.22%    passed     18.62%
+  31  As122_Laos                 49.26%    failed      0.01%
+  32  As123_Viet                 45.31%    failed      0.01%
+  33  As131_Mala                 45.58%    failed      0.69%
+  34  As098_Phil                 57.74%    passed     31.80%
+  35  As105_Phil                 45.90%    passed     40.04%
+  36  As080_Indo                 45.72%    passed     12.79%
+  37  As081_Indo                 45.60%    passed      9.70%
+  38  As133_Indo                 45.11%    passed     10.06%
+  39  As085_WDus                 93.27%    failed      0.00%
+  40  As087_WAus                 45.45%    passed     40.33%
+  41  As089_EAus                 71.91%    passed     28.44%
+  42  As092_EDus                 93.27%    failed      0.00%
+  43  As104_EAus                 46.82%    passed     17.48%
+  44  As101_NAus                 57.52%    passed     29.13%
+  45  As102_NAus                 60.39%    failed      0.00%
+  46  As103_NAus                 58.40%    passed     22.23%
+  47  As094_PNG                  46.44%    failed      0.76%
+  48  As096_PNG                  45.63%    failed      0.33%
+  49  As097_PNG                  57.33%    passed     38.03%
+  50  As108_Laos                 59.57%    failed      0.01%
+  51  As114_Thai                 59.59%    failed      0.00%
+  52  As124_Indo                 72.02%    passed      7.68%
+  53  As130_Viet                 71.32%    passed     12.14%
+  54  As109_Thai                 45.17%    passed     34.88%
+  55  As111_Phil                 71.59%    passed     27.78%
+  56  As120_Thai                 44.97%    passed     24.98%
+  57  As110_Laos                 45.42%    passed     43.32%
+  58  As121_Laos                 45.09%    passed     35.50%
+  59  As125_Thai                 71.77%    passed     21.92%
+  60  As132_Mala                 56.86%    passed      9.12%
+  61  As127_Laos                 45.51%    passed      7.64%
+  62  As116_Thai                 71.41%    passed     24.19%
+  63  As117_Thai                 56.93%    passed     12.09%
+  64  As059_Gab                  45.61%    passed     13.29%
+  65  As010_Gab                  79.93%    failed      0.19%
+  66  As050_Cam                  60.02%    failed      0.00%
+  67  As011_Gab                  54.04%    failed      0.00%
+  68  As021_Gab                  60.84%    failed      4.42%
+  69  As082_Cam                  57.43%    failed      4.30%
+  70  As056_Gab                  45.58%    failed      2.95%
+  71  As027_Gab                  50.89%    failed      1.21%
+  72  As034_Cam                  72.41%    passed     62.23%
+  73  As084_Cam                  63.75%    failed      0.16%
+  74  As085_Cam                  71.93%    passed     70.54%
+  75  As014_Gab                  74.08%    failed      0.05%
+  76  As029_Gab                  77.90%    passed     12.08%
+  77  As040_Gab                  45.43%    failed      3.50%
+  78  As058_Gab                  50.80%    failed      0.16%
+  79  As072_Lib                  72.14%    passed     55.15%
+  80  As012_Gab                  81.27%    passed     58.01%
+  81  As025_Gab                  66.31%    failed      1.04%
+  82  As017_Gab                  72.93%    passed     50.53%
+  83  As031_Gab                  51.96%    failed      2.87%
+  84  As135_Viet                 56.90%    failed      3.62%
+  85  As045_Cam                  57.33%    passed      5.90%
+  86  As070_Lib                  57.52%    failed      0.54%
+  87  As083_Cam                  46.22%    passed     88.08%
+  88  Synthetonychia             46.96%    failed      0.00%
+  89  Dendrolasma                 8.00%    failed      0.75%
+  90  Trogulus                   10.71%    failed      0.00%
+  91  Protolophus                 3.26%    passed     55.69%
+  92  Pantopsalis                22.71%    failed      2.16%
+  93  Hesperonemastoma            3.39%    failed      0.02%
+  94  As061_Lib                  71.89%    passed     19.80%
+  95  As069_Lib                  58.03%    failed      0.00%
+  96  As032_Gab                  61.58%    failed      0.71%
+  97  As039_Gab                  57.58%    failed      0.02%
+  98  Troglosiro                 14.89%    failed      0.17%
+  99  Pseudoepedanus             41.36%    failed      0.00%
+ 100  Agoristenidae_DNA105839    21.26%    passed     14.13%
+ 101  Trinella                   68.59%    passed     84.14%
+ 102  Arulla_DNA102666           17.29%    passed     57.67%
+ 103  Assamiidae_DNA104069       34.22%    failed      0.17%
+ 104  Chilon                     66.58%    failed      3.87%
+ 105  Paraselenca                28.22%    failed      0.00%
+ 106  Assamiidae_DNA104858       68.61%    passed     80.30%
+ 107  Fijicolana                 16.63%    passed     39.68%
+ 108  Stygnomma                  38.57%    passed     58.74%
+ 109  Pellobunus                  8.02%    passed     21.46%
+ 110  Icaleptes_DNA104056         8.75%    passed     59.17%
+ 111  Icaleptes_DNA104053        19.57%    failed      0.03%
+ 112  Guasinia                   31.80%    failed      0.39%
+ 113  Metabiantes_DNA100703      13.81%    passed     64.78%
+ 114  Metabiantes_DNA100704       9.15%    passed     18.39%
+ 115  Stenostygnus_DNA104847     13.85%    passed     89.01%
+ 116  Stenostygnus_DNA104849     21.99%    passed     43.64%
+ 117  Stenostygnus_DNA104850     21.58%    passed     14.01%
+ 118  Stenostygnus_DNA104848     21.99%    passed     76.80%
+ 119  Ethobunus                   8.50%    passed     74.18%
+ 120  Fissiphallius_DNA104055    19.57%    failed      0.11%
+ 121  Fissiphallius_DNA104057    21.87%    failed      0.07%
+ 122  Escadabius                 20.41%    failed      0.24%
+ 123  Metabiantes_DNA100335      28.09%    passed     11.03%
+ 124  Biantidae_DNA105668        20.25%    passed     31.02%
+ 125  Samoidae                   31.86%    failed      0.12%
+ 126  Mitraceras                 25.45%    failed      0.16%
+ 127  Jarmilana                  43.62%    passed     28.56%
+ 128  Maiorerus                  62.96%    passed     72.48%
+ 129  Epedanidae_DNA104861       19.61%    failed      0.02%
+ 130  Epedanidae_DNA104862       19.77%    failed      0.00%
+ 131  Goniosoma                   8.83%    passed     68.15%
+ 132  Megapachylus               10.82%    passed     86.25%
+ 133  Heterocranaus               8.02%    passed     34.06%
+ 134  Santinezia                  9.56%    passed     82.76%
+ 135  Metalibitia                19.66%    failed      0.01%
+ 136  Lomanius_DNA104935          8.11%    passed     60.68%
+ 137  Stygnopsidae_DNA103882     20.97%    passed      5.51%
+ 138  Stygnopsidae_DNA104855      9.52%    passed     74.65%
+ 139  Stygnopsidae_DNA104856      8.05%    passed     65.11%
+ 140  Minuella                   25.90%    failed      0.05%
+ 141  Karos                       8.07%    passed     94.71%
+ 142  Equitius                    8.05%    passed     82.67%
+ 143  Larifuga                   16.39%    passed     16.05%
+ 144  Triaenonychidae            10.40%    passed     94.65%
+ 145  Triaenobunus                7.95%    passed     99.13%
+ 146  Rostromontia               40.38%    failed      0.32%
+ 147  IC_DNA102668               19.66%    failed      0.09%
+ 148  IC_DNA102669               20.50%    failed      0.07%
+ 149  Zalmoxida                  14.71%    passed     36.31%
+ 150  IC_DNA103729               28.61%    failed      4.09%
+ 151  IC_DNA103572               29.65%    failed      0.09%
+ 152  Bunofagea                  10.78%    passed     14.13%
+ 153  Vonones                    77.60%    passed     11.99%
+ 154  Erebomaster                46.53%    failed      0.37%
+ 155  Holoscotolemon             19.26%    passed     29.49%
+ 156  Peltonychia                 7.96%    passed      8.76%
+ 157  Trojanella                 31.87%    passed     69.53%
+ 158  Epedanidae_DNA104062       28.79%    passed     69.39%
+ 159  Epedanidae_DNA104068       30.73%    passed     47.34%
+ 160  Epedanidae_DNA104066       20.43%    passed     44.19%
+ 161  Op106_Toccolus             42.26%    passed     16.54%
+ 162  Op107_Nanepedanus_rufus    42.30%    passed     16.95%
+ 163  Op104_Dibuninae            42.31%    passed     14.24%
+ 164  Op105_Dibunus              42.37%    passed     31.78%
+ 165  As026_Gab                  54.49%    failed      0.13%
+ 166  As030_Gab                  70.03%    failed      0.00%
+ 167  As022_Gab                  85.58%    passed     36.67%
+ 168  As028_Gab                  54.89%    passed     11.86%
+ 169  As085_WAus                 64.00%    failed      0.18%
+ 170  As092_EAus                 54.96%    passed     44.76%
+ 171  Op103_Bupares              53.78%    passed     16.94%
+ 172  As057_Gab                  67.46%    failed      0.00%
+ 173  As134_Viet                 63.50%    failed      0.05%
+ 174  As090_EAus                 69.31%    failed      1.27%
+ 175  As095_PNG                  68.04%    failed      0.00%
+ 176  As009_Cam                  59.09%    failed      0.19%
+ 177  As016_Gab                  87.26%    passed     56.00%
+ 178  As018_Gab                  55.35%    failed      2.71%
+ 179  Op049_Beloniscus           42.78%    passed     47.58%
+ 180  As106_Thai                 51.84%    passed      8.22%
+ 181  As115_Thai                 51.78%    failed      4.47%
+ 182  As118_Thai                 51.73%    passed      8.97%
+ 183  As129_Laos                 57.99%    failed      0.35%
+ 184  As136_Viet                 51.73%    passed     18.96%
+ 185  As140_Viet                 51.95%    passed     25.59%
+ 186  As126_Laos                 52.13%    passed     15.05%
+ 187  As119_Indo                 66.44%    failed      0.17%
+ 188  Kimula                     52.79%    failed      0.02%
+ 189  Fumontana                  36.61%    failed      0.14%
+ 190  Zuma                       55.71%    failed      0.36%
+ 191  Stygnoplus                 19.62%    failed      0.07%
+ 192  Caddo                      63.01%    passed     69.93%
+ 193  Theromaster                21.38%    failed      0.00%
+ 194  As099_Dibunus              56.72%    passed     38.37%
+ 195  Icaleptes                  51.01%    failed      0.00%
+ 196  Fissiphallius              39.37%    passed     21.40%
+ 197  Lomanius_DNA104934         52.07%    failed      0.00%
+ 198  Stygnommatidae_DNA105636   57.69%    failed      0.00%
+ 199  Neopygoplus                94.13%    failed      0.74%
+WARNING: 77 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                      39.30%  84 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: No CharPartition defined, use all CharSets
+
+Loading 7 partitions...
+Reading alignment file concat-alignment.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 199 sequences with 5575 columns, 2731 distinct patterns
+1632 parsimony-informative, 464 singleton sites, 3479 constant sites
+                          Gap/Ambiguity  Composition  p-value
+   1  Zalmoxis                    1.51%    passed     50.21%
+   2  Dongmoa                    13.13%    passed     32.06%
+   3  Tithaeus                   14.62%    passed      7.62%
+   4  Martensiellus               3.59%    passed     46.81%
+   5  Palaeoncopus                1.51%    passed     89.94%
+   6  Sandokan                    1.47%    passed     30.70%
+   7  Glysterus                   2.42%    passed     58.53%
+   8  Cynortula                   2.22%    passed     80.67%
+   9  Zygopachylus                1.61%    passed     98.44%
+  10  Santobius_DNA104931         8.09%    failed      1.55%
+  11  Santobius_DNA104930        20.79%    passed     16.67%
+  12  Hoplobunus                  8.75%    passed     19.38%
+  13  Scotolemon_lespesi         34.03%    passed     34.88%
+  14  IC_DNA104070                8.22%    failed      2.48%
+  15  IC_DNA104071               19.12%    passed     21.70%
+  16  Baculigerus                 5.36%    passed     37.39%
+  17  Trionyxella                 2.76%    passed     81.26%
+  18  Assamiidae_DNA104857       35.44%    passed     91.01%
+  19  Paktongius                  7.39%    passed     62.47%
+  20  Assamiidae_DNA104859       21.38%    passed     13.15%
+  21  Haasus_sp                  22.40%    failed      0.49%
+  22  Haasus_judaeus             35.71%    failed      2.11%
+  23  Conomma                     2.30%    passed     47.44%
+  24  Bishopella                 21.83%    failed      0.13%
+  25  Scotolemon                  7.66%    failed      0.24%
+  26  As020_Gab                  49.09%    failed      0.05%
+  27  As038_Gab                  57.31%    passed      9.06%
+  28  As041_Gab                  45.65%    failed      0.20%
+  29  Gnomulus                    1.45%    passed     44.03%
+  30  Caenoncopus                 1.22%    passed     18.62%
+  31  As122_Laos                 49.26%    failed      0.01%
+  32  As123_Viet                 45.31%    failed      0.01%
+  33  As131_Mala                 45.58%    failed      0.69%
+  34  As098_Phil                 57.74%    passed     31.80%
+  35  As105_Phil                 45.90%    passed     40.04%
+  36  As080_Indo                 45.72%    passed     12.79%
+  37  As081_Indo                 45.60%    passed      9.70%
+  38  As133_Indo                 45.11%    passed     10.06%
+  39  As085_WDus                 93.27%    failed      0.00%
+  40  As087_WAus                 45.45%    passed     40.33%
+  41  As089_EAus                 71.91%    passed     28.44%
+  42  As092_EDus                 93.27%    failed      0.00%
+  43  As104_EAus                 46.82%    passed     17.48%
+  44  As101_NAus                 57.52%    passed     29.13%
+  45  As102_NAus                 60.39%    failed      0.00%
+  46  As103_NAus                 58.40%    passed     22.23%
+  47  As094_PNG                  46.44%    failed      0.76%
+  48  As096_PNG                  45.63%    failed      0.33%
+  49  As097_PNG                  57.33%    passed     38.03%
+  50  As108_Laos                 59.57%    failed      0.01%
+  51  As114_Thai                 59.59%    failed      0.00%
+  52  As124_Indo                 72.02%    passed      7.68%
+  53  As130_Viet                 71.32%    passed     12.14%
+  54  As109_Thai                 45.17%    passed     34.88%
+  55  As111_Phil                 71.59%    passed     27.78%
+  56  As120_Thai                 44.97%    passed     24.98%
+  57  As110_Laos                 45.42%    passed     43.32%
+  58  As121_Laos                 45.09%    passed     35.50%
+  59  As125_Thai                 71.77%    passed     21.92%
+  60  As132_Mala                 56.86%    passed      9.12%
+  61  As127_Laos                 45.51%    passed      7.64%
+  62  As116_Thai                 71.41%    passed     24.19%
+  63  As117_Thai                 56.93%    passed     12.09%
+  64  As059_Gab                  45.61%    passed     13.29%
+  65  As010_Gab                  79.93%    failed      0.19%
+  66  As050_Cam                  60.02%    failed      0.00%
+  67  As011_Gab                  54.04%    failed      0.00%
+  68  As021_Gab                  60.84%    failed      4.42%
+  69  As082_Cam                  57.43%    failed      4.30%
+  70  As056_Gab                  45.58%    failed      2.95%
+  71  As027_Gab                  50.89%    failed      1.21%
+  72  As034_Cam                  72.41%    passed     62.23%
+  73  As084_Cam                  63.75%    failed      0.16%
+  74  As085_Cam                  71.93%    passed     70.54%
+  75  As014_Gab                  74.08%    failed      0.05%
+  76  As029_Gab                  77.90%    passed     12.08%
+  77  As040_Gab                  45.43%    failed      3.50%
+  78  As058_Gab                  50.80%    failed      0.16%
+  79  As072_Lib                  72.14%    passed     55.15%
+  80  As012_Gab                  81.27%    passed     58.01%
+  81  As025_Gab                  66.31%    failed      1.04%
+  82  As017_Gab                  72.93%    passed     50.53%
+  83  As031_Gab                  51.96%    failed      2.87%
+  84  As135_Viet                 56.90%    failed      3.62%
+  85  As045_Cam                  57.33%    passed      5.90%
+  86  As070_Lib                  57.52%    failed      0.54%
+  87  As083_Cam                  46.22%    passed     88.08%
+  88  Synthetonychia             46.96%    failed      0.00%
+  89  Dendrolasma                 8.00%    failed      0.75%
+  90  Trogulus                   10.71%    failed      0.00%
+  91  Protolophus                 3.26%    passed     55.69%
+  92  Pantopsalis                22.71%    failed      2.16%
+  93  Hesperonemastoma            3.39%    failed      0.02%
+  94  As061_Lib                  71.89%    passed     19.80%
+  95  As069_Lib                  58.03%    failed      0.00%
+  96  As032_Gab                  61.58%    failed      0.71%
+  97  As039_Gab                  57.58%    failed      0.02%
+  98  Troglosiro                 14.89%    failed      0.17%
+  99  Pseudoepedanus             41.36%    failed      0.00%
+ 100  Agoristenidae_DNA105839    21.26%    passed     14.13%
+ 101  Trinella                   68.59%    passed     84.14%
+ 102  Arulla_DNA102666           17.29%    passed     57.67%
+ 103  Assamiidae_DNA104069       34.22%    failed      0.17%
+ 104  Chilon                     66.58%    failed      3.87%
+ 105  Paraselenca                28.22%    failed      0.00%
+ 106  Assamiidae_DNA104858       68.61%    passed     80.30%
+ 107  Fijicolana                 16.63%    passed     39.68%
+ 108  Stygnomma                  38.57%    passed     58.74%
+ 109  Pellobunus                  8.02%    passed     21.46%
+ 110  Icaleptes_DNA104056         8.75%    passed     59.17%
+ 111  Icaleptes_DNA104053        19.57%    failed      0.03%
+ 112  Guasinia                   31.80%    failed      0.39%
+ 113  Metabiantes_DNA100703      13.81%    passed     64.78%
+ 114  Metabiantes_DNA100704       9.15%    passed     18.39%
+ 115  Stenostygnus_DNA104847     13.85%    passed     89.01%
+ 116  Stenostygnus_DNA104849     21.99%    passed     43.64%
+ 117  Stenostygnus_DNA104850     21.58%    passed     14.01%
+ 118  Stenostygnus_DNA104848     21.99%    passed     76.80%
+ 119  Ethobunus                   8.50%    passed     74.18%
+ 120  Fissiphallius_DNA104055    19.57%    failed      0.11%
+ 121  Fissiphallius_DNA104057    21.87%    failed      0.07%
+ 122  Escadabius                 20.41%    failed      0.24%
+ 123  Metabiantes_DNA100335      28.09%    passed     11.03%
+ 124  Biantidae_DNA105668        20.25%    passed     31.02%
+ 125  Samoidae                   31.86%    failed      0.12%
+ 126  Mitraceras                 25.45%    failed      0.16%
+ 127  Jarmilana                  43.62%    passed     28.56%
+ 128  Maiorerus                  62.96%    passed     72.48%
+ 129  Epedanidae_DNA104861       19.61%    failed      0.02%
+ 130  Epedanidae_DNA104862       19.77%    failed      0.00%
+ 131  Goniosoma                   8.83%    passed     68.15%
+ 132  Megapachylus               10.82%    passed     86.25%
+ 133  Heterocranaus               8.02%    passed     34.06%
+ 134  Santinezia                  9.56%    passed     82.76%
+ 135  Metalibitia                19.66%    failed      0.01%
+ 136  Lomanius_DNA104935          8.11%    passed     60.68%
+ 137  Stygnopsidae_DNA103882     20.97%    passed      5.51%
+ 138  Stygnopsidae_DNA104855      9.52%    passed     74.65%
+ 139  Stygnopsidae_DNA104856      8.05%    passed     65.11%
+ 140  Minuella                   25.90%    failed      0.05%
+ 141  Karos                       8.07%    passed     94.71%
+ 142  Equitius                    8.05%    passed     82.67%
+ 143  Larifuga                   16.39%    passed     16.05%
+ 144  Triaenonychidae            10.40%    passed     94.65%
+ 145  Triaenobunus                7.95%    passed     99.13%
+ 146  Rostromontia               40.38%    failed      0.32%
+ 147  IC_DNA102668               19.66%    failed      0.09%
+ 148  IC_DNA102669               20.50%    failed      0.07%
+ 149  Zalmoxida                  14.71%    passed     36.31%
+ 150  IC_DNA103729               28.61%    failed      4.09%
+ 151  IC_DNA103572               29.65%    failed      0.09%
+ 152  Bunofagea                  10.78%    passed     14.13%
+ 153  Vonones                    77.60%    passed     11.99%
+ 154  Erebomaster                46.53%    failed      0.37%
+ 155  Holoscotolemon             19.26%    passed     29.49%
+ 156  Peltonychia                 7.96%    passed      8.76%
+ 157  Trojanella                 31.87%    passed     69.53%
+ 158  Epedanidae_DNA104062       28.79%    passed     69.39%
+ 159  Epedanidae_DNA104068       30.73%    passed     47.34%
+ 160  Epedanidae_DNA104066       20.43%    passed     44.19%
+ 161  Op106_Toccolus             42.26%    passed     16.54%
+ 162  Op107_Nanepedanus_rufus    42.30%    passed     16.95%
+ 163  Op104_Dibuninae            42.31%    passed     14.24%
+ 164  Op105_Dibunus              42.37%    passed     31.78%
+ 165  As026_Gab                  54.49%    failed      0.13%
+ 166  As030_Gab                  70.03%    failed      0.00%
+ 167  As022_Gab                  85.58%    passed     36.67%
+ 168  As028_Gab                  54.89%    passed     11.86%
+ 169  As085_WAus                 64.00%    failed      0.18%
+ 170  As092_EAus                 54.96%    passed     44.76%
+ 171  Op103_Bupares              53.78%    passed     16.94%
+ 172  As057_Gab                  67.46%    failed      0.00%
+ 173  As134_Viet                 63.50%    failed      0.05%
+ 174  As090_EAus                 69.31%    failed      1.27%
+ 175  As095_PNG                  68.04%    failed      0.00%
+ 176  As009_Cam                  59.09%    failed      0.19%
+ 177  As016_Gab                  87.26%    passed     56.00%
+ 178  As018_Gab                  55.35%    failed      2.71%
+ 179  Op049_Beloniscus           42.78%    passed     47.58%
+ 180  As106_Thai                 51.84%    passed      8.22%
+ 181  As115_Thai                 51.78%    failed      4.47%
+ 182  As118_Thai                 51.73%    passed      8.97%
+ 183  As129_Laos                 57.99%    failed      0.35%
+ 184  As136_Viet                 51.73%    passed     18.96%
+ 185  As140_Viet                 51.95%    passed     25.59%
+ 186  As126_Laos                 52.13%    passed     15.05%
+ 187  As119_Indo                 66.44%    failed      0.17%
+ 188  Kimula                     52.79%    failed      0.02%
+ 189  Fumontana                  36.61%    failed      0.14%
+ 190  Zuma                       55.71%    failed      0.36%
+ 191  Stygnoplus                 19.62%    failed      0.07%
+ 192  Caddo                      63.01%    passed     69.93%
+ 193  Theromaster                21.38%    failed      0.00%
+ 194  As099_Dibunus              56.72%    passed     38.37%
+ 195  Icaleptes                  51.01%    failed      0.00%
+ 196  Fissiphallius              39.37%    passed     21.40%
+ 197  Lomanius_DNA104934         52.07%    failed      0.00%
+ 198  Stygnommatidae_DNA105636   57.69%    failed      0.00%
+ 199  Neopygoplus                94.13%    failed      0.74%
+WARNING: 77 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                      39.30%  84 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file concat-alignment.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 199 sequences with 5575 columns, 2731 distinct patterns
+1632 parsimony-informative, 464 singleton sites, 3479 constant sites
+                          Gap/Ambiguity  Composition  p-value
+   1  Zalmoxis                    1.51%    passed     50.21%
+   2  Dongmoa                    13.13%    passed     32.06%
+   3  Tithaeus                   14.62%    passed      7.62%
+   4  Martensiellus               3.59%    passed     46.81%
+   5  Palaeoncopus                1.51%    passed     89.94%
+   6  Sandokan                    1.47%    passed     30.70%
+   7  Glysterus                   2.42%    passed     58.53%
+   8  Cynortula                   2.22%    passed     80.67%
+   9  Zygopachylus                1.61%    passed     98.44%
+  10  Santobius_DNA104931         8.09%    failed      1.55%
+  11  Santobius_DNA104930        20.79%    passed     16.67%
+  12  Hoplobunus                  8.75%    passed     19.38%
+  13  Scotolemon_lespesi         34.03%    passed     34.88%
+  14  IC_DNA104070                8.22%    failed      2.48%
+  15  IC_DNA104071               19.12%    passed     21.70%
+  16  Baculigerus                 5.36%    passed     37.39%
+  17  Trionyxella                 2.76%    passed     81.26%
+  18  Assamiidae_DNA104857       35.44%    passed     91.01%
+  19  Paktongius                  7.39%    passed     62.47%
+  20  Assamiidae_DNA104859       21.38%    passed     13.15%
+  21  Haasus_sp                  22.40%    failed      0.49%
+  22  Haasus_judaeus             35.71%    failed      2.11%
+  23  Conomma                     2.30%    passed     47.44%
+  24  Bishopella                 21.83%    failed      0.13%
+  25  Scotolemon                  7.66%    failed      0.24%
+  26  As020_Gab                  49.09%    failed      0.05%
+  27  As038_Gab                  57.31%    passed      9.06%
+  28  As041_Gab                  45.65%    failed      0.20%
+  29  Gnomulus                    1.45%    passed     44.03%
+  30  Caenoncopus                 1.22%    passed     18.62%
+  31  As122_Laos                 49.26%    failed      0.01%
+  32  As123_Viet                 45.31%    failed      0.01%
+  33  As131_Mala                 45.58%    failed      0.69%
+  34  As098_Phil                 57.74%    passed     31.80%
+  35  As105_Phil                 45.90%    passed     40.04%
+  36  As080_Indo                 45.72%    passed     12.79%
+  37  As081_Indo                 45.60%    passed      9.70%
+  38  As133_Indo                 45.11%    passed     10.06%
+  39  As085_WDus                 93.27%    failed      0.00%
+  40  As087_WAus                 45.45%    passed     40.33%
+  41  As089_EAus                 71.91%    passed     28.44%
+  42  As092_EDus                 93.27%    failed      0.00%
+  43  As104_EAus                 46.82%    passed     17.48%
+  44  As101_NAus                 57.52%    passed     29.13%
+  45  As102_NAus                 60.39%    failed      0.00%
+  46  As103_NAus                 58.40%    passed     22.23%
+  47  As094_PNG                  46.44%    failed      0.76%
+  48  As096_PNG                  45.63%    failed      0.33%
+  49  As097_PNG                  57.33%    passed     38.03%
+  50  As108_Laos                 59.57%    failed      0.01%
+  51  As114_Thai                 59.59%    failed      0.00%
+  52  As124_Indo                 72.02%    passed      7.68%
+  53  As130_Viet                 71.32%    passed     12.14%
+  54  As109_Thai                 45.17%    passed     34.88%
+  55  As111_Phil                 71.59%    passed     27.78%
+  56  As120_Thai                 44.97%    passed     24.98%
+  57  As110_Laos                 45.42%    passed     43.32%
+  58  As121_Laos                 45.09%    passed     35.50%
+  59  As125_Thai                 71.77%    passed     21.92%
+  60  As132_Mala                 56.86%    passed      9.12%
+  61  As127_Laos                 45.51%    passed      7.64%
+  62  As116_Thai                 71.41%    passed     24.19%
+  63  As117_Thai                 56.93%    passed     12.09%
+  64  As059_Gab                  45.61%    passed     13.29%
+  65  As010_Gab                  79.93%    failed      0.19%
+  66  As050_Cam                  60.02%    failed      0.00%
+  67  As011_Gab                  54.04%    failed      0.00%
+  68  As021_Gab                  60.84%    failed      4.42%
+  69  As082_Cam                  57.43%    failed      4.30%
+  70  As056_Gab                  45.58%    failed      2.95%
+  71  As027_Gab                  50.89%    failed      1.21%
+  72  As034_Cam                  72.41%    passed     62.23%
+  73  As084_Cam                  63.75%    failed      0.16%
+  74  As085_Cam                  71.93%    passed     70.54%
+  75  As014_Gab                  74.08%    failed      0.05%
+  76  As029_Gab                  77.90%    passed     12.08%
+  77  As040_Gab                  45.43%    failed      3.50%
+  78  As058_Gab                  50.80%    failed      0.16%
+  79  As072_Lib                  72.14%    passed     55.15%
+  80  As012_Gab                  81.27%    passed     58.01%
+  81  As025_Gab                  66.31%    failed      1.04%
+  82  As017_Gab                  72.93%    passed     50.53%
+  83  As031_Gab                  51.96%    failed      2.87%
+  84  As135_Viet                 56.90%    failed      3.62%
+  85  As045_Cam                  57.33%    passed      5.90%
+  86  As070_Lib                  57.52%    failed      0.54%
+  87  As083_Cam                  46.22%    passed     88.08%
+  88  Synthetonychia             46.96%    failed      0.00%
+  89  Dendrolasma                 8.00%    failed      0.75%
+  90  Trogulus                   10.71%    failed      0.00%
+  91  Protolophus                 3.26%    passed     55.69%
+  92  Pantopsalis                22.71%    failed      2.16%
+  93  Hesperonemastoma            3.39%    failed      0.02%
+  94  As061_Lib                  71.89%    passed     19.80%
+  95  As069_Lib                  58.03%    failed      0.00%
+  96  As032_Gab                  61.58%    failed      0.71%
+  97  As039_Gab                  57.58%    failed      0.02%
+  98  Troglosiro                 14.89%    failed      0.17%
+  99  Pseudoepedanus             41.36%    failed      0.00%
+ 100  Agoristenidae_DNA105839    21.26%    passed     14.13%
+ 101  Trinella                   68.59%    passed     84.14%
+ 102  Arulla_DNA102666           17.29%    passed     57.67%
+ 103  Assamiidae_DNA104069       34.22%    failed      0.17%
+ 104  Chilon                     66.58%    failed      3.87%
+ 105  Paraselenca                28.22%    failed      0.00%
+ 106  Assamiidae_DNA104858       68.61%    passed     80.30%
+ 107  Fijicolana                 16.63%    passed     39.68%
+ 108  Stygnomma                  38.57%    passed     58.74%
+ 109  Pellobunus                  8.02%    passed     21.46%
+ 110  Icaleptes_DNA104056         8.75%    passed     59.17%
+ 111  Icaleptes_DNA104053        19.57%    failed      0.03%
+ 112  Guasinia                   31.80%    failed      0.39%
+ 113  Metabiantes_DNA100703      13.81%    passed     64.78%
+ 114  Metabiantes_DNA100704       9.15%    passed     18.39%
+ 115  Stenostygnus_DNA104847     13.85%    passed     89.01%
+ 116  Stenostygnus_DNA104849     21.99%    passed     43.64%
+ 117  Stenostygnus_DNA104850     21.58%    passed     14.01%
+ 118  Stenostygnus_DNA104848     21.99%    passed     76.80%
+ 119  Ethobunus                   8.50%    passed     74.18%
+ 120  Fissiphallius_DNA104055    19.57%    failed      0.11%
+ 121  Fissiphallius_DNA104057    21.87%    failed      0.07%
+ 122  Escadabius                 20.41%    failed      0.24%
+ 123  Metabiantes_DNA100335      28.09%    passed     11.03%
+ 124  Biantidae_DNA105668        20.25%    passed     31.02%
+ 125  Samoidae                   31.86%    failed      0.12%
+ 126  Mitraceras                 25.45%    failed      0.16%
+ 127  Jarmilana                  43.62%    passed     28.56%
+ 128  Maiorerus                  62.96%    passed     72.48%
+ 129  Epedanidae_DNA104861       19.61%    failed      0.02%
+ 130  Epedanidae_DNA104862       19.77%    failed      0.00%
+ 131  Goniosoma                   8.83%    passed     68.15%
+ 132  Megapachylus               10.82%    passed     86.25%
+ 133  Heterocranaus               8.02%    passed     34.06%
+ 134  Santinezia                  9.56%    passed     82.76%
+ 135  Metalibitia                19.66%    failed      0.01%
+ 136  Lomanius_DNA104935          8.11%    passed     60.68%
+ 137  Stygnopsidae_DNA103882     20.97%    passed      5.51%
+ 138  Stygnopsidae_DNA104855      9.52%    passed     74.65%
+ 139  Stygnopsidae_DNA104856      8.05%    passed     65.11%
+ 140  Minuella                   25.90%    failed      0.05%
+ 141  Karos                       8.07%    passed     94.71%
+ 142  Equitius                    8.05%    passed     82.67%
+ 143  Larifuga                   16.39%    passed     16.05%
+ 144  Triaenonychidae            10.40%    passed     94.65%
+ 145  Triaenobunus                7.95%    passed     99.13%
+ 146  Rostromontia               40.38%    failed      0.32%
+ 147  IC_DNA102668               19.66%    failed      0.09%
+ 148  IC_DNA102669               20.50%    failed      0.07%
+ 149  Zalmoxida                  14.71%    passed     36.31%
+ 150  IC_DNA103729               28.61%    failed      4.09%
+ 151  IC_DNA103572               29.65%    failed      0.09%
+ 152  Bunofagea                  10.78%    passed     14.13%
+ 153  Vonones                    77.60%    passed     11.99%
+ 154  Erebomaster                46.53%    failed      0.37%
+ 155  Holoscotolemon             19.26%    passed     29.49%
+ 156  Peltonychia                 7.96%    passed      8.76%
+ 157  Trojanella                 31.87%    passed     69.53%
+ 158  Epedanidae_DNA104062       28.79%    passed     69.39%
+ 159  Epedanidae_DNA104068       30.73%    passed     47.34%
+ 160  Epedanidae_DNA104066       20.43%    passed     44.19%
+ 161  Op106_Toccolus             42.26%    passed     16.54%
+ 162  Op107_Nanepedanus_rufus    42.30%    passed     16.95%
+ 163  Op104_Dibuninae            42.31%    passed     14.24%
+ 164  Op105_Dibunus              42.37%    passed     31.78%
+ 165  As026_Gab                  54.49%    failed      0.13%
+ 166  As030_Gab                  70.03%    failed      0.00%
+ 167  As022_Gab                  85.58%    passed     36.67%
+ 168  As028_Gab                  54.89%    passed     11.86%
+ 169  As085_WAus                 64.00%    failed      0.18%
+ 170  As092_EAus                 54.96%    passed     44.76%
+ 171  Op103_Bupares              53.78%    passed     16.94%
+ 172  As057_Gab                  67.46%    failed      0.00%
+ 173  As134_Viet                 63.50%    failed      0.05%
+ 174  As090_EAus                 69.31%    failed      1.27%
+ 175  As095_PNG                  68.04%    failed      0.00%
+ 176  As009_Cam                  59.09%    failed      0.19%
+ 177  As016_Gab                  87.26%    passed     56.00%
+ 178  As018_Gab                  55.35%    failed      2.71%
+ 179  Op049_Beloniscus           42.78%    passed     47.58%
+ 180  As106_Thai                 51.84%    passed      8.22%
+ 181  As115_Thai                 51.78%    failed      4.47%
+ 182  As118_Thai                 51.73%    passed      8.97%
+ 183  As129_Laos                 57.99%    failed      0.35%
+ 184  As136_Viet                 51.73%    passed     18.96%
+ 185  As140_Viet                 51.95%    passed     25.59%
+ 186  As126_Laos                 52.13%    passed     15.05%
+ 187  As119_Indo                 66.44%    failed      0.17%
+ 188  Kimula                     52.79%    failed      0.02%
+ 189  Fumontana                  36.61%    failed      0.14%
+ 190  Zuma                       55.71%    failed      0.36%
+ 191  Stygnoplus                 19.62%    failed      0.07%
+ 192  Caddo                      63.01%    passed     69.93%
+ 193  Theromaster                21.38%    failed      0.00%
+ 194  As099_Dibunus              56.72%    passed     38.37%
+ 195  Icaleptes                  51.01%    failed      0.00%
+ 196  Fissiphallius              39.37%    passed     21.40%
+ 197  Lomanius_DNA104934         52.07%    failed      0.00%
+ 198  Stygnommatidae_DNA105636   57.69%    failed      0.00%
+ 199  Neopygoplus                94.13%    failed      0.74%
+WARNING: 77 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                      39.30%  84 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file concat-alignment.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 199 sequences with 5575 columns, 2731 distinct patterns
+1632 parsimony-informative, 464 singleton sites, 3479 constant sites
+                          Gap/Ambiguity  Composition  p-value
+   1  Zalmoxis                    1.51%    passed     50.21%
+   2  Dongmoa                    13.13%    passed     32.06%
+   3  Tithaeus                   14.62%    passed      7.62%
+   4  Martensiellus               3.59%    passed     46.81%
+   5  Palaeoncopus                1.51%    passed     89.94%
+   6  Sandokan                    1.47%    passed     30.70%
+   7  Glysterus                   2.42%    passed     58.53%
+   8  Cynortula                   2.22%    passed     80.67%
+   9  Zygopachylus                1.61%    passed     98.44%
+  10  Santobius_DNA104931         8.09%    failed      1.55%
+  11  Santobius_DNA104930        20.79%    passed     16.67%
+  12  Hoplobunus                  8.75%    passed     19.38%
+  13  Scotolemon_lespesi         34.03%    passed     34.88%
+  14  IC_DNA104070                8.22%    failed      2.48%
+  15  IC_DNA104071               19.12%    passed     21.70%
+  16  Baculigerus                 5.36%    passed     37.39%
+  17  Trionyxella                 2.76%    passed     81.26%
+  18  Assamiidae_DNA104857       35.44%    passed     91.01%
+  19  Paktongius                  7.39%    passed     62.47%
+  20  Assamiidae_DNA104859       21.38%    passed     13.15%
+  21  Haasus_sp                  22.40%    failed      0.49%
+  22  Haasus_judaeus             35.71%    failed      2.11%
+  23  Conomma                     2.30%    passed     47.44%
+  24  Bishopella                 21.83%    failed      0.13%
+  25  Scotolemon                  7.66%    failed      0.24%
+  26  As020_Gab                  49.09%    failed      0.05%
+  27  As038_Gab                  57.31%    passed      9.06%
+  28  As041_Gab                  45.65%    failed      0.20%
+  29  Gnomulus                    1.45%    passed     44.03%
+  30  Caenoncopus                 1.22%    passed     18.62%
+  31  As122_Laos                 49.26%    failed      0.01%
+  32  As123_Viet                 45.31%    failed      0.01%
+  33  As131_Mala                 45.58%    failed      0.69%
+  34  As098_Phil                 57.74%    passed     31.80%
+  35  As105_Phil                 45.90%    passed     40.04%
+  36  As080_Indo                 45.72%    passed     12.79%
+  37  As081_Indo                 45.60%    passed      9.70%
+  38  As133_Indo                 45.11%    passed     10.06%
+  39  As085_WDus                 93.27%    failed      0.00%
+  40  As087_WAus                 45.45%    passed     40.33%
+  41  As089_EAus                 71.91%    passed     28.44%
+  42  As092_EDus                 93.27%    failed      0.00%
+  43  As104_EAus                 46.82%    passed     17.48%
+  44  As101_NAus                 57.52%    passed     29.13%
+  45  As102_NAus                 60.39%    failed      0.00%
+  46  As103_NAus                 58.40%    passed     22.23%
+  47  As094_PNG                  46.44%    failed      0.76%
+  48  As096_PNG                  45.63%    failed      0.33%
+  49  As097_PNG                  57.33%    passed     38.03%
+  50  As108_Laos                 59.57%    failed      0.01%
+  51  As114_Thai                 59.59%    failed      0.00%
+  52  As124_Indo                 72.02%    passed      7.68%
+  53  As130_Viet                 71.32%    passed     12.14%
+  54  As109_Thai                 45.17%    passed     34.88%
+  55  As111_Phil                 71.59%    passed     27.78%
+  56  As120_Thai                 44.97%    passed     24.98%
+  57  As110_Laos                 45.42%    passed     43.32%
+  58  As121_Laos                 45.09%    passed     35.50%
+  59  As125_Thai                 71.77%    passed     21.92%
+  60  As132_Mala                 56.86%    passed      9.12%
+  61  As127_Laos                 45.51%    passed      7.64%
+  62  As116_Thai                 71.41%    passed     24.19%
+  63  As117_Thai                 56.93%    passed     12.09%
+  64  As059_Gab                  45.61%    passed     13.29%
+  65  As010_Gab                  79.93%    failed      0.19%
+  66  As050_Cam                  60.02%    failed      0.00%
+  67  As011_Gab                  54.04%    failed      0.00%
+  68  As021_Gab                  60.84%    failed      4.42%
+  69  As082_Cam                  57.43%    failed      4.30%
+  70  As056_Gab                  45.58%    failed      2.95%
+  71  As027_Gab                  50.89%    failed      1.21%
+  72  As034_Cam                  72.41%    passed     62.23%
+  73  As084_Cam                  63.75%    failed      0.16%
+  74  As085_Cam                  71.93%    passed     70.54%
+  75  As014_Gab                  74.08%    failed      0.05%
+  76  As029_Gab                  77.90%    passed     12.08%
+  77  As040_Gab                  45.43%    failed      3.50%
+  78  As058_Gab                  50.80%    failed      0.16%
+  79  As072_Lib                  72.14%    passed     55.15%
+  80  As012_Gab                  81.27%    passed     58.01%
+  81  As025_Gab                  66.31%    failed      1.04%
+  82  As017_Gab                  72.93%    passed     50.53%
+  83  As031_Gab                  51.96%    failed      2.87%
+  84  As135_Viet                 56.90%    failed      3.62%
+  85  As045_Cam                  57.33%    passed      5.90%
+  86  As070_Lib                  57.52%    failed      0.54%
+  87  As083_Cam                  46.22%    passed     88.08%
+  88  Synthetonychia             46.96%    failed      0.00%
+  89  Dendrolasma                 8.00%    failed      0.75%
+  90  Trogulus                   10.71%    failed      0.00%
+  91  Protolophus                 3.26%    passed     55.69%
+  92  Pantopsalis                22.71%    failed      2.16%
+  93  Hesperonemastoma            3.39%    failed      0.02%
+  94  As061_Lib                  71.89%    passed     19.80%
+  95  As069_Lib                  58.03%    failed      0.00%
+  96  As032_Gab                  61.58%    failed      0.71%
+  97  As039_Gab                  57.58%    failed      0.02%
+  98  Troglosiro                 14.89%    failed      0.17%
+  99  Pseudoepedanus             41.36%    failed      0.00%
+ 100  Agoristenidae_DNA105839    21.26%    passed     14.13%
+ 101  Trinella                   68.59%    passed     84.14%
+ 102  Arulla_DNA102666           17.29%    passed     57.67%
+ 103  Assamiidae_DNA104069       34.22%    failed      0.17%
+ 104  Chilon                     66.58%    failed      3.87%
+ 105  Paraselenca                28.22%    failed      0.00%
+ 106  Assamiidae_DNA104858       68.61%    passed     80.30%
+ 107  Fijicolana                 16.63%    passed     39.68%
+ 108  Stygnomma                  38.57%    passed     58.74%
+ 109  Pellobunus                  8.02%    passed     21.46%
+ 110  Icaleptes_DNA104056         8.75%    passed     59.17%
+ 111  Icaleptes_DNA104053        19.57%    failed      0.03%
+ 112  Guasinia                   31.80%    failed      0.39%
+ 113  Metabiantes_DNA100703      13.81%    passed     64.78%
+ 114  Metabiantes_DNA100704       9.15%    passed     18.39%
+ 115  Stenostygnus_DNA104847     13.85%    passed     89.01%
+ 116  Stenostygnus_DNA104849     21.99%    passed     43.64%
+ 117  Stenostygnus_DNA104850     21.58%    passed     14.01%
+ 118  Stenostygnus_DNA104848     21.99%    passed     76.80%
+ 119  Ethobunus                   8.50%    passed     74.18%
+ 120  Fissiphallius_DNA104055    19.57%    failed      0.11%
+ 121  Fissiphallius_DNA104057    21.87%    failed      0.07%
+ 122  Escadabius                 20.41%    failed      0.24%
+ 123  Metabiantes_DNA100335      28.09%    passed     11.03%
+ 124  Biantidae_DNA105668        20.25%    passed     31.02%
+ 125  Samoidae                   31.86%    failed      0.12%
+ 126  Mitraceras                 25.45%    failed      0.16%
+ 127  Jarmilana                  43.62%    passed     28.56%
+ 128  Maiorerus                  62.96%    passed     72.48%
+ 129  Epedanidae_DNA104861       19.61%    failed      0.02%
+ 130  Epedanidae_DNA104862       19.77%    failed      0.00%
+ 131  Goniosoma                   8.83%    passed     68.15%
+ 132  Megapachylus               10.82%    passed     86.25%
+ 133  Heterocranaus               8.02%    passed     34.06%
+ 134  Santinezia                  9.56%    passed     82.76%
+ 135  Metalibitia                19.66%    failed      0.01%
+ 136  Lomanius_DNA104935          8.11%    passed     60.68%
+ 137  Stygnopsidae_DNA103882     20.97%    passed      5.51%
+ 138  Stygnopsidae_DNA104855      9.52%    passed     74.65%
+ 139  Stygnopsidae_DNA104856      8.05%    passed     65.11%
+ 140  Minuella                   25.90%    failed      0.05%
+ 141  Karos                       8.07%    passed     94.71%
+ 142  Equitius                    8.05%    passed     82.67%
+ 143  Larifuga                   16.39%    passed     16.05%
+ 144  Triaenonychidae            10.40%    passed     94.65%
+ 145  Triaenobunus                7.95%    passed     99.13%
+ 146  Rostromontia               40.38%    failed      0.32%
+ 147  IC_DNA102668               19.66%    failed      0.09%
+ 148  IC_DNA102669               20.50%    failed      0.07%
+ 149  Zalmoxida                  14.71%    passed     36.31%
+ 150  IC_DNA103729               28.61%    failed      4.09%
+ 151  IC_DNA103572               29.65%    failed      0.09%
+ 152  Bunofagea                  10.78%    passed     14.13%
+ 153  Vonones                    77.60%    passed     11.99%
+ 154  Erebomaster                46.53%    failed      0.37%
+ 155  Holoscotolemon             19.26%    passed     29.49%
+ 156  Peltonychia                 7.96%    passed      8.76%
+ 157  Trojanella                 31.87%    passed     69.53%
+ 158  Epedanidae_DNA104062       28.79%    passed     69.39%
+ 159  Epedanidae_DNA104068       30.73%    passed     47.34%
+ 160  Epedanidae_DNA104066       20.43%    passed     44.19%
+ 161  Op106_Toccolus             42.26%    passed     16.54%
+ 162  Op107_Nanepedanus_rufus    42.30%    passed     16.95%
+ 163  Op104_Dibuninae            42.31%    passed     14.24%
+ 164  Op105_Dibunus              42.37%    passed     31.78%
+ 165  As026_Gab                  54.49%    failed      0.13%
+ 166  As030_Gab                  70.03%    failed      0.00%
+ 167  As022_Gab                  85.58%    passed     36.67%
+ 168  As028_Gab                  54.89%    passed     11.86%
+ 169  As085_WAus                 64.00%    failed      0.18%
+ 170  As092_EAus                 54.96%    passed     44.76%
+ 171  Op103_Bupares              53.78%    passed     16.94%
+ 172  As057_Gab                  67.46%    failed      0.00%
+ 173  As134_Viet                 63.50%    failed      0.05%
+ 174  As090_EAus                 69.31%    failed      1.27%
+ 175  As095_PNG                  68.04%    failed      0.00%
+ 176  As009_Cam                  59.09%    failed      0.19%
+ 177  As016_Gab                  87.26%    passed     56.00%
+ 178  As018_Gab                  55.35%    failed      2.71%
+ 179  Op049_Beloniscus           42.78%    passed     47.58%
+ 180  As106_Thai                 51.84%    passed      8.22%
+ 181  As115_Thai                 51.78%    failed      4.47%
+ 182  As118_Thai                 51.73%    passed      8.97%
+ 183  As129_Laos                 57.99%    failed      0.35%
+ 184  As136_Viet                 51.73%    passed     18.96%
+ 185  As140_Viet                 51.95%    passed     25.59%
+ 186  As126_Laos                 52.13%    passed     15.05%
+ 187  As119_Indo                 66.44%    failed      0.17%
+ 188  Kimula                     52.79%    failed      0.02%
+ 189  Fumontana                  36.61%    failed      0.14%
+ 190  Zuma                       55.71%    failed      0.36%
+ 191  Stygnoplus                 19.62%    failed      0.07%
+ 192  Caddo                      63.01%    passed     69.93%
+ 193  Theromaster                21.38%    failed      0.00%
+ 194  As099_Dibunus              56.72%    passed     38.37%
+ 195  Icaleptes                  51.01%    failed      0.00%
+ 196  Fissiphallius              39.37%    passed     21.40%
+ 197  Lomanius_DNA104934         52.07%    failed      0.00%
+ 198  Stygnommatidae_DNA105636   57.69%    failed      0.00%
+ 199  Neopygoplus                94.13%    failed      0.74%
+WARNING: 77 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                      39.30%  84 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file concat-alignment.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 199 sequences with 5575 columns, 2731 distinct patterns
+1632 parsimony-informative, 464 singleton sites, 3479 constant sites
+                          Gap/Ambiguity  Composition  p-value
+   1  Zalmoxis                    1.51%    passed     50.21%
+   2  Dongmoa                    13.13%    passed     32.06%
+   3  Tithaeus                   14.62%    passed      7.62%
+   4  Martensiellus               3.59%    passed     46.81%
+   5  Palaeoncopus                1.51%    passed     89.94%
+   6  Sandokan                    1.47%    passed     30.70%
+   7  Glysterus                   2.42%    passed     58.53%
+   8  Cynortula                   2.22%    passed     80.67%
+   9  Zygopachylus                1.61%    passed     98.44%
+  10  Santobius_DNA104931         8.09%    failed      1.55%
+  11  Santobius_DNA104930        20.79%    passed     16.67%
+  12  Hoplobunus                  8.75%    passed     19.38%
+  13  Scotolemon_lespesi         34.03%    passed     34.88%
+  14  IC_DNA104070                8.22%    failed      2.48%
+  15  IC_DNA104071               19.12%    passed     21.70%
+  16  Baculigerus                 5.36%    passed     37.39%
+  17  Trionyxella                 2.76%    passed     81.26%
+  18  Assamiidae_DNA104857       35.44%    passed     91.01%
+  19  Paktongius                  7.39%    passed     62.47%
+  20  Assamiidae_DNA104859       21.38%    passed     13.15%
+  21  Haasus_sp                  22.40%    failed      0.49%
+  22  Haasus_judaeus             35.71%    failed      2.11%
+  23  Conomma                     2.30%    passed     47.44%
+  24  Bishopella                 21.83%    failed      0.13%
+  25  Scotolemon                  7.66%    failed      0.24%
+  26  As020_Gab                  49.09%    failed      0.05%
+  27  As038_Gab                  57.31%    passed      9.06%
+  28  As041_Gab                  45.65%    failed      0.20%
+  29  Gnomulus                    1.45%    passed     44.03%
+  30  Caenoncopus                 1.22%    passed     18.62%
+  31  As122_Laos                 49.26%    failed      0.01%
+  32  As123_Viet                 45.31%    failed      0.01%
+  33  As131_Mala                 45.58%    failed      0.69%
+  34  As098_Phil                 57.74%    passed     31.80%
+  35  As105_Phil                 45.90%    passed     40.04%
+  36  As080_Indo                 45.72%    passed     12.79%
+  37  As081_Indo                 45.60%    passed      9.70%
+  38  As133_Indo                 45.11%    passed     10.06%
+  39  As085_WDus                 93.27%    failed      0.00%
+  40  As087_WAus                 45.45%    passed     40.33%
+  41  As089_EAus                 71.91%    passed     28.44%
+  42  As092_EDus                 93.27%    failed      0.00%
+  43  As104_EAus                 46.82%    passed     17.48%
+  44  As101_NAus                 57.52%    passed     29.13%
+  45  As102_NAus                 60.39%    failed      0.00%
+  46  As103_NAus                 58.40%    passed     22.23%
+  47  As094_PNG                  46.44%    failed      0.76%
+  48  As096_PNG                  45.63%    failed      0.33%
+  49  As097_PNG                  57.33%    passed     38.03%
+  50  As108_Laos                 59.57%    failed      0.01%
+  51  As114_Thai                 59.59%    failed      0.00%
+  52  As124_Indo                 72.02%    passed      7.68%
+  53  As130_Viet                 71.32%    passed     12.14%
+  54  As109_Thai                 45.17%    passed     34.88%
+  55  As111_Phil                 71.59%    passed     27.78%
+  56  As120_Thai                 44.97%    passed     24.98%
+  57  As110_Laos                 45.42%    passed     43.32%
+  58  As121_Laos                 45.09%    passed     35.50%
+  59  As125_Thai                 71.77%    passed     21.92%
+  60  As132_Mala                 56.86%    passed      9.12%
+  61  As127_Laos                 45.51%    passed      7.64%
+  62  As116_Thai                 71.41%    passed     24.19%
+  63  As117_Thai                 56.93%    passed     12.09%
+  64  As059_Gab                  45.61%    passed     13.29%
+  65  As010_Gab                  79.93%    failed      0.19%
+  66  As050_Cam                  60.02%    failed      0.00%
+  67  As011_Gab                  54.04%    failed      0.00%
+  68  As021_Gab                  60.84%    failed      4.42%
+  69  As082_Cam                  57.43%    failed      4.30%
+  70  As056_Gab                  45.58%    failed      2.95%
+  71  As027_Gab                  50.89%    failed      1.21%
+  72  As034_Cam                  72.41%    passed     62.23%
+  73  As084_Cam                  63.75%    failed      0.16%
+  74  As085_Cam                  71.93%    passed     70.54%
+  75  As014_Gab                  74.08%    failed      0.05%
+  76  As029_Gab                  77.90%    passed     12.08%
+  77  As040_Gab                  45.43%    failed      3.50%
+  78  As058_Gab                  50.80%    failed      0.16%
+  79  As072_Lib                  72.14%    passed     55.15%
+  80  As012_Gab                  81.27%    passed     58.01%
+  81  As025_Gab                  66.31%    failed      1.04%
+  82  As017_Gab                  72.93%    passed     50.53%
+  83  As031_Gab                  51.96%    failed      2.87%
+  84  As135_Viet                 56.90%    failed      3.62%
+  85  As045_Cam                  57.33%    passed      5.90%
+  86  As070_Lib                  57.52%    failed      0.54%
+  87  As083_Cam                  46.22%    passed     88.08%
+  88  Synthetonychia             46.96%    failed      0.00%
+  89  Dendrolasma                 8.00%    failed      0.75%
+  90  Trogulus                   10.71%    failed      0.00%
+  91  Protolophus                 3.26%    passed     55.69%
+  92  Pantopsalis                22.71%    failed      2.16%
+  93  Hesperonemastoma            3.39%    failed      0.02%
+  94  As061_Lib                  71.89%    passed     19.80%
+  95  As069_Lib                  58.03%    failed      0.00%
+  96  As032_Gab                  61.58%    failed      0.71%
+  97  As039_Gab                  57.58%    failed      0.02%
+  98  Troglosiro                 14.89%    failed      0.17%
+  99  Pseudoepedanus             41.36%    failed      0.00%
+ 100  Agoristenidae_DNA105839    21.26%    passed     14.13%
+ 101  Trinella                   68.59%    passed     84.14%
+ 102  Arulla_DNA102666           17.29%    passed     57.67%
+ 103  Assamiidae_DNA104069       34.22%    failed      0.17%
+ 104  Chilon                     66.58%    failed      3.87%
+ 105  Paraselenca                28.22%    failed      0.00%
+ 106  Assamiidae_DNA104858       68.61%    passed     80.30%
+ 107  Fijicolana                 16.63%    passed     39.68%
+ 108  Stygnomma                  38.57%    passed     58.74%
+ 109  Pellobunus                  8.02%    passed     21.46%
+ 110  Icaleptes_DNA104056         8.75%    passed     59.17%
+ 111  Icaleptes_DNA104053        19.57%    failed      0.03%
+ 112  Guasinia                   31.80%    failed      0.39%
+ 113  Metabiantes_DNA100703      13.81%    passed     64.78%
+ 114  Metabiantes_DNA100704       9.15%    passed     18.39%
+ 115  Stenostygnus_DNA104847     13.85%    passed     89.01%
+ 116  Stenostygnus_DNA104849     21.99%    passed     43.64%
+ 117  Stenostygnus_DNA104850     21.58%    passed     14.01%
+ 118  Stenostygnus_DNA104848     21.99%    passed     76.80%
+ 119  Ethobunus                   8.50%    passed     74.18%
+ 120  Fissiphallius_DNA104055    19.57%    failed      0.11%
+ 121  Fissiphallius_DNA104057    21.87%    failed      0.07%
+ 122  Escadabius                 20.41%    failed      0.24%
+ 123  Metabiantes_DNA100335      28.09%    passed     11.03%
+ 124  Biantidae_DNA105668        20.25%    passed     31.02%
+ 125  Samoidae                   31.86%    failed      0.12%
+ 126  Mitraceras                 25.45%    failed      0.16%
+ 127  Jarmilana                  43.62%    passed     28.56%
+ 128  Maiorerus                  62.96%    passed     72.48%
+ 129  Epedanidae_DNA104861       19.61%    failed      0.02%
+ 130  Epedanidae_DNA104862       19.77%    failed      0.00%
+ 131  Goniosoma                   8.83%    passed     68.15%
+ 132  Megapachylus               10.82%    passed     86.25%
+ 133  Heterocranaus               8.02%    passed     34.06%
+ 134  Santinezia                  9.56%    passed     82.76%
+ 135  Metalibitia                19.66%    failed      0.01%
+ 136  Lomanius_DNA104935          8.11%    passed     60.68%
+ 137  Stygnopsidae_DNA103882     20.97%    passed      5.51%
+ 138  Stygnopsidae_DNA104855      9.52%    passed     74.65%
+ 139  Stygnopsidae_DNA104856      8.05%    passed     65.11%
+ 140  Minuella                   25.90%    failed      0.05%
+ 141  Karos                       8.07%    passed     94.71%
+ 142  Equitius                    8.05%    passed     82.67%
+ 143  Larifuga                   16.39%    passed     16.05%
+ 144  Triaenonychidae            10.40%    passed     94.65%
+ 145  Triaenobunus                7.95%    passed     99.13%
+ 146  Rostromontia               40.38%    failed      0.32%
+ 147  IC_DNA102668               19.66%    failed      0.09%
+ 148  IC_DNA102669               20.50%    failed      0.07%
+ 149  Zalmoxida                  14.71%    passed     36.31%
+ 150  IC_DNA103729               28.61%    failed      4.09%
+ 151  IC_DNA103572               29.65%    failed      0.09%
+ 152  Bunofagea                  10.78%    passed     14.13%
+ 153  Vonones                    77.60%    passed     11.99%
+ 154  Erebomaster                46.53%    failed      0.37%
+ 155  Holoscotolemon             19.26%    passed     29.49%
+ 156  Peltonychia                 7.96%    passed      8.76%
+ 157  Trojanella                 31.87%    passed     69.53%
+ 158  Epedanidae_DNA104062       28.79%    passed     69.39%
+ 159  Epedanidae_DNA104068       30.73%    passed     47.34%
+ 160  Epedanidae_DNA104066       20.43%    passed     44.19%
+ 161  Op106_Toccolus             42.26%    passed     16.54%
+ 162  Op107_Nanepedanus_rufus    42.30%    passed     16.95%
+ 163  Op104_Dibuninae            42.31%    passed     14.24%
+ 164  Op105_Dibunus              42.37%    passed     31.78%
+ 165  As026_Gab                  54.49%    failed      0.13%
+ 166  As030_Gab                  70.03%    failed      0.00%
+ 167  As022_Gab                  85.58%    passed     36.67%
+ 168  As028_Gab                  54.89%    passed     11.86%
+ 169  As085_WAus                 64.00%    failed      0.18%
+ 170  As092_EAus                 54.96%    passed     44.76%
+ 171  Op103_Bupares              53.78%    passed     16.94%
+ 172  As057_Gab                  67.46%    failed      0.00%
+ 173  As134_Viet                 63.50%    failed      0.05%
+ 174  As090_EAus                 69.31%    failed      1.27%
+ 175  As095_PNG                  68.04%    failed      0.00%
+ 176  As009_Cam                  59.09%    failed      0.19%
+ 177  As016_Gab                  87.26%    passed     56.00%
+ 178  As018_Gab                  55.35%    failed      2.71%
+ 179  Op049_Beloniscus           42.78%    passed     47.58%
+ 180  As106_Thai                 51.84%    passed      8.22%
+ 181  As115_Thai                 51.78%    failed      4.47%
+ 182  As118_Thai                 51.73%    passed      8.97%
+ 183  As129_Laos                 57.99%    failed      0.35%
+ 184  As136_Viet                 51.73%    passed     18.96%
+ 185  As140_Viet                 51.95%    passed     25.59%
+ 186  As126_Laos                 52.13%    passed     15.05%
+ 187  As119_Indo                 66.44%    failed      0.17%
+ 188  Kimula                     52.79%    failed      0.02%
+ 189  Fumontana                  36.61%    failed      0.14%
+ 190  Zuma                       55.71%    failed      0.36%
+ 191  Stygnoplus                 19.62%    failed      0.07%
+ 192  Caddo                      63.01%    passed     69.93%
+ 193  Theromaster                21.38%    failed      0.00%
+ 194  As099_Dibunus              56.72%    passed     38.37%
+ 195  Icaleptes                  51.01%    failed      0.00%
+ 196  Fissiphallius              39.37%    passed     21.40%
+ 197  Lomanius_DNA104934         52.07%    failed      0.00%
+ 198  Stygnommatidae_DNA105636   57.69%    failed      0.00%
+ 199  Neopygoplus                94.13%    failed      0.74%
+WARNING: 77 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                      39.30%  84 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file concat-alignment.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 199 sequences with 5575 columns, 2731 distinct patterns
+1632 parsimony-informative, 464 singleton sites, 3479 constant sites
+                          Gap/Ambiguity  Composition  p-value
+   1  Zalmoxis                    1.51%    passed     50.21%
+   2  Dongmoa                    13.13%    passed     32.06%
+   3  Tithaeus                   14.62%    passed      7.62%
+   4  Martensiellus               3.59%    passed     46.81%
+   5  Palaeoncopus                1.51%    passed     89.94%
+   6  Sandokan                    1.47%    passed     30.70%
+   7  Glysterus                   2.42%    passed     58.53%
+   8  Cynortula                   2.22%    passed     80.67%
+   9  Zygopachylus                1.61%    passed     98.44%
+  10  Santobius_DNA104931         8.09%    failed      1.55%
+  11  Santobius_DNA104930        20.79%    passed     16.67%
+  12  Hoplobunus                  8.75%    passed     19.38%
+  13  Scotolemon_lespesi         34.03%    passed     34.88%
+  14  IC_DNA104070                8.22%    failed      2.48%
+  15  IC_DNA104071               19.12%    passed     21.70%
+  16  Baculigerus                 5.36%    passed     37.39%
+  17  Trionyxella                 2.76%    passed     81.26%
+  18  Assamiidae_DNA104857       35.44%    passed     91.01%
+  19  Paktongius                  7.39%    passed     62.47%
+  20  Assamiidae_DNA104859       21.38%    passed     13.15%
+  21  Haasus_sp                  22.40%    failed      0.49%
+  22  Haasus_judaeus             35.71%    failed      2.11%
+  23  Conomma                     2.30%    passed     47.44%
+  24  Bishopella                 21.83%    failed      0.13%
+  25  Scotolemon                  7.66%    failed      0.24%
+  26  As020_Gab                  49.09%    failed      0.05%
+  27  As038_Gab                  57.31%    passed      9.06%
+  28  As041_Gab                  45.65%    failed      0.20%
+  29  Gnomulus                    1.45%    passed     44.03%
+  30  Caenoncopus                 1.22%    passed     18.62%
+  31  As122_Laos                 49.26%    failed      0.01%
+  32  As123_Viet                 45.31%    failed      0.01%
+  33  As131_Mala                 45.58%    failed      0.69%
+  34  As098_Phil                 57.74%    passed     31.80%
+  35  As105_Phil                 45.90%    passed     40.04%
+  36  As080_Indo                 45.72%    passed     12.79%
+  37  As081_Indo                 45.60%    passed      9.70%
+  38  As133_Indo                 45.11%    passed     10.06%
+  39  As085_WDus                 93.27%    failed      0.00%
+  40  As087_WAus                 45.45%    passed     40.33%
+  41  As089_EAus                 71.91%    passed     28.44%
+  42  As092_EDus                 93.27%    failed      0.00%
+  43  As104_EAus                 46.82%    passed     17.48%
+  44  As101_NAus                 57.52%    passed     29.13%
+  45  As102_NAus                 60.39%    failed      0.00%
+  46  As103_NAus                 58.40%    passed     22.23%
+  47  As094_PNG                  46.44%    failed      0.76%
+  48  As096_PNG                  45.63%    failed      0.33%
+  49  As097_PNG                  57.33%    passed     38.03%
+  50  As108_Laos                 59.57%    failed      0.01%
+  51  As114_Thai                 59.59%    failed      0.00%
+  52  As124_Indo                 72.02%    passed      7.68%
+  53  As130_Viet                 71.32%    passed     12.14%
+  54  As109_Thai                 45.17%    passed     34.88%
+  55  As111_Phil                 71.59%    passed     27.78%
+  56  As120_Thai                 44.97%    passed     24.98%
+  57  As110_Laos                 45.42%    passed     43.32%
+  58  As121_Laos                 45.09%    passed     35.50%
+  59  As125_Thai                 71.77%    passed     21.92%
+  60  As132_Mala                 56.86%    passed      9.12%
+  61  As127_Laos                 45.51%    passed      7.64%
+  62  As116_Thai                 71.41%    passed     24.19%
+  63  As117_Thai                 56.93%    passed     12.09%
+  64  As059_Gab                  45.61%    passed     13.29%
+  65  As010_Gab                  79.93%    failed      0.19%
+  66  As050_Cam                  60.02%    failed      0.00%
+  67  As011_Gab                  54.04%    failed      0.00%
+  68  As021_Gab                  60.84%    failed      4.42%
+  69  As082_Cam                  57.43%    failed      4.30%
+  70  As056_Gab                  45.58%    failed      2.95%
+  71  As027_Gab                  50.89%    failed      1.21%
+  72  As034_Cam                  72.41%    passed     62.23%
+  73  As084_Cam                  63.75%    failed      0.16%
+  74  As085_Cam                  71.93%    passed     70.54%
+  75  As014_Gab                  74.08%    failed      0.05%
+  76  As029_Gab                  77.90%    passed     12.08%
+  77  As040_Gab                  45.43%    failed      3.50%
+  78  As058_Gab                  50.80%    failed      0.16%
+  79  As072_Lib                  72.14%    passed     55.15%
+  80  As012_Gab                  81.27%    passed     58.01%
+  81  As025_Gab                  66.31%    failed      1.04%
+  82  As017_Gab                  72.93%    passed     50.53%
+  83  As031_Gab                  51.96%    failed      2.87%
+  84  As135_Viet                 56.90%    failed      3.62%
+  85  As045_Cam                  57.33%    passed      5.90%
+  86  As070_Lib                  57.52%    failed      0.54%
+  87  As083_Cam                  46.22%    passed     88.08%
+  88  Synthetonychia             46.96%    failed      0.00%
+  89  Dendrolasma                 8.00%    failed      0.75%
+  90  Trogulus                   10.71%    failed      0.00%
+  91  Protolophus                 3.26%    passed     55.69%
+  92  Pantopsalis                22.71%    failed      2.16%
+  93  Hesperonemastoma            3.39%    failed      0.02%
+  94  As061_Lib                  71.89%    passed     19.80%
+  95  As069_Lib                  58.03%    failed      0.00%
+  96  As032_Gab                  61.58%    failed      0.71%
+  97  As039_Gab                  57.58%    failed      0.02%
+  98  Troglosiro                 14.89%    failed      0.17%
+  99  Pseudoepedanus             41.36%    failed      0.00%
+ 100  Agoristenidae_DNA105839    21.26%    passed     14.13%
+ 101  Trinella                   68.59%    passed     84.14%
+ 102  Arulla_DNA102666           17.29%    passed     57.67%
+ 103  Assamiidae_DNA104069       34.22%    failed      0.17%
+ 104  Chilon                     66.58%    failed      3.87%
+ 105  Paraselenca                28.22%    failed      0.00%
+ 106  Assamiidae_DNA104858       68.61%    passed     80.30%
+ 107  Fijicolana                 16.63%    passed     39.68%
+ 108  Stygnomma                  38.57%    passed     58.74%
+ 109  Pellobunus                  8.02%    passed     21.46%
+ 110  Icaleptes_DNA104056         8.75%    passed     59.17%
+ 111  Icaleptes_DNA104053        19.57%    failed      0.03%
+ 112  Guasinia                   31.80%    failed      0.39%
+ 113  Metabiantes_DNA100703      13.81%    passed     64.78%
+ 114  Metabiantes_DNA100704       9.15%    passed     18.39%
+ 115  Stenostygnus_DNA104847     13.85%    passed     89.01%
+ 116  Stenostygnus_DNA104849     21.99%    passed     43.64%
+ 117  Stenostygnus_DNA104850     21.58%    passed     14.01%
+ 118  Stenostygnus_DNA104848     21.99%    passed     76.80%
+ 119  Ethobunus                   8.50%    passed     74.18%
+ 120  Fissiphallius_DNA104055    19.57%    failed      0.11%
+ 121  Fissiphallius_DNA104057    21.87%    failed      0.07%
+ 122  Escadabius                 20.41%    failed      0.24%
+ 123  Metabiantes_DNA100335      28.09%    passed     11.03%
+ 124  Biantidae_DNA105668        20.25%    passed     31.02%
+ 125  Samoidae                   31.86%    failed      0.12%
+ 126  Mitraceras                 25.45%    failed      0.16%
+ 127  Jarmilana                  43.62%    passed     28.56%
+ 128  Maiorerus                  62.96%    passed     72.48%
+ 129  Epedanidae_DNA104861       19.61%    failed      0.02%
+ 130  Epedanidae_DNA104862       19.77%    failed      0.00%
+ 131  Goniosoma                   8.83%    passed     68.15%
+ 132  Megapachylus               10.82%    passed     86.25%
+ 133  Heterocranaus               8.02%    passed     34.06%
+ 134  Santinezia                  9.56%    passed     82.76%
+ 135  Metalibitia                19.66%    failed      0.01%
+ 136  Lomanius_DNA104935          8.11%    passed     60.68%
+ 137  Stygnopsidae_DNA103882     20.97%    passed      5.51%
+ 138  Stygnopsidae_DNA104855      9.52%    passed     74.65%
+ 139  Stygnopsidae_DNA104856      8.05%    passed     65.11%
+ 140  Minuella                   25.90%    failed      0.05%
+ 141  Karos                       8.07%    passed     94.71%
+ 142  Equitius                    8.05%    passed     82.67%
+ 143  Larifuga                   16.39%    passed     16.05%
+ 144  Triaenonychidae            10.40%    passed     94.65%
+ 145  Triaenobunus                7.95%    passed     99.13%
+ 146  Rostromontia               40.38%    failed      0.32%
+ 147  IC_DNA102668               19.66%    failed      0.09%
+ 148  IC_DNA102669               20.50%    failed      0.07%
+ 149  Zalmoxida                  14.71%    passed     36.31%
+ 150  IC_DNA103729               28.61%    failed      4.09%
+ 151  IC_DNA103572               29.65%    failed      0.09%
+ 152  Bunofagea                  10.78%    passed     14.13%
+ 153  Vonones                    77.60%    passed     11.99%
+ 154  Erebomaster                46.53%    failed      0.37%
+ 155  Holoscotolemon             19.26%    passed     29.49%
+ 156  Peltonychia                 7.96%    passed      8.76%
+ 157  Trojanella                 31.87%    passed     69.53%
+ 158  Epedanidae_DNA104062       28.79%    passed     69.39%
+ 159  Epedanidae_DNA104068       30.73%    passed     47.34%
+ 160  Epedanidae_DNA104066       20.43%    passed     44.19%
+ 161  Op106_Toccolus             42.26%    passed     16.54%
+ 162  Op107_Nanepedanus_rufus    42.30%    passed     16.95%
+ 163  Op104_Dibuninae            42.31%    passed     14.24%
+ 164  Op105_Dibunus              42.37%    passed     31.78%
+ 165  As026_Gab                  54.49%    failed      0.13%
+ 166  As030_Gab                  70.03%    failed      0.00%
+ 167  As022_Gab                  85.58%    passed     36.67%
+ 168  As028_Gab                  54.89%    passed     11.86%
+ 169  As085_WAus                 64.00%    failed      0.18%
+ 170  As092_EAus                 54.96%    passed     44.76%
+ 171  Op103_Bupares              53.78%    passed     16.94%
+ 172  As057_Gab                  67.46%    failed      0.00%
+ 173  As134_Viet                 63.50%    failed      0.05%
+ 174  As090_EAus                 69.31%    failed      1.27%
+ 175  As095_PNG                  68.04%    failed      0.00%
+ 176  As009_Cam                  59.09%    failed      0.19%
+ 177  As016_Gab                  87.26%    passed     56.00%
+ 178  As018_Gab                  55.35%    failed      2.71%
+ 179  Op049_Beloniscus           42.78%    passed     47.58%
+ 180  As106_Thai                 51.84%    passed      8.22%
+ 181  As115_Thai                 51.78%    failed      4.47%
+ 182  As118_Thai                 51.73%    passed      8.97%
+ 183  As129_Laos                 57.99%    failed      0.35%
+ 184  As136_Viet                 51.73%    passed     18.96%
+ 185  As140_Viet                 51.95%    passed     25.59%
+ 186  As126_Laos                 52.13%    passed     15.05%
+ 187  As119_Indo                 66.44%    failed      0.17%
+ 188  Kimula                     52.79%    failed      0.02%
+ 189  Fumontana                  36.61%    failed      0.14%
+ 190  Zuma                       55.71%    failed      0.36%
+ 191  Stygnoplus                 19.62%    failed      0.07%
+ 192  Caddo                      63.01%    passed     69.93%
+ 193  Theromaster                21.38%    failed      0.00%
+ 194  As099_Dibunus              56.72%    passed     38.37%
+ 195  Icaleptes                  51.01%    failed      0.00%
+ 196  Fissiphallius              39.37%    passed     21.40%
+ 197  Lomanius_DNA104934         52.07%    failed      0.00%
+ 198  Stygnommatidae_DNA105636   57.69%    failed      0.00%
+ 199  Neopygoplus                94.13%    failed      0.74%
+WARNING: 77 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                      39.30%  84 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file concat-alignment.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 199 sequences with 5575 columns, 2731 distinct patterns
+1632 parsimony-informative, 464 singleton sites, 3479 constant sites
+                          Gap/Ambiguity  Composition  p-value
+   1  Zalmoxis                    1.51%    passed     50.21%
+   2  Dongmoa                    13.13%    passed     32.06%
+   3  Tithaeus                   14.62%    passed      7.62%
+   4  Martensiellus               3.59%    passed     46.81%
+   5  Palaeoncopus                1.51%    passed     89.94%
+   6  Sandokan                    1.47%    passed     30.70%
+   7  Glysterus                   2.42%    passed     58.53%
+   8  Cynortula                   2.22%    passed     80.67%
+   9  Zygopachylus                1.61%    passed     98.44%
+  10  Santobius_DNA104931         8.09%    failed      1.55%
+  11  Santobius_DNA104930        20.79%    passed     16.67%
+  12  Hoplobunus                  8.75%    passed     19.38%
+  13  Scotolemon_lespesi         34.03%    passed     34.88%
+  14  IC_DNA104070                8.22%    failed      2.48%
+  15  IC_DNA104071               19.12%    passed     21.70%
+  16  Baculigerus                 5.36%    passed     37.39%
+  17  Trionyxella                 2.76%    passed     81.26%
+  18  Assamiidae_DNA104857       35.44%    passed     91.01%
+  19  Paktongius                  7.39%    passed     62.47%
+  20  Assamiidae_DNA104859       21.38%    passed     13.15%
+  21  Haasus_sp                  22.40%    failed      0.49%
+  22  Haasus_judaeus             35.71%    failed      2.11%
+  23  Conomma                     2.30%    passed     47.44%
+  24  Bishopella                 21.83%    failed      0.13%
+  25  Scotolemon                  7.66%    failed      0.24%
+  26  As020_Gab                  49.09%    failed      0.05%
+  27  As038_Gab                  57.31%    passed      9.06%
+  28  As041_Gab                  45.65%    failed      0.20%
+  29  Gnomulus                    1.45%    passed     44.03%
+  30  Caenoncopus                 1.22%    passed     18.62%
+  31  As122_Laos                 49.26%    failed      0.01%
+  32  As123_Viet                 45.31%    failed      0.01%
+  33  As131_Mala                 45.58%    failed      0.69%
+  34  As098_Phil                 57.74%    passed     31.80%
+  35  As105_Phil                 45.90%    passed     40.04%
+  36  As080_Indo                 45.72%    passed     12.79%
+  37  As081_Indo                 45.60%    passed      9.70%
+  38  As133_Indo                 45.11%    passed     10.06%
+  39  As085_WDus                 93.27%    failed      0.00%
+  40  As087_WAus                 45.45%    passed     40.33%
+  41  As089_EAus                 71.91%    passed     28.44%
+  42  As092_EDus                 93.27%    failed      0.00%
+  43  As104_EAus                 46.82%    passed     17.48%
+  44  As101_NAus                 57.52%    passed     29.13%
+  45  As102_NAus                 60.39%    failed      0.00%
+  46  As103_NAus                 58.40%    passed     22.23%
+  47  As094_PNG                  46.44%    failed      0.76%
+  48  As096_PNG                  45.63%    failed      0.33%
+  49  As097_PNG                  57.33%    passed     38.03%
+  50  As108_Laos                 59.57%    failed      0.01%
+  51  As114_Thai                 59.59%    failed      0.00%
+  52  As124_Indo                 72.02%    passed      7.68%
+  53  As130_Viet                 71.32%    passed     12.14%
+  54  As109_Thai                 45.17%    passed     34.88%
+  55  As111_Phil                 71.59%    passed     27.78%
+  56  As120_Thai                 44.97%    passed     24.98%
+  57  As110_Laos                 45.42%    passed     43.32%
+  58  As121_Laos                 45.09%    passed     35.50%
+  59  As125_Thai                 71.77%    passed     21.92%
+  60  As132_Mala                 56.86%    passed      9.12%
+  61  As127_Laos                 45.51%    passed      7.64%
+  62  As116_Thai                 71.41%    passed     24.19%
+  63  As117_Thai                 56.93%    passed     12.09%
+  64  As059_Gab                  45.61%    passed     13.29%
+  65  As010_Gab                  79.93%    failed      0.19%
+  66  As050_Cam                  60.02%    failed      0.00%
+  67  As011_Gab                  54.04%    failed      0.00%
+  68  As021_Gab                  60.84%    failed      4.42%
+  69  As082_Cam                  57.43%    failed      4.30%
+  70  As056_Gab                  45.58%    failed      2.95%
+  71  As027_Gab                  50.89%    failed      1.21%
+  72  As034_Cam                  72.41%    passed     62.23%
+  73  As084_Cam                  63.75%    failed      0.16%
+  74  As085_Cam                  71.93%    passed     70.54%
+  75  As014_Gab                  74.08%    failed      0.05%
+  76  As029_Gab                  77.90%    passed     12.08%
+  77  As040_Gab                  45.43%    failed      3.50%
+  78  As058_Gab                  50.80%    failed      0.16%
+  79  As072_Lib                  72.14%    passed     55.15%
+  80  As012_Gab                  81.27%    passed     58.01%
+  81  As025_Gab                  66.31%    failed      1.04%
+  82  As017_Gab                  72.93%    passed     50.53%
+  83  As031_Gab                  51.96%    failed      2.87%
+  84  As135_Viet                 56.90%    failed      3.62%
+  85  As045_Cam                  57.33%    passed      5.90%
+  86  As070_Lib                  57.52%    failed      0.54%
+  87  As083_Cam                  46.22%    passed     88.08%
+  88  Synthetonychia             46.96%    failed      0.00%
+  89  Dendrolasma                 8.00%    failed      0.75%
+  90  Trogulus                   10.71%    failed      0.00%
+  91  Protolophus                 3.26%    passed     55.69%
+  92  Pantopsalis                22.71%    failed      2.16%
+  93  Hesperonemastoma            3.39%    failed      0.02%
+  94  As061_Lib                  71.89%    passed     19.80%
+  95  As069_Lib                  58.03%    failed      0.00%
+  96  As032_Gab                  61.58%    failed      0.71%
+  97  As039_Gab                  57.58%    failed      0.02%
+  98  Troglosiro                 14.89%    failed      0.17%
+  99  Pseudoepedanus             41.36%    failed      0.00%
+ 100  Agoristenidae_DNA105839    21.26%    passed     14.13%
+ 101  Trinella                   68.59%    passed     84.14%
+ 102  Arulla_DNA102666           17.29%    passed     57.67%
+ 103  Assamiidae_DNA104069       34.22%    failed      0.17%
+ 104  Chilon                     66.58%    failed      3.87%
+ 105  Paraselenca                28.22%    failed      0.00%
+ 106  Assamiidae_DNA104858       68.61%    passed     80.30%
+ 107  Fijicolana                 16.63%    passed     39.68%
+ 108  Stygnomma                  38.57%    passed     58.74%
+ 109  Pellobunus                  8.02%    passed     21.46%
+ 110  Icaleptes_DNA104056         8.75%    passed     59.17%
+ 111  Icaleptes_DNA104053        19.57%    failed      0.03%
+ 112  Guasinia                   31.80%    failed      0.39%
+ 113  Metabiantes_DNA100703      13.81%    passed     64.78%
+ 114  Metabiantes_DNA100704       9.15%    passed     18.39%
+ 115  Stenostygnus_DNA104847     13.85%    passed     89.01%
+ 116  Stenostygnus_DNA104849     21.99%    passed     43.64%
+ 117  Stenostygnus_DNA104850     21.58%    passed     14.01%
+ 118  Stenostygnus_DNA104848     21.99%    passed     76.80%
+ 119  Ethobunus                   8.50%    passed     74.18%
+ 120  Fissiphallius_DNA104055    19.57%    failed      0.11%
+ 121  Fissiphallius_DNA104057    21.87%    failed      0.07%
+ 122  Escadabius                 20.41%    failed      0.24%
+ 123  Metabiantes_DNA100335      28.09%    passed     11.03%
+ 124  Biantidae_DNA105668        20.25%    passed     31.02%
+ 125  Samoidae                   31.86%    failed      0.12%
+ 126  Mitraceras                 25.45%    failed      0.16%
+ 127  Jarmilana                  43.62%    passed     28.56%
+ 128  Maiorerus                  62.96%    passed     72.48%
+ 129  Epedanidae_DNA104861       19.61%    failed      0.02%
+ 130  Epedanidae_DNA104862       19.77%    failed      0.00%
+ 131  Goniosoma                   8.83%    passed     68.15%
+ 132  Megapachylus               10.82%    passed     86.25%
+ 133  Heterocranaus               8.02%    passed     34.06%
+ 134  Santinezia                  9.56%    passed     82.76%
+ 135  Metalibitia                19.66%    failed      0.01%
+ 136  Lomanius_DNA104935          8.11%    passed     60.68%
+ 137  Stygnopsidae_DNA103882     20.97%    passed      5.51%
+ 138  Stygnopsidae_DNA104855      9.52%    passed     74.65%
+ 139  Stygnopsidae_DNA104856      8.05%    passed     65.11%
+ 140  Minuella                   25.90%    failed      0.05%
+ 141  Karos                       8.07%    passed     94.71%
+ 142  Equitius                    8.05%    passed     82.67%
+ 143  Larifuga                   16.39%    passed     16.05%
+ 144  Triaenonychidae            10.40%    passed     94.65%
+ 145  Triaenobunus                7.95%    passed     99.13%
+ 146  Rostromontia               40.38%    failed      0.32%
+ 147  IC_DNA102668               19.66%    failed      0.09%
+ 148  IC_DNA102669               20.50%    failed      0.07%
+ 149  Zalmoxida                  14.71%    passed     36.31%
+ 150  IC_DNA103729               28.61%    failed      4.09%
+ 151  IC_DNA103572               29.65%    failed      0.09%
+ 152  Bunofagea                  10.78%    passed     14.13%
+ 153  Vonones                    77.60%    passed     11.99%
+ 154  Erebomaster                46.53%    failed      0.37%
+ 155  Holoscotolemon             19.26%    passed     29.49%
+ 156  Peltonychia                 7.96%    passed      8.76%
+ 157  Trojanella                 31.87%    passed     69.53%
+ 158  Epedanidae_DNA104062       28.79%    passed     69.39%
+ 159  Epedanidae_DNA104068       30.73%    passed     47.34%
+ 160  Epedanidae_DNA104066       20.43%    passed     44.19%
+ 161  Op106_Toccolus             42.26%    passed     16.54%
+ 162  Op107_Nanepedanus_rufus    42.30%    passed     16.95%
+ 163  Op104_Dibuninae            42.31%    passed     14.24%
+ 164  Op105_Dibunus              42.37%    passed     31.78%
+ 165  As026_Gab                  54.49%    failed      0.13%
+ 166  As030_Gab                  70.03%    failed      0.00%
+ 167  As022_Gab                  85.58%    passed     36.67%
+ 168  As028_Gab                  54.89%    passed     11.86%
+ 169  As085_WAus                 64.00%    failed      0.18%
+ 170  As092_EAus                 54.96%    passed     44.76%
+ 171  Op103_Bupares              53.78%    passed     16.94%
+ 172  As057_Gab                  67.46%    failed      0.00%
+ 173  As134_Viet                 63.50%    failed      0.05%
+ 174  As090_EAus                 69.31%    failed      1.27%
+ 175  As095_PNG                  68.04%    failed      0.00%
+ 176  As009_Cam                  59.09%    failed      0.19%
+ 177  As016_Gab                  87.26%    passed     56.00%
+ 178  As018_Gab                  55.35%    failed      2.71%
+ 179  Op049_Beloniscus           42.78%    passed     47.58%
+ 180  As106_Thai                 51.84%    passed      8.22%
+ 181  As115_Thai                 51.78%    failed      4.47%
+ 182  As118_Thai                 51.73%    passed      8.97%
+ 183  As129_Laos                 57.99%    failed      0.35%
+ 184  As136_Viet                 51.73%    passed     18.96%
+ 185  As140_Viet                 51.95%    passed     25.59%
+ 186  As126_Laos                 52.13%    passed     15.05%
+ 187  As119_Indo                 66.44%    failed      0.17%
+ 188  Kimula                     52.79%    failed      0.02%
+ 189  Fumontana                  36.61%    failed      0.14%
+ 190  Zuma                       55.71%    failed      0.36%
+ 191  Stygnoplus                 19.62%    failed      0.07%
+ 192  Caddo                      63.01%    passed     69.93%
+ 193  Theromaster                21.38%    failed      0.00%
+ 194  As099_Dibunus              56.72%    passed     38.37%
+ 195  Icaleptes                  51.01%    failed      0.00%
+ 196  Fissiphallius              39.37%    passed     21.40%
+ 197  Lomanius_DNA104934         52.07%    failed      0.00%
+ 198  Stygnommatidae_DNA105636   57.69%    failed      0.00%
+ 199  Neopygoplus                94.13%    failed      0.74%
+WARNING: 77 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                      39.30%  84 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading alignment file concat-alignment.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 199 sequences with 5575 columns, 2731 distinct patterns
+1632 parsimony-informative, 464 singleton sites, 3479 constant sites
+                          Gap/Ambiguity  Composition  p-value
+   1  Zalmoxis                    1.51%    passed     50.21%
+   2  Dongmoa                    13.13%    passed     32.06%
+   3  Tithaeus                   14.62%    passed      7.62%
+   4  Martensiellus               3.59%    passed     46.81%
+   5  Palaeoncopus                1.51%    passed     89.94%
+   6  Sandokan                    1.47%    passed     30.70%
+   7  Glysterus                   2.42%    passed     58.53%
+   8  Cynortula                   2.22%    passed     80.67%
+   9  Zygopachylus                1.61%    passed     98.44%
+  10  Santobius_DNA104931         8.09%    failed      1.55%
+  11  Santobius_DNA104930        20.79%    passed     16.67%
+  12  Hoplobunus                  8.75%    passed     19.38%
+  13  Scotolemon_lespesi         34.03%    passed     34.88%
+  14  IC_DNA104070                8.22%    failed      2.48%
+  15  IC_DNA104071               19.12%    passed     21.70%
+  16  Baculigerus                 5.36%    passed     37.39%
+  17  Trionyxella                 2.76%    passed     81.26%
+  18  Assamiidae_DNA104857       35.44%    passed     91.01%
+  19  Paktongius                  7.39%    passed     62.47%
+  20  Assamiidae_DNA104859       21.38%    passed     13.15%
+  21  Haasus_sp                  22.40%    failed      0.49%
+  22  Haasus_judaeus             35.71%    failed      2.11%
+  23  Conomma                     2.30%    passed     47.44%
+  24  Bishopella                 21.83%    failed      0.13%
+  25  Scotolemon                  7.66%    failed      0.24%
+  26  As020_Gab                  49.09%    failed      0.05%
+  27  As038_Gab                  57.31%    passed      9.06%
+  28  As041_Gab                  45.65%    failed      0.20%
+  29  Gnomulus                    1.45%    passed     44.03%
+  30  Caenoncopus                 1.22%    passed     18.62%
+  31  As122_Laos                 49.26%    failed      0.01%
+  32  As123_Viet                 45.31%    failed      0.01%
+  33  As131_Mala                 45.58%    failed      0.69%
+  34  As098_Phil                 57.74%    passed     31.80%
+  35  As105_Phil                 45.90%    passed     40.04%
+  36  As080_Indo                 45.72%    passed     12.79%
+  37  As081_Indo                 45.60%    passed      9.70%
+  38  As133_Indo                 45.11%    passed     10.06%
+  39  As085_WDus                 93.27%    failed      0.00%
+  40  As087_WAus                 45.45%    passed     40.33%
+  41  As089_EAus                 71.91%    passed     28.44%
+  42  As092_EDus                 93.27%    failed      0.00%
+  43  As104_EAus                 46.82%    passed     17.48%
+  44  As101_NAus                 57.52%    passed     29.13%
+  45  As102_NAus                 60.39%    failed      0.00%
+  46  As103_NAus                 58.40%    passed     22.23%
+  47  As094_PNG                  46.44%    failed      0.76%
+  48  As096_PNG                  45.63%    failed      0.33%
+  49  As097_PNG                  57.33%    passed     38.03%
+  50  As108_Laos                 59.57%    failed      0.01%
+  51  As114_Thai                 59.59%    failed      0.00%
+  52  As124_Indo                 72.02%    passed      7.68%
+  53  As130_Viet                 71.32%    passed     12.14%
+  54  As109_Thai                 45.17%    passed     34.88%
+  55  As111_Phil                 71.59%    passed     27.78%
+  56  As120_Thai                 44.97%    passed     24.98%
+  57  As110_Laos                 45.42%    passed     43.32%
+  58  As121_Laos                 45.09%    passed     35.50%
+  59  As125_Thai                 71.77%    passed     21.92%
+  60  As132_Mala                 56.86%    passed      9.12%
+  61  As127_Laos                 45.51%    passed      7.64%
+  62  As116_Thai                 71.41%    passed     24.19%
+  63  As117_Thai                 56.93%    passed     12.09%
+  64  As059_Gab                  45.61%    passed     13.29%
+  65  As010_Gab                  79.93%    failed      0.19%
+  66  As050_Cam                  60.02%    failed      0.00%
+  67  As011_Gab                  54.04%    failed      0.00%
+  68  As021_Gab                  60.84%    failed      4.42%
+  69  As082_Cam                  57.43%    failed      4.30%
+  70  As056_Gab                  45.58%    failed      2.95%
+  71  As027_Gab                  50.89%    failed      1.21%
+  72  As034_Cam                  72.41%    passed     62.23%
+  73  As084_Cam                  63.75%    failed      0.16%
+  74  As085_Cam                  71.93%    passed     70.54%
+  75  As014_Gab                  74.08%    failed      0.05%
+  76  As029_Gab                  77.90%    passed     12.08%
+  77  As040_Gab                  45.43%    failed      3.50%
+  78  As058_Gab                  50.80%    failed      0.16%
+  79  As072_Lib                  72.14%    passed     55.15%
+  80  As012_Gab                  81.27%    passed     58.01%
+  81  As025_Gab                  66.31%    failed      1.04%
+  82  As017_Gab                  72.93%    passed     50.53%
+  83  As031_Gab                  51.96%    failed      2.87%
+  84  As135_Viet                 56.90%    failed      3.62%
+  85  As045_Cam                  57.33%    passed      5.90%
+  86  As070_Lib                  57.52%    failed      0.54%
+  87  As083_Cam                  46.22%    passed     88.08%
+  88  Synthetonychia             46.96%    failed      0.00%
+  89  Dendrolasma                 8.00%    failed      0.75%
+  90  Trogulus                   10.71%    failed      0.00%
+  91  Protolophus                 3.26%    passed     55.69%
+  92  Pantopsalis                22.71%    failed      2.16%
+  93  Hesperonemastoma            3.39%    failed      0.02%
+  94  As061_Lib                  71.89%    passed     19.80%
+  95  As069_Lib                  58.03%    failed      0.00%
+  96  As032_Gab                  61.58%    failed      0.71%
+  97  As039_Gab                  57.58%    failed      0.02%
+  98  Troglosiro                 14.89%    failed      0.17%
+  99  Pseudoepedanus             41.36%    failed      0.00%
+ 100  Agoristenidae_DNA105839    21.26%    passed     14.13%
+ 101  Trinella                   68.59%    passed     84.14%
+ 102  Arulla_DNA102666           17.29%    passed     57.67%
+ 103  Assamiidae_DNA104069       34.22%    failed      0.17%
+ 104  Chilon                     66.58%    failed      3.87%
+ 105  Paraselenca                28.22%    failed      0.00%
+ 106  Assamiidae_DNA104858       68.61%    passed     80.30%
+ 107  Fijicolana                 16.63%    passed     39.68%
+ 108  Stygnomma                  38.57%    passed     58.74%
+ 109  Pellobunus                  8.02%    passed     21.46%
+ 110  Icaleptes_DNA104056         8.75%    passed     59.17%
+ 111  Icaleptes_DNA104053        19.57%    failed      0.03%
+ 112  Guasinia                   31.80%    failed      0.39%
+ 113  Metabiantes_DNA100703      13.81%    passed     64.78%
+ 114  Metabiantes_DNA100704       9.15%    passed     18.39%
+ 115  Stenostygnus_DNA104847     13.85%    passed     89.01%
+ 116  Stenostygnus_DNA104849     21.99%    passed     43.64%
+ 117  Stenostygnus_DNA104850     21.58%    passed     14.01%
+ 118  Stenostygnus_DNA104848     21.99%    passed     76.80%
+ 119  Ethobunus                   8.50%    passed     74.18%
+ 120  Fissiphallius_DNA104055    19.57%    failed      0.11%
+ 121  Fissiphallius_DNA104057    21.87%    failed      0.07%
+ 122  Escadabius                 20.41%    failed      0.24%
+ 123  Metabiantes_DNA100335      28.09%    passed     11.03%
+ 124  Biantidae_DNA105668        20.25%    passed     31.02%
+ 125  Samoidae                   31.86%    failed      0.12%
+ 126  Mitraceras                 25.45%    failed      0.16%
+ 127  Jarmilana                  43.62%    passed     28.56%
+ 128  Maiorerus                  62.96%    passed     72.48%
+ 129  Epedanidae_DNA104861       19.61%    failed      0.02%
+ 130  Epedanidae_DNA104862       19.77%    failed      0.00%
+ 131  Goniosoma                   8.83%    passed     68.15%
+ 132  Megapachylus               10.82%    passed     86.25%
+ 133  Heterocranaus               8.02%    passed     34.06%
+ 134  Santinezia                  9.56%    passed     82.76%
+ 135  Metalibitia                19.66%    failed      0.01%
+ 136  Lomanius_DNA104935          8.11%    passed     60.68%
+ 137  Stygnopsidae_DNA103882     20.97%    passed      5.51%
+ 138  Stygnopsidae_DNA104855      9.52%    passed     74.65%
+ 139  Stygnopsidae_DNA104856      8.05%    passed     65.11%
+ 140  Minuella                   25.90%    failed      0.05%
+ 141  Karos                       8.07%    passed     94.71%
+ 142  Equitius                    8.05%    passed     82.67%
+ 143  Larifuga                   16.39%    passed     16.05%
+ 144  Triaenonychidae            10.40%    passed     94.65%
+ 145  Triaenobunus                7.95%    passed     99.13%
+ 146  Rostromontia               40.38%    failed      0.32%
+ 147  IC_DNA102668               19.66%    failed      0.09%
+ 148  IC_DNA102669               20.50%    failed      0.07%
+ 149  Zalmoxida                  14.71%    passed     36.31%
+ 150  IC_DNA103729               28.61%    failed      4.09%
+ 151  IC_DNA103572               29.65%    failed      0.09%
+ 152  Bunofagea                  10.78%    passed     14.13%
+ 153  Vonones                    77.60%    passed     11.99%
+ 154  Erebomaster                46.53%    failed      0.37%
+ 155  Holoscotolemon             19.26%    passed     29.49%
+ 156  Peltonychia                 7.96%    passed      8.76%
+ 157  Trojanella                 31.87%    passed     69.53%
+ 158  Epedanidae_DNA104062       28.79%    passed     69.39%
+ 159  Epedanidae_DNA104068       30.73%    passed     47.34%
+ 160  Epedanidae_DNA104066       20.43%    passed     44.19%
+ 161  Op106_Toccolus             42.26%    passed     16.54%
+ 162  Op107_Nanepedanus_rufus    42.30%    passed     16.95%
+ 163  Op104_Dibuninae            42.31%    passed     14.24%
+ 164  Op105_Dibunus              42.37%    passed     31.78%
+ 165  As026_Gab                  54.49%    failed      0.13%
+ 166  As030_Gab                  70.03%    failed      0.00%
+ 167  As022_Gab                  85.58%    passed     36.67%
+ 168  As028_Gab                  54.89%    passed     11.86%
+ 169  As085_WAus                 64.00%    failed      0.18%
+ 170  As092_EAus                 54.96%    passed     44.76%
+ 171  Op103_Bupares              53.78%    passed     16.94%
+ 172  As057_Gab                  67.46%    failed      0.00%
+ 173  As134_Viet                 63.50%    failed      0.05%
+ 174  As090_EAus                 69.31%    failed      1.27%
+ 175  As095_PNG                  68.04%    failed      0.00%
+ 176  As009_Cam                  59.09%    failed      0.19%
+ 177  As016_Gab                  87.26%    passed     56.00%
+ 178  As018_Gab                  55.35%    failed      2.71%
+ 179  Op049_Beloniscus           42.78%    passed     47.58%
+ 180  As106_Thai                 51.84%    passed      8.22%
+ 181  As115_Thai                 51.78%    failed      4.47%
+ 182  As118_Thai                 51.73%    passed      8.97%
+ 183  As129_Laos                 57.99%    failed      0.35%
+ 184  As136_Viet                 51.73%    passed     18.96%
+ 185  As140_Viet                 51.95%    passed     25.59%
+ 186  As126_Laos                 52.13%    passed     15.05%
+ 187  As119_Indo                 66.44%    failed      0.17%
+ 188  Kimula                     52.79%    failed      0.02%
+ 189  Fumontana                  36.61%    failed      0.14%
+ 190  Zuma                       55.71%    failed      0.36%
+ 191  Stygnoplus                 19.62%    failed      0.07%
+ 192  Caddo                      63.01%    passed     69.93%
+ 193  Theromaster                21.38%    failed      0.00%
+ 194  As099_Dibunus              56.72%    passed     38.37%
+ 195  Icaleptes                  51.01%    failed      0.00%
+ 196  Fissiphallius              39.37%    passed     21.40%
+ 197  Lomanius_DNA104934         52.07%    failed      0.00%
+ 198  Stygnommatidae_DNA105636   57.69%    failed      0.00%
+ 199  Neopygoplus                94.13%    failed      0.74%
+WARNING: 77 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                      39.30%  84 sequences failed composition chi2 test (p-value<5%; df=3)
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1		98	388	291	77	TEST	16S
+2		191	1762	269	1334	TEST	18S
+3		169	2441	498	1723	TEST	28S
+4		120	219	133	73	TEST	1COI
+5		120	219	85	102	TEST	2COI
+6		120	219	219	0	TEST	3COI
+7		151	327	137	170	TEST	H3
+Degree of missing data: 0.175
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.044 seconds
+NOTE: ModelFinder requires 66 MB RAM!
+NUMBER OF THREADS FOR PARTITION FINDING: 7
+Testing GTR+F+G on supermatrix...
+GTR+F+G4 / LnL: -102359.792 / df: 404 / AIC: 205527.584 / AICc: 205590.880 / BIC: 208204.508
+Selecting individual models for 7 charsets using BIC...
+ No. Model        Score       Charset
+   1 TIM2+F+I+G4  10362.327   2COI
+   2 GTR+F+I+G4   20276.832   1COI
+   3 GTR+F+ASC+G4 51948.910   3COI
+   4 GTR+F+I+G4   34020.738   16S
+   5 GTR+F+I+G4   23570.257   H3
+   6 GTR+F+I+G4   37276.230   28S
+   7 TIMe+I+G4    22120.142   18S
+Full partition model BIC score: 203139.153 (LnL: -99598.525  df:457)
+Partition information was printed to partition.txt.best_scheme.nex
+Partition information in Raxml format was printed to partition.txt.best_scheme
+
+All model information printed to partition.txt.model.gz
+CPU time for ModelFinder: 102.916 seconds (0h:1m:42s)
+Wall-clock time for ModelFinder: 29.195 seconds (0h:0m:29s)
+Generating 1000 samples for ultrafast bootstrap (seed: 8229)...
+
+NOTE: 66 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+9 trees examined
+Threads: 1 / Time: 8.140 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -136516
+Threads: 2 / Time: 4.630 sec / Speedup: 1.758 / Efficiency: 88% / LogL: -136516
+Threads: 3 / Time: 3.729 sec / Speedup: 2.183 / Efficiency: 73% / LogL: -136516
+Threads: 4 / Time: 3.625 sec / Speedup: 2.245 / Efficiency: 56% / LogL: -136516
+Threads: 5 / Time: 4.276 sec / Speedup: 1.904 / Efficiency: 38% / LogL: -136516
+BEST NUMBER OF THREADS: 3
+
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -105508.755
+Current log-likelihood at step 1: -99420.677
+Current log-likelihood at step 2: -99317.376
+Current log-likelihood at step 3: -99135.473
+Current log-likelihood at step 4: -99098.536
+Current log-likelihood at step 5: -99094.326
+Current log-likelihood at step 6: -99091.739
+Current log-likelihood at step 7: -99089.956
+Current log-likelihood at step 8: -99089.296
+Current log-likelihood at step 9: -99088.649
+Current log-likelihood at step 10: -99088.270
+Current log-likelihood at step 11: -99087.860
+Current log-likelihood at step 12: -99087.335
+Current log-likelihood at step 13: -99087.116
+Current log-likelihood at step 14: -99086.926
+Current log-likelihood at step 15: -99086.724
+Current log-likelihood at step 16: -99086.609
+Current log-likelihood at step 17: -99086.479
+Current log-likelihood at step 18: -99086.358
+Current log-likelihood at step 19: -99086.193
+Current log-likelihood at step 20: -99086.116
+Parameters optimization took 19 rounds (6.184 sec)
+
+Computing ML distances based on estimated model parameters... 1.280 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+0.020 seconds
+Log-likelihood of BIONJ tree: -108874.111
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 6.647 second
+Computing log-likelihood of 98 initial trees ... 10.430 seconds
+Current best score: -99086.116
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98923.103
+Current log-likelihood at step 1: -98921.863
+Current log-likelihood at step 2: -98921.151
+Current log-likelihood at step 3: -98920.833
+Current log-likelihood at step 4: -98920.723
+Current log-likelihood at step 5: -98920.506
+Current log-likelihood at step 6: -98920.223
+Current log-likelihood at step 7: -98920.037
+Current log-likelihood at step 8: -98919.953
+Parameters optimization took 7 rounds (1.944 sec)
+
+BETTER TREE FOUND at iteration 1: -98919.953
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98902.672
+Current log-likelihood at step 1: -98901.968
+Current log-likelihood at step 2: -98901.798
+Current log-likelihood at step 3: -98901.696
+Current log-likelihood at step 4: -98901.621
+Parameters optimization took 3 rounds (1.124 sec)
+
+BETTER TREE FOUND at iteration 2: -98901.621
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98896.939
+Current log-likelihood at step 1: -98896.439
+Current log-likelihood at step 2: -98896.393
+Parameters optimization took 1 rounds (0.517 sec)
+
+BETTER TREE FOUND at iteration 5: -98896.393
+Iteration 10 / LogL: -98910.050 / Time: 0h:1m:10s
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98841.140
+Current log-likelihood at step 1: -98840.171
+Current log-likelihood at step 2: -98839.993
+Current log-likelihood at step 3: -98839.911
+Parameters optimization took 2 rounds (0.854 sec)
+
+BETTER TREE FOUND at iteration 11: -98839.911
+Iteration 20 / LogL: -98899.311 / Time: 0h:1m:30s
+Finish initializing candidate tree set (20)
+Current best tree score: -98839.911 / CPU time: 57.620
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -98901.708 / Time: 0h:1m:46s (0h:4m:56s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98835.531
+Current log-likelihood at step 1: -98835.387
+Current log-likelihood at step 2: -98835.333
+Parameters optimization took 1 rounds (0.488 sec)
+
+BETTER TREE FOUND at iteration 31: -98835.333
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98834.965
+Current log-likelihood at step 1: -98834.708
+Current log-likelihood at step 2: -98834.631
+Parameters optimization took 1 rounds (0.501 sec)
+
+BETTER TREE FOUND at iteration 35: -98834.631
+Iteration 40 / LogL: -98878.307 / Time: 0h:2m:3s (0h:4m:59s left)
+Iteration 50 / LogL: -98836.897 / Time: 0h:2m:18s (0h:4m:0s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98834.408
+Current log-likelihood at step 1: -98834.243
+Current log-likelihood at step 2: -98834.201
+Parameters optimization took 1 rounds (0.492 sec)
+
+BETTER TREE FOUND at iteration 60: -98834.201
+Iteration 60 / LogL: -98834.201 / Time: 0h:2m:35s (0h:4m:23s left)
+Iteration 70 / LogL: -98841.723 / Time: 0h:2m:50s (0h:3m:42s left)
+Iteration 80 / LogL: -98897.806 / Time: 0h:3m:5s (0h:3m:8s left)
+Iteration 90 / LogL: -98900.898 / Time: 0h:3m:20s (0h:2m:37s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98832.961
+Current log-likelihood at step 1: -98832.814
+Current log-likelihood at step 2: -98832.796
+Parameters optimization took 1 rounds (0.520 sec)
+
+BETTER TREE FOUND at iteration 99: -98832.796
+Iteration 100 / LogL: -98851.584 / Time: 0h:3m:38s (0h:3m:38s left)
+Iteration 110 / LogL: -98832.800 / Time: 0h:3m:54s (0h:3m:11s left)
+Iteration 120 / LogL: -98853.553 / Time: 0h:4m:9s (0h:2m:45s left)
+Iteration 130 / LogL: -98861.025 / Time: 0h:4m:25s (0h:2m:21s left)
+Iteration 140 / LogL: -98834.635 / Time: 0h:4m:41s (0h:1m:59s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98832.712
+Current log-likelihood at step 1: -98832.689
+Parameters optimization took 0 rounds (0.245 sec)
+
+BETTER TREE FOUND at iteration 148: -98832.689
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98832.538
+Current log-likelihood at step 1: -98832.504
+Parameters optimization took 0 rounds (0.243 sec)
+
+BETTER TREE FOUND at iteration 150: -98832.504
+Iteration 150 / LogL: -98832.504 / Time: 0h:4m:57s (0h:3m:19s left)
+Iteration 160 / LogL: -98901.168 / Time: 0h:5m:13s (0h:2m:57s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98831.836
+Current log-likelihood at step 1: -98831.789
+Parameters optimization took 0 rounds (0.246 sec)
+
+BETTER TREE FOUND at iteration 166: -98831.789
+Iteration 170 / LogL: -98834.620 / Time: 0h:5m:29s (0h:3m:6s left)
+Iteration 180 / LogL: -98832.516 / Time: 0h:5m:45s (0h:2m:45s left)
+Iteration 190 / LogL: -98832.063 / Time: 0h:6m:0s (0h:2m:24s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98831.649
+Current log-likelihood at step 1: -98831.616
+Parameters optimization took 0 rounds (0.230 sec)
+
+BETTER TREE FOUND at iteration 194: -98831.616
+Iteration 200 / LogL: -98837.217 / Time: 0h:6m:15s (0h:2m:57s left)
+Iteration 210 / LogL: -98908.555 / Time: 0h:6m:31s (0h:2m:37s left)
+Iteration 220 / LogL: -98834.658 / Time: 0h:6m:48s (0h:2m:17s left)
+Iteration 230 / LogL: -98833.236 / Time: 0h:7m:4s (0h:1m:58s left)
+BETTER TREE FOUND at iteration 235: -98831.609
+Iteration 240 / LogL: -98845.101 / Time: 0h:7m:20s (0h:2m:55s left)
+Iteration 250 / LogL: -98832.780 / Time: 0h:7m:35s (0h:2m:35s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98831.525
+Current log-likelihood at step 1: -98831.513
+Parameters optimization took 0 rounds (0.251 sec)
+
+BETTER TREE FOUND at iteration 253: -98831.513
+BETTER TREE FOUND at iteration 257: -98831.508
+Iteration 260 / LogL: -98832.492 / Time: 0h:7m:51s (0h:2m:56s left)
+Iteration 270 / LogL: -98920.438 / Time: 0h:8m:7s (0h:2m:37s left)
+Iteration 280 / LogL: -98841.231 / Time: 0h:8m:22s (0h:2m:18s left)
+Iteration 290 / LogL: -98843.226 / Time: 0h:8m:37s (0h:2m:0s left)
+Iteration 300 / LogL: -98896.637 / Time: 0h:8m:53s (0h:1m:41s left)
+Iteration 310 / LogL: -98914.221 / Time: 0h:9m:9s (0h:1m:23s left)
+Iteration 320 / LogL: -98885.804 / Time: 0h:9m:25s (0h:1m:5s left)
+Iteration 330 / LogL: -98842.137 / Time: 0h:9m:41s (0h:0m:47s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98831.444
+Current log-likelihood at step 1: -98831.313
+Current log-likelihood at step 2: -98831.297
+Parameters optimization took 1 rounds (0.499 sec)
+
+BETTER TREE FOUND at iteration 334: -98831.297
+Iteration 340 / LogL: -98875.723 / Time: 0h:9m:58s (0h:2m:45s left)
+Iteration 350 / LogL: -98884.352 / Time: 0h:10m:13s (0h:2m:27s left)
+Iteration 360 / LogL: -98837.921 / Time: 0h:10m:29s (0h:2m:9s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -98831.261
+Current log-likelihood at step 1: -98831.233
+Parameters optimization took 0 rounds (0.256 sec)
+
+BETTER TREE FOUND at iteration 361: -98831.233
+Iteration 370 / LogL: -98831.891 / Time: 0h:10m:46s (0h:2m:39s left)
+Iteration 380 / LogL: -98831.686 / Time: 0h:11m:1s (0h:2m:21s left)
+Iteration 390 / LogL: -98840.186 / Time: 0h:11m:17s (0h:2m:3s left)
+Iteration 400 / LogL: -98851.998 / Time: 0h:11m:32s (0h:1m:45s left)
+Iteration 410 / LogL: -98833.629 / Time: 0h:11m:48s (0h:1m:28s left)
+Iteration 420 / LogL: -98839.644 / Time: 0h:12m:5s (0h:1m:10s left)
+Iteration 430 / LogL: -98864.646 / Time: 0h:12m:20s (0h:0m:53s left)
+Iteration 440 / LogL: -98838.620 / Time: 0h:12m:35s (0h:0m:36s left)
+Iteration 450 / LogL: -98879.070 / Time: 0h:12m:52s (0h:0m:18s left)
+Iteration 460 / LogL: -98832.033 / Time: 0h:13m:9s (0h:0m:1s left)
+Refining ufboot trees with NNI 5 branches...
+100 samples done
+200 samples done
+300 samples done
+400 samples done
+500 samples done
+600 samples done
+700 samples done
+800 samples done
+900 samples done
+1000 samples done
+Total 1000 ufboot trees refined
+TREE SEARCH COMPLETED AFTER 462 ITERATIONS / Time: 0h:25m:16s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -98831.233
+Current log-likelihood at step 1: -98831.227
+Parameters optimization took 0 rounds (0.233 sec)
+
+BEST SCORE FOUND : -98831.227
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+Alternative NNI shows better log-likelihood -98831.188 > -98831.227
+4.428 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file partition.txt.splits.nex
+Total tree length: 23.285
+
+Total number of iterations: 462
+CPU time used for tree search: 4324.585 sec (1h:12m:4s)
+Wall-clock time used for tree search: 1483.907 sec (0h:24m:43s)
+Total CPU time used: 4428.490 sec (1h:13m:48s)
+Total wall-clock time used: 1521.939 sec (0h:25m:21s)
+UFBoot trees printed to partition.txt.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file partition.txt.splits.nex...
+199 taxa and 1383 splits.
+Consensus tree written to partition.txt.contree
+Reading input trees file partition.txt.contree
+Log-likelihood of consensus tree: -98831.615
+
+Analysis results written to: 
+  IQ-TREE report:                partition.txt.iqtree
+  Maximum-likelihood tree:       partition.txt.treefile
+  Likelihood distances:          partition.txt.mldist
+  Best partitioning scheme:      partition.txt.best_scheme.nex
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          partition.txt.splits.nex
+  Consensus tree:                partition.txt.contree
+  UFBoot trees:                  partition.txt.ufboot
+  Screen log file:               partition.txt.log
+
+Date and Time: Fri Apr 21 21:20:49 2023
